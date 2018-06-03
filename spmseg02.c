@@ -1,0 +1,141 @@
+
+// PIC16F1938 Configuration Bit Settings
+
+// 'C' source line config statements
+
+#include <xc.h>
+
+// #pragma config statements should precede project file includes.
+// Use project enums instead of #define for ON and OFF.
+
+// CONFIG1
+#pragma config FOSC = INTOSC    // Oscillator Selection (INTOSC oscillator: I/O function on CLKIN pin)
+#pragma config WDTE = OFF       // Watchdog Timer Enable (WDT disabled)
+#pragma config PWRTE = OFF      // Power-up Timer Enable (PWRT disabled)
+#pragma config MCLRE = ON       // MCLR Pin Function Select (MCLR/VPP pin function is MCLR)
+#pragma config CP = OFF         // Flash Program Memory Code Protection (Program memory code protection is disabled)
+#pragma config CPD = OFF        // Data Memory Code Protection (Data memory code protection is disabled)
+#pragma config BOREN = OFF      // Brown-out Reset Enable (Brown-out Reset disabled)
+#pragma config CLKOUTEN = OFF   // Clock Out Enable (CLKOUT function is disabled. I/O or oscillator function on the CLKOUT pin)
+#pragma config IESO = ON        // Internal/External Switchover (Internal/External Switchover mode is enabled)
+#pragma config FCMEN = OFF      // Fail-Safe Clock Monitor Enable (Fail-Safe Clock Monitor is disabled)
+
+// CONFIG2
+#pragma config WRT = OFF        // Flash Memory Self-Write Protection (Write protection off)
+#pragma config VCAPEN = OFF     // Voltage Regulator Capacitor Enable (All VCAP pin functionality is disabled)
+#pragma config PLLEN = OFF      // PLL Enable (4x PLL disabled)
+#pragma config STVREN = ON      // Stack Overflow/Underflow Reset Enable (Stack Overflow or Underflow will cause a Reset)
+#pragma config BORV = LO        // Brown-out Reset Voltage Selection (Brown-out Reset Voltage (Vbor), low trip point selected.)
+#pragma config LVP = OFF        // Low-Voltage Programming Enable (High-voltage on MCLR/VPP must be used for programming)
+
+#include "mono_con.h"
+
+// Internal OSC: 8MHz
+#define _XTAL_FREQ 8000000      //  __delay_ms(), __delay_us()
+
+// Main Function
+void main(void)
+{
+    int tsw1Status, tsw2Status;
+    int spmN;
+    int spmStatus;
+    int segCnt;
+    int segSel;
+    int loopCnt;
+
+    // Initialize Clock,I/O
+    init();
+
+    // Init Data
+    tsw1Status = 0;
+    tsw2Status = 0;
+    spmN = 0;
+    spmStatus = 0;
+    segCnt = 0;
+    segSel = 0;
+    loopCnt = 0;
+    SEL_7SEG10 = 0;
+    SEL_7SEG01 = 0;
+    CK_SPM = 0;
+    PHASE_SPM = 0b00000000;     // SPMotor: OFF
+    CK_SPM = 1;
+    CK_SPM = 0;
+
+    // Main Loop
+    while(1){
+        // Loop Cycle Countup
+        loopCnt++;
+
+        // TactSW1
+        if(TSW1 == 0){
+            if(tsw1Status == 0){
+                tsw1Status = 1;
+                // Change DCMotor Status
+                spmStatus = (spmStatus==1)? 0: 1;
+            }
+        }
+        else{
+            tsw1Status = 0;
+        }
+
+        // TactSW2
+        if(TSW2 == 0){
+            if(tsw2Status == 0){
+                tsw2Status = 1;
+                // Countup
+                segCnt++;
+                if(segCnt >= 100){
+                    segCnt = 0;
+                }
+            }
+        }
+        else{
+            tsw2Status = 0;
+        }
+
+        // Process CycleTime: 10ms
+        if(loopCnt >= 10){
+            loopCnt = 0;
+
+            // Segment: OFF
+            SEL_7SEG10 = 0;
+            SEL_7SEG01 = 0;
+
+            // SPMotor
+            if(spmStatus){
+                PHASE_SPM = spmData[spmN];  // Out SPMotorData
+                CK_SPM = 1;                 // Out Clock
+                CK_SPM = 0;
+
+                spmN++;                 // SPMotor: CW
+                spmN &= 0b00000011;
+            }
+            else{
+                spmN = 0;
+                PHASE_SPM = 0b00000000;
+                CK_SPM = 1;
+                CK_SPM = 0;
+            }
+        }
+
+         // Dynamic Lighting
+        SEL_7SEG10 = 0;
+        SEL_7SEG01 = 0;
+
+        if(segSel == 1){
+            segSel = 0;
+            DAT_7SEG = segData[segCnt/10];
+            SEL_7SEG10 = 1;
+        }
+        else{
+            segSel = 1;
+            DAT_7SEG = segData[segCnt%10];
+            SEL_7SEG01 = 1;
+        }
+
+        // Loop CycleTime: 1ms
+        __delay_ms(1);
+    }
+
+    return;
+}

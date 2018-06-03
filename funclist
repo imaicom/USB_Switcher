@@ -1,0 +1,7 @@
+_init: CODE, 1966 0 16
+_segData: STRING, 0 0 21
+__stringtab: STRING, 4 0 1
+_main: CODE, 1982 0 66
+__initialization: CODE, 1963 0 0
+_spmData: STRING, 0 0 25
+Total: 129
