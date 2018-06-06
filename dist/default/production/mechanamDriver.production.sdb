@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F1938 ]
 [d frameptr 6 ]
-"46 /Users/imai/MPLABXProjects/mechanamDriver/allsw01.c
+"46 /Users/meka/MPLABXProjects/mechanamDriver/allsw01.c
 [e E3170 tgColor `uc
 OFF 0
 RED 1
@@ -22,9 +22,9 @@ WHITE 7
 [v _eecpymem eecpymem `(v  1 e 1 0 ]
 "39
 [v _memcpyee memcpyee `(v  1 e 1 0 ]
-"37 /Users/imai/MPLABXProjects/mechanamDriver/allsw01.c
+"37 /Users/meka/MPLABXProjects/mechanamDriver/allsw01.c
 [v _main main `(v  1 e 1 0 ]
-"33 /Users/imai/MPLABXProjects/mechanamDriver/mono_con.c
+"33 /Users/meka/MPLABXProjects/mechanamDriver/mono_con.c
 [v _init init `(v  1 e 1 0 ]
 "427 /Applications/microchip/xc8/v1.45/include/pic16f1938.h
 [v _PORTA PORTA `VEuc  1 e 1 @12 ]
@@ -56,12 +56,12 @@ WHITE 7
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
 "3133
 [v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
-"37 /Users/imai/MPLABXProjects/mechanamDriver/allsw01.c
+"37 /Users/meka/MPLABXProjects/mechanamDriver/allsw01.c
 [v _main main `(v  1 e 1 0 ]
 {
 "75
 } 0
-"33 /Users/imai/MPLABXProjects/mechanamDriver/mono_con.c
+"33 /Users/meka/MPLABXProjects/mechanamDriver/mono_con.c
 [v _init init `(v  1 e 1 0 ]
 {
 "47

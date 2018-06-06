@@ -5,7 +5,7 @@ Linker command line:
 --edf=/Applications/microchip/xc8/v1.45/dat/en_msgs.txt -cs \
   -h+dist/default/production/mechanamDriver.production.sym \
   --cmf=dist/default/production/mechanamDriver.production.cmf -z -Q16F1938 \
-  -o/tmp/xc3PoEy0y -Mdist/default/production/mechanamDriver.production.map \
+  -o/tmp/xcKVWFTdM -Mdist/default/production/mechanamDriver.production.map \
   -E1 -ver=XC8 -ASTACK=02000h-023efh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
   -AENTRY=00h-0FFhx64 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
@@ -30,7 +30,7 @@ Linker command line:
   -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-08008h -pconfig=CONFIG \
   -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
-  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xc2IsUbXL.obj \
+  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcuH0BoDk.obj \
   dist/default/production/mechanamDriver.production.obj 
 
 Object code version is 3.11
@@ -40,7 +40,7 @@ Machine type is 16F1938
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xc2IsUbXL.obj
+/tmp/xcuH0BoDk.obj
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
