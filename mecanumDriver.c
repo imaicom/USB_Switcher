@@ -42,11 +42,12 @@ void main(void)
     PORTC      = 0b00000000 ; // RC出力ピンの初期化(全てLOWにする)
 
      while(1) { // 左前　右前　左後　左後
-        while(!RB0) { PORTC = 0b10101010; }; PORTC = 0; // 前進　１０　１０　１０　１０
-        while(!RB1) { PORTC = 0b01010101; }; PORTC = 0; // 後進　０１　０１　０１　０１
-        while(!RB2) { PORTC = 0b10011001; }; PORTC = 0; // 右転　１０　０１　１０　０１
-        while(!RB3) { PORTC = 0b01100110; }; PORTC = 0; // 左転　０１　１０　０１　１０
-        while(!RB4) { PORTC = 0b10010110; }; PORTC = 0; // 右進　１０　０１　０１　１０
-        while(!RB5) { PORTC = 0b01101001; }; PORTC = 0; // 左進　０１　１０　１０　０１
+        while(!RB0) { PORTC = 0b10101010; }; // 前進　１０　１０　１０　１０
+        while(!RB1) { PORTC = 0b01010101; }; // 後進　０１　０１　０１　０１
+        while(!RB2) { PORTC = 0b10011001; }; // 右転　１０　０１　１０　０１
+        while(!RB3) { PORTC = 0b01100110; }; // 左転　０１　１０　０１　１０
+        while(!RB4) { PORTC = 0b10010110; }; // 右進　１０　０１　０１　１０
+        while(!RB5) { PORTC = 0b01101001; }; // 左進　０１　１０　１０　０１
+        PORTC = 0;
     }
 }
