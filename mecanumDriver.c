@@ -1,12 +1,7 @@
 
 // PIC16F1938 Configuration Bit Settings
 
-// 'C' source line config statements
-
 #include <xc.h>
-
-// #pragma config statements should precede project file includes.
-// Use project enums instead of #define for ON and OFF.
 
 // CONFIG1
 #pragma config FOSC = INTOSC    // Oscillator Selection (INTOSC oscillator: I/O function on CLKIN pin)
@@ -28,47 +23,15 @@
 #pragma config BORV = LO        // Brown-out Reset Voltage Selection (Brown-out Reset Voltage (Vbor), low trip point selected.)
 #pragma config LVP = OFF        // Low-Voltage Programming Enable (High-voltage on MCLR/VPP must be used for programming)
 
-#include "mono_con.h"
-
 // Internal OSC: 8MHz
 #define _XTAL_FREQ 8000000      //  __delay_ms(), __delay_us()
 
-// Main Function
 void main(void)
 {
-    // Initialize Clock,I/O
-    init();
-
-    // Main Loop
+    
+ 
     while(1){
-        if(TGLSW == 0){             // ToggleSW: ON
-            if(TSW1 == 0){              // TactSW1: ON
-                FCLED = BLUE<<5;        // FCLED: BLUE
-            }
-            else if(TSW2 == 0){         // TactSW2: ON
-                FCLED = GREEN<<5;       // FCLED: GREEN
-            }
-            else if(PTINT == 1){        // PhotoInterrupter: OFF
-                FCLED = BLUEGREEN<<5;   // FCLED: BLUEGREEN
-            }
-            else{                       // TSW1,TSW2: OFF,PhotoInterrupter: ON
-                FCLED = RED<<5;         // FCLED: RED
-            }
-        }
-        else{                       // ToggleSW: OFF
-            if(TSW1 == 0){              // TactSW1: ON
-                FCLED = PURPLE<<5;      // FCLED: PURPLE
-            }
-            else if(TSW2 == 0){         // TactSW2: ON
-                FCLED = YELLOW<<5;      // FCLED: YELLOW
-            }
-            else if(PTINT == 1){        // PhotoInterrupter: OFF
-                FCLED = WHITE<<5;       // FCLED: WHITE
-            }
-            else{                       // TSW1,TSW2: OFF,PhotoInterrupter: ON
-                FCLED = OFF<<5;         // FCLED: OFF
-            }
-        }
+        
     }
 
     return;
