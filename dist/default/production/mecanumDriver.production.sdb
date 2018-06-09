@@ -37,10 +37,18 @@
 [v _WPUB WPUB `VEuc  1 e 1 @525 ]
 "7812
 [v _RB0 RB0 `VEb  1 e 0 @104 ]
-"7834
-[v _RC3 RC3 `VEb  1 e 0 @115 ]
+"7814
+[v _RB1 RB1 `VEb  1 e 0 @105 ]
+"7816
+[v _RB2 RB2 `VEb  1 e 0 @106 ]
+"7818
+[v _RB3 RB3 `VEb  1 e 0 @107 ]
+"7820
+[v _RB4 RB4 `VEb  1 e 0 @108 ]
+"7822
+[v _RB5 RB5 `VEb  1 e 0 @109 ]
 "29 /Users/imai/MPLABXProjects/mecanumDriver/mecanumDriver.c
 [v _main main `(v  1 e 1 0 ]
 {
-"50
+"58
 } 0

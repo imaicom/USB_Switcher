@@ -4202,18 +4202,22 @@ OPTION_REG = 0b00000000 ;
 ANSELA = 0b00000000 ;
 ANSELB = 0b00000000 ;
 TRISA = 0b00000000 ;
-TRISB = 0b00000001 ;
+TRISB = 0b00111111 ;
 TRISC = 0b00000000 ;
-WPUB = 0b00000001 ;
+WPUB = 0b00111111 ;
+
 PORTA = 0b00000000 ;
 PORTB = 0b00000000 ;
 PORTC = 0b00000000 ;
 
 while(1) {
-if (RB0 == 0) {
-RC3 = 1 ;
-} else {
-RC3 = 0 ;
-}
+
+# 51
+if(!RB0) { PORTC = 0b10101010; while(!RB0); PORTC = 0;};
+if(!RB1) { PORTC = 0b01010101; while(!RB1); PORTC = 0;};
+if(!RB2) { PORTC = 0b10011001; while(!RB2); PORTC = 0;};
+if(!RB3) { PORTC = 0b01100110; while(!RB3); PORTC = 0;};
+if(!RB4) { PORTC = 0b10010110; while(!RB4); PORTC = 0;};
+if(!RB5) { PORTC = 0b01101001; while(!RB5); PORTC = 0;};
 }
 }
