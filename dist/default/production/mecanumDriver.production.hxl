@@ -5,7 +5,7 @@
   1028h - 1000Dh
   10012h - 1003Fh
   
- dist/default/production/MonoConKihon.X.production.hex ranges:
+ dist/default/production/mecanumDriver.production.hex ranges:
   0h - 7h
   F94h - 1027h
   1000Eh - 10011h
@@ -21,7 +21,7 @@
   T = Trailing code
   & = Find & replace opcode
   X = Find & delete opcode
-  1 = dist/default/production/MonoConKihon.X.production.hex
+  1 = dist/default/production/mecanumDriver.production.hex
 00000000: 11111111--------------------------------------------------------
 00000F80: --------------------11111111111111111111111111111111111111111111
 00000FC0: 1111111111111111111111111111111111111111111111111111111111111111

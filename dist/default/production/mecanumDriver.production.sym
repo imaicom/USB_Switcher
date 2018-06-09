@@ -23,13 +23,16 @@ wtemp0 7E 0 ABS 0
 __size_of_init 0 0 ABS 0
 __Hconfig 8009 0 CONFIG 0
 __Lconfig 8007 0 CONFIG 0
+__Hstringtext1 0 0 ABS 0
+__Lstringtext1 0 0 ABS 0
+__pstringtext1 800 0 STRCODE 0
 __Hbigram 0 0 ABS 0
 __Lbigram 0 0 ABS 0
 __Hram 0 0 ABS 0
 __Lram 0 0 ABS 0
 __CFG_STVREN$ON 0 0 ABS 0
-__Hfunctab 0 0 CODE 0
-__Lfunctab 0 0 CODE 0
+__Hfunctab 0 0 ENTRY 0
+__Lfunctab 0 0 ENTRY 0
 __Hcommon 0 0 ABS 0
 __Lcommon 0 0 ABS 0
 __Heeprom_data 0 0 EEDATA 3
@@ -65,8 +68,11 @@ __Hcode 0 0 ABS 0
 __Lcode 0 0 ABS 0
 stackhi 23EF 0 ABS 0
 stacklo 2000 0 ABS 0
+__Hstringtext2 0 0 ABS 0
+__Lstringtext2 0 0 ABS 0
 __Hinit 2 0 CODE 0
 __Linit 2 0 CODE 0
+__pstringtext2 810 0 STRCODE 0
 __end_of_main 7FD 0 CODE 0
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
@@ -187,11 +193,8 @@ __Hbank23 0 0 BANK23 1
 __Lbank23 0 0 BANK23 1
 __Hbank14 0 0 BANK14 1
 __Lbank14 0 0 BANK14 1
-__Hstringtext 0 0 ABS 0
-__Lstringtext 0 0 ABS 0
 __Hbank24 0 0 BANK24 1
 __Lbank24 0 0 BANK24 1
-__pstringtext 800 0 STRCODE 0
 __Hbank15 0 0 BANK15 1
 __Lbank15 0 0 BANK15 1
 __Hbank25 0 0 BANK25 1
@@ -219,13 +222,13 @@ __Hend_init 4 0 CODE 0
 __Lend_init 2 0 CODE 0
 __Hreset_vec 2 0 CODE 0
 __Lreset_vec 0 0 CODE 0
-intlevel0 0 0 CODE 0
+intlevel0 0 0 ENTRY 0
 __CFG_WDTE$OFF 0 0 ABS 0
-intlevel1 0 0 CODE 0
-intlevel2 0 0 CODE 0
-intlevel3 0 0 CODE 0
-intlevel4 0 0 CODE 0
-intlevel5 0 0 CODE 0
+intlevel1 0 0 ENTRY 0
+intlevel2 0 0 ENTRY 0
+intlevel3 0 0 ENTRY 0
+intlevel4 0 0 ENTRY 0
+intlevel5 0 0 ENTRY 0
 __HcstackCOMMON 0 0 ABS 0
 __LcstackCOMMON 0 0 ABS 0
 __pcstackCOMMON 0 0 COMMON 1
@@ -244,16 +247,16 @@ reset_vec 0 7 CODE 0 0
 cinit FFA FFF CODE FFA 0
 config 1000E 10011 CONFIG 1000E 0
 maintext FB4 FF9 CODE FB4 0
-stringtext 1000 1027 STRCODE 1000 0
+stringtext1 1000 1027 STRCODE 1000 0
 text1 F94 FB3 CODE F94 0
 %locals
-dist/default/production/MonoConKihon.X.production.obj
-/tmp/xcv15Krmw
-784 7FD 0 CODE 0
-787 7FD 0 CODE 0
-793 7FD 0 CODE 0
+dist/default/production/mecanumDriver.production.obj
+/tmp/xcRxx7us5
+786 7FD 0 CODE 0
+789 7FD 0 CODE 0
 795 7FD 0 CODE 0
-796 7FE 0 CODE 0
+797 7FD 0 CODE 0
+798 7FE 0 CODE 0
 allsw01.c
 37 7DA 0 CODE 0
 40 7DA 0 CODE 0
