@@ -28,9 +28,12 @@
 
 void main(void)
 {
+    int a;
     
  
     while(1){
+        a = PORTB;
+        PORTC = 0b10101010;
         
     }
 

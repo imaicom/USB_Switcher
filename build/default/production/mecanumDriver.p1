@@ -1,5 +1,9 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
+"489 /Applications/microchip/xc8/v1.45/include/pic16f1938.h
+[v _PORTB `Vuc ~T0 @X0 0 e@13 ]
+"551
+[v _PORTC `Vuc ~T0 @X0 0 e@14 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -3045,21 +3049,30 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mecanumDriver.c: 30: {
 [e :U _main ]
 [f ]
-[; ;mecanumDriver.c: 33: while(1){
-"33
+"31
+[v _a `i ~T0 @X0 1 a ]
+[; ;mecanumDriver.c: 31: int a;
+[; ;mecanumDriver.c: 34: while(1){
+"34
 [e :U 351 ]
 {
+[; ;mecanumDriver.c: 35: a = PORTB;
 "35
+[e = _a -> _PORTB `i ]
+[; ;mecanumDriver.c: 36: PORTC = 0b10101010;
+"36
+[e = _PORTC -> -> 170 `i `uc ]
+"38
 }
 [e :U 350 ]
-"33
+"34
 [e $U 351  ]
 [e :U 352 ]
-[; ;mecanumDriver.c: 35: }
-[; ;mecanumDriver.c: 37: return;
-"37
-[e $UE 349  ]
 [; ;mecanumDriver.c: 38: }
-"38
+[; ;mecanumDriver.c: 40: return;
+"40
+[e $UE 349  ]
+[; ;mecanumDriver.c: 41: }
+"41
 [e :UE 349 ]
 }
