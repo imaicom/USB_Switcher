@@ -13,14 +13,34 @@
 [v _memcpyee memcpyee `(v  1 e 1 0 ]
 "29 /Users/imai/MPLABXProjects/mecanumDriver/mecanumDriver.c
 [v _main main `(v  1 e 1 0 ]
-"489 /Applications/microchip/xc8/v1.45/include/pic16f1938.h
+"427 /Applications/microchip/xc8/v1.45/include/pic16f1938.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"489
 [v _PORTB PORTB `VEuc  1 e 1 @13 ]
 "551
 [v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"1226
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1288
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1350
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1598
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"1849
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"3075
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3133
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3700
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"7812
+[v _RB0 RB0 `VEb  1 e 0 @104 ]
+"7834
+[v _RC3 RC3 `VEb  1 e 0 @115 ]
 "29 /Users/imai/MPLABXProjects/mecanumDriver/mecanumDriver.c
 [v _main main `(v  1 e 1 0 ]
 {
-"31
-[v main@a a `i  1 a 2 2 ]
-"40
+"55
 } 0

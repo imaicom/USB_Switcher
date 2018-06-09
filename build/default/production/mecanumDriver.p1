@@ -1,9 +1,31 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"489 /Applications/microchip/xc8/v1.45/include/pic16f1938.h
+"1849 /Applications/microchip/xc8/v1.45/include/pic16f1938.h
+[v _OSCCON `Vuc ~T0 @X0 0 e@153 ]
+"1598
+[v _OPTION_REG `Vuc ~T0 @X0 0 e@149 ]
+"3075
+[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
+"3133
+[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
+"1226
+[v _TRISA `Vuc ~T0 @X0 0 e@140 ]
+"1288
+[v _TRISB `Vuc ~T0 @X0 0 e@141 ]
+"1350
+[v _TRISC `Vuc ~T0 @X0 0 e@142 ]
+"3700
+[v _WPUB `Vuc ~T0 @X0 0 e@525 ]
+"427
+[v _PORTA `Vuc ~T0 @X0 0 e@12 ]
+"489
 [v _PORTB `Vuc ~T0 @X0 0 e@13 ]
 "551
 [v _PORTC `Vuc ~T0 @X0 0 e@14 ]
+"7812
+[v _RB0 `Vb ~T0 @X0 0 e@104 ]
+"7834
+[v _RC3 `Vb ~T0 @X0 0 e@115 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -3049,30 +3071,77 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mecanumDriver.c: 30: {
 [e :U _main ]
 [f ]
+[; ;mecanumDriver.c: 31: OSCCON = 0b01110010 ;
 "31
-[v _a `i ~T0 @X0 1 a ]
-[; ;mecanumDriver.c: 31: int a;
-[; ;mecanumDriver.c: 34: while(1){
+[e = _OSCCON -> -> 114 `i `uc ]
+[; ;mecanumDriver.c: 32: OPTION_REG = 0b00000000 ;
+"32
+[e = _OPTION_REG -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 33: ANSELA = 0b00000000 ;
+"33
+[e = _ANSELA -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 34: ANSELB = 0b00000000 ;
 "34
+[e = _ANSELB -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 35: TRISA = 0b00000000 ;
+"35
+[e = _TRISA -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 36: TRISB = 0b00111111 ;
+"36
+[e = _TRISB -> -> 63 `i `uc ]
+[; ;mecanumDriver.c: 37: TRISC = 0b00000000 ;
+"37
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 38: WPUB = 0b00111111 ;
+"38
+[e = _WPUB -> -> 63 `i `uc ]
+[; ;mecanumDriver.c: 39: PORTA = 0b00000000 ;
+"39
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 40: PORTB = 0b00000000 ;
+"40
+[e = _PORTB -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 41: PORTC = 0b00000000 ;
+"41
+[e = _PORTC -> -> 0 `i `uc ]
+"43
+[v _a `i ~T0 @X0 1 a ]
+[; ;mecanumDriver.c: 43: int a;
+[; ;mecanumDriver.c: 46: while(1) {
+"46
 [e :U 351 ]
 {
-[; ;mecanumDriver.c: 35: a = PORTB;
-"35
-[e = _a -> _PORTB `i ]
-[; ;mecanumDriver.c: 36: PORTC = 0b10101010;
-"36
-[e = _PORTC -> -> 170 `i `uc ]
-"37
+[; ;mecanumDriver.c: 47: if (RB0 == 0) {
+"47
+[e $ ! == -> _RB0 `i -> 0 `i 353  ]
+{
+[; ;mecanumDriver.c: 48: RC3 = 1 ;
+"48
+[e = _RC3 -> -> 1 `i `b ]
+"49
+}
+[; ;mecanumDriver.c: 49: } else {
+[e $U 354  ]
+[e :U 353 ]
+{
+[; ;mecanumDriver.c: 50: RC3 = 0 ;
+"50
+[e = _RC3 -> -> 0 `i `b ]
+"51
+}
+[e :U 354 ]
+"52
 }
 [e :U 350 ]
-"34
+"46
 [e $U 351  ]
 [e :U 352 ]
-[; ;mecanumDriver.c: 37: }
-[; ;mecanumDriver.c: 39: return;
-"39
+[; ;mecanumDriver.c: 51: }
+[; ;mecanumDriver.c: 52: }
+[; ;mecanumDriver.c: 54: return;
+"54
 [e $UE 349  ]
-[; ;mecanumDriver.c: 40: }
-"40
+[; ;mecanumDriver.c: 55: }
+"55
 [e :UE 349 ]
 }

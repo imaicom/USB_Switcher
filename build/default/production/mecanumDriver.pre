@@ -4197,12 +4197,27 @@ extern __bank0 __bit __timeout;
 
 void main(void)
 {
+OSCCON = 0b01110010 ;
+OPTION_REG = 0b00000000 ;
+ANSELA = 0b00000000 ;
+ANSELB = 0b00000000 ;
+TRISA = 0b00000000 ;
+TRISB = 0b00111111 ;
+TRISC = 0b00000000 ;
+WPUB = 0b00111111 ;
+PORTA = 0b00000000 ;
+PORTB = 0b00000000 ;
+PORTC = 0b00000000 ;
+
 int a;
 
 
-while(1){
-a = PORTB;
-PORTC = 0b10101010;
+while(1) {
+if (RB0 == 0) {
+RC3 = 1 ;
+} else {
+RC3 = 0 ;
+}
 }
 
 return;
