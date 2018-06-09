@@ -3086,15 +3086,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mecanumDriver.c: 35: TRISA = 0b00000000 ;
 "35
 [e = _TRISA -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 36: TRISB = 0b00111111 ;
+[; ;mecanumDriver.c: 36: TRISB = 0b00000001 ;
 "36
-[e = _TRISB -> -> 63 `i `uc ]
+[e = _TRISB -> -> 1 `i `uc ]
 [; ;mecanumDriver.c: 37: TRISC = 0b00000000 ;
 "37
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 38: WPUB = 0b00111111 ;
+[; ;mecanumDriver.c: 38: WPUB = 0b00000001 ;
 "38
-[e = _WPUB -> -> 63 `i `uc ]
+[e = _WPUB -> -> 1 `i `uc ]
 [; ;mecanumDriver.c: 39: PORTA = 0b00000000 ;
 "39
 [e = _PORTA -> -> 0 `i `uc ]
@@ -3104,44 +3104,38 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mecanumDriver.c: 41: PORTC = 0b00000000 ;
 "41
 [e = _PORTC -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 43: while(1) {
 "43
-[v _a `i ~T0 @X0 1 a ]
-[; ;mecanumDriver.c: 43: int a;
-[; ;mecanumDriver.c: 46: while(1) {
-"46
 [e :U 351 ]
 {
-[; ;mecanumDriver.c: 47: if (RB0 == 0) {
-"47
+[; ;mecanumDriver.c: 44: if (RB0 == 0) {
+"44
 [e $ ! == -> _RB0 `i -> 0 `i 353  ]
 {
-[; ;mecanumDriver.c: 48: RC3 = 1 ;
-"48
+[; ;mecanumDriver.c: 45: RC3 = 1 ;
+"45
 [e = _RC3 -> -> 1 `i `b ]
-"49
+"46
 }
-[; ;mecanumDriver.c: 49: } else {
+[; ;mecanumDriver.c: 46: } else {
 [e $U 354  ]
 [e :U 353 ]
 {
-[; ;mecanumDriver.c: 50: RC3 = 0 ;
-"50
+[; ;mecanumDriver.c: 47: RC3 = 0 ;
+"47
 [e = _RC3 -> -> 0 `i `b ]
-"51
+"48
 }
 [e :U 354 ]
-"52
+"49
 }
 [e :U 350 ]
-"46
+"43
 [e $U 351  ]
 [e :U 352 ]
-[; ;mecanumDriver.c: 51: }
-[; ;mecanumDriver.c: 52: }
-[; ;mecanumDriver.c: 54: return;
-"54
-[e $UE 349  ]
-[; ;mecanumDriver.c: 55: }
-"55
+[; ;mecanumDriver.c: 48: }
+[; ;mecanumDriver.c: 49: }
+[; ;mecanumDriver.c: 50: }
+"50
 [e :UE 349 ]
 }

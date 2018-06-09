@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Sat Jun  9 18:59:46 2018
+                                                                                               Sat Jun  9 19:04:56 2018
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	16F1938
@@ -264,7 +264,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    250 ;; Parameters:    Size  Location     Type
    251 ;;		None
    252 ;; Auto vars:     Size  Location     Type
-   253 ;;  a               2    0        int 
+   253 ;;		None
    254 ;; Return value:  Size  Location     Type
    255 ;;                  1    wreg      void 
    256 ;; Registers used:
@@ -317,15 +317,15 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    298  07EB  0021               	movlb	1	; select bank1
    299  07EC  018C               	clrf	12	;volatile
    300                           
-   301                           ;mecanumDriver.c: 36: TRISB = 0b00111111 ;
-   302  07ED  303F               	movlw	63
+   301                           ;mecanumDriver.c: 36: TRISB = 0b00000001 ;
+   302  07ED  3001               	movlw	1
    303  07EE  008D               	movwf	13	;volatile
    304                           
    305                           ;mecanumDriver.c: 37: TRISC = 0b00000000 ;
    306  07EF  018E               	clrf	14	;volatile
    307                           
-   308                           ;mecanumDriver.c: 38: WPUB = 0b00111111 ;
-   309  07F0  303F               	movlw	63
+   308                           ;mecanumDriver.c: 38: WPUB = 0b00000001 ;
+   309  07F0  3001               	movlw	1
    310  07F1  0024               	movlb	4	; select bank4
    311  07F2  008D               	movwf	13	;volatile
    312                           
@@ -341,29 +341,24 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    322  07F7  2FF9               	goto	l510
    323  07F8                     l512:	
    324                           
-   325                           ;mecanumDriver.c: 48: RC3 = 1 ;
+   325                           ;mecanumDriver.c: 45: RC3 = 1 ;
    326  07F8  158E               	bsf	14,3	;volatile
    327  07F9                     l510:	
-   328                           ;mecanumDriver.c: 43: int a;
-   329                           ;mecanumDriver.c: 46: while(1) {
-   330                           
-   331                           ;mecanumDriver.c: 49: } else {
+   328                           ;mecanumDriver.c: 43: while(1) {
+   329                           
+   330                           ;mecanumDriver.c: 46: } else {
+   331                           
    332                           
-   333                           
-   334                           ;mecanumDriver.c: 47: if (RB0 == 0) {
-   335  07F9  1C0D               	btfss	13,0	;volatile
-   336  07FA  2FF8               	goto	l512
-   337                           
-   338                           ;mecanumDriver.c: 50: RC3 = 0 ;
-   339  07FB  118E               	bcf	14,3	;volatile
-   340  07FC  2FF9               	goto	l510
-   341  07FD                     __end_of_main:	
-   342                           ;mecanumDriver.c: 51: }
-   343                           ;mecanumDriver.c: 52: }
-   344                           ;mecanumDriver.c: 54: return;
-   345                           
-   346  007E                     btemp	set	126	;btemp
-   347  007E                     wtemp0	set	126
+   333                           ;mecanumDriver.c: 44: if (RB0 == 0) {
+   334  07F9  1C0D               	btfss	13,0	;volatile
+   335  07FA  2FF8               	goto	l512
+   336                           
+   337                           ;mecanumDriver.c: 47: RC3 = 0 ;
+   338  07FB  118E               	bcf	14,3	;volatile
+   339  07FC  2FF9               	goto	l510
+   340  07FD                     __end_of_main:	
+   341  007E                     btemp	set	126	;btemp
+   342  007E                     wtemp0	set	126
 
 
 Data Sizes:
@@ -456,7 +451,7 @@ Call Graph Tables:
  ---------------------------------------------------------------------------------
  (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
  ---------------------------------------------------------------------------------
- (0) _main                                                 2     2      0       0
+ (0) _main                                                 0     0      0       0
  ---------------------------------------------------------------------------------
  Estimated maximum stack depth 0
  ---------------------------------------------------------------------------------
@@ -569,7 +564,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Sat Jun  9 18:59:46 2018
+Symbol Table                                                                                   Sat Jun  9 19:04:56 2018
 
             __CFG_CP$OFF 0000                      l510 07F9                      l512 07F8  
                     _RB0 0068                      _RC3 0073             __CFG_CPD$OFF 0000  
