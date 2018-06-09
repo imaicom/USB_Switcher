@@ -4211,13 +4211,11 @@ PORTB = 0b00000000 ;
 PORTC = 0b00000000 ;
 
 while(1) {
-
-# 51
-if(!RB0) { PORTC = 0b10101010; while(!RB0); PORTC = 0;};
-if(!RB1) { PORTC = 0b01010101; while(!RB1); PORTC = 0;};
-if(!RB2) { PORTC = 0b10011001; while(!RB2); PORTC = 0;};
-if(!RB3) { PORTC = 0b01100110; while(!RB3); PORTC = 0;};
-if(!RB4) { PORTC = 0b10010110; while(!RB4); PORTC = 0;};
-if(!RB5) { PORTC = 0b01101001; while(!RB5); PORTC = 0;};
+while(!RB0) { PORTC = 0b10101010; }; PORTC = 0;
+while(!RB1) { PORTC = 0b01010101; }; PORTC = 0;
+while(!RB2) { PORTC = 0b10011001; }; PORTC = 0;
+while(!RB3) { PORTC = 0b01100110; }; PORTC = 0;
+while(!RB4) { PORTC = 0b10010110; }; PORTC = 0;
+while(!RB5) { PORTC = 0b01101001; }; PORTC = 0;
 }
 }

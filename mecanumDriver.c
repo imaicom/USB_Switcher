@@ -41,18 +41,12 @@ void main(void)
     PORTB      = 0b00000000 ; // RB出力ピンの初期化(全てLOWにする)
     PORTC      = 0b00000000 ; // RC出力ピンの初期化(全てLOWにする)
 
-     while(1) {
-/*        if (RB0 == 0) {      // ２１番ピン接続のスイッチが押されたか？
-            RC3 = 1 ;       // １４番ピンにHIGHを出力する(LED 点灯)
-        } else {
-            RC3 = 0 ;       // １４番ピンにLOWを出力する(LED 消灯)
-        }
-*/
-         if(!RB0) { PORTC = 0b10101010; while(!RB0); PORTC = 0;};
-         if(!RB1) { PORTC = 0b01010101; while(!RB1); PORTC = 0;};
-         if(!RB2) { PORTC = 0b10011001; while(!RB2); PORTC = 0;};
-         if(!RB3) { PORTC = 0b01100110; while(!RB3); PORTC = 0;};
-         if(!RB4) { PORTC = 0b10010110; while(!RB4); PORTC = 0;};
-         if(!RB5) { PORTC = 0b01101001; while(!RB5); PORTC = 0;};
-     }
+     while(1) { // 左前　右前　左後　左後
+        while(!RB0) { PORTC = 0b10101010; }; PORTC = 0; // 前進　１０　１０　１０　１０
+        while(!RB1) { PORTC = 0b01010101; }; PORTC = 0; // 後進　０１　０１　０１　０１
+        while(!RB2) { PORTC = 0b10011001; }; PORTC = 0; // 右転　１０　０１　１０　０１
+        while(!RB3) { PORTC = 0b01100110; }; PORTC = 0; // 左転　０１　１０　０１　１０
+        while(!RB4) { PORTC = 0b10010110; }; PORTC = 0; // 右進　１０　０１　０１　１０
+        while(!RB5) { PORTC = 0b01101001; }; PORTC = 0; // 左進　０１　１０　１０　０１
+    }
 }

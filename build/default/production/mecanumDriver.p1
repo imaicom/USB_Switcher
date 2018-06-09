@@ -3116,92 +3116,80 @@ Version 3.2 HI-TECH Software Intermediate Code
 "44
 [e :U 351 ]
 {
-[; ;mecanumDriver.c: 51: if(!RB0) { PORTC = 0b10101010; while(!RB0); PORTC = 0;};
-"51
-[e $ ! ! _RB0 353  ]
+[; ;mecanumDriver.c: 45: while(!RB0) { PORTC = 0b10101010; }; PORTC = 0;
+"45
+[e $U 353  ]
+[e :U 354 ]
 {
 [e = _PORTC -> -> 170 `i `uc ]
-[e $U 354  ]
-[e :U 355 ]
-[e :U 354 ]
-[e $ ! _RB0 355  ]
-[e :U 356 ]
-[e = _PORTC -> -> 0 `i `uc ]
 }
 [e :U 353 ]
-[; ;mecanumDriver.c: 52: if(!RB1) { PORTC = 0b01010101; while(!RB1); PORTC = 0;};
-"52
-[e $ ! ! _RB1 357  ]
+[e $ ! _RB0 354  ]
+[e :U 355 ]
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 46: while(!RB1) { PORTC = 0b01010101; }; PORTC = 0;
+"46
+[e $U 356  ]
+[e :U 357 ]
 {
 [e = _PORTC -> -> 85 `i `uc ]
-[e $U 358  ]
-[e :U 359 ]
-[e :U 358 ]
-[e $ ! _RB1 359  ]
-[e :U 360 ]
-[e = _PORTC -> -> 0 `i `uc ]
 }
-[e :U 357 ]
-[; ;mecanumDriver.c: 53: if(!RB2) { PORTC = 0b10011001; while(!RB2); PORTC = 0;};
-"53
-[e $ ! ! _RB2 361  ]
+[e :U 356 ]
+[e $ ! _RB1 357  ]
+[e :U 358 ]
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 47: while(!RB2) { PORTC = 0b10011001; }; PORTC = 0;
+"47
+[e $U 359  ]
+[e :U 360 ]
 {
 [e = _PORTC -> -> 153 `i `uc ]
+}
+[e :U 359 ]
+[e $ ! _RB2 360  ]
+[e :U 361 ]
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 48: while(!RB3) { PORTC = 0b01100110; }; PORTC = 0;
+"48
 [e $U 362  ]
 [e :U 363 ]
-[e :U 362 ]
-[e $ ! _RB2 363  ]
-[e :U 364 ]
-[e = _PORTC -> -> 0 `i `uc ]
-}
-[e :U 361 ]
-[; ;mecanumDriver.c: 54: if(!RB3) { PORTC = 0b01100110; while(!RB3); PORTC = 0;};
-"54
-[e $ ! ! _RB3 365  ]
 {
 [e = _PORTC -> -> 102 `i `uc ]
-[e $U 366  ]
-[e :U 367 ]
-[e :U 366 ]
-[e $ ! _RB3 367  ]
-[e :U 368 ]
-[e = _PORTC -> -> 0 `i `uc ]
 }
-[e :U 365 ]
-[; ;mecanumDriver.c: 55: if(!RB4) { PORTC = 0b10010110; while(!RB4); PORTC = 0;};
-"55
-[e $ ! ! _RB4 369  ]
+[e :U 362 ]
+[e $ ! _RB3 363  ]
+[e :U 364 ]
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 49: while(!RB4) { PORTC = 0b10010110; }; PORTC = 0;
+"49
+[e $U 365  ]
+[e :U 366 ]
 {
 [e = _PORTC -> -> 150 `i `uc ]
-[e $U 370  ]
-[e :U 371 ]
-[e :U 370 ]
-[e $ ! _RB4 371  ]
-[e :U 372 ]
-[e = _PORTC -> -> 0 `i `uc ]
 }
+[e :U 365 ]
+[e $ ! _RB4 366  ]
+[e :U 367 ]
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 50: while(!RB5) { PORTC = 0b01101001; }; PORTC = 0;
+"50
+[e $U 368  ]
 [e :U 369 ]
-[; ;mecanumDriver.c: 56: if(!RB5) { PORTC = 0b01101001; while(!RB5); PORTC = 0;};
-"56
-[e $ ! ! _RB5 373  ]
 {
 [e = _PORTC -> -> 105 `i `uc ]
-[e $U 374  ]
-[e :U 375 ]
-[e :U 374 ]
-[e $ ! _RB5 375  ]
-[e :U 376 ]
-[e = _PORTC -> -> 0 `i `uc ]
 }
-[e :U 373 ]
-"57
+[e :U 368 ]
+[e $ ! _RB5 369  ]
+[e :U 370 ]
+[e = _PORTC -> -> 0 `i `uc ]
+"51
 }
 [e :U 350 ]
 "44
 [e $U 351  ]
 [e :U 352 ]
-[; ;mecanumDriver.c: 57: }
-[; ;mecanumDriver.c: 58: }
-"58
+[; ;mecanumDriver.c: 51: }
+[; ;mecanumDriver.c: 52: }
+"52
 [e :UE 349 ]
 }
