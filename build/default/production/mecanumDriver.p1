@@ -3062,17 +3062,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mecanumDriver.c: 36: PORTC = 0b10101010;
 "36
 [e = _PORTC -> -> 170 `i `uc ]
-"38
+"37
 }
 [e :U 350 ]
 "34
 [e $U 351  ]
 [e :U 352 ]
-[; ;mecanumDriver.c: 38: }
-[; ;mecanumDriver.c: 40: return;
-"40
+[; ;mecanumDriver.c: 37: }
+[; ;mecanumDriver.c: 39: return;
+"39
 [e $UE 349  ]
-[; ;mecanumDriver.c: 41: }
-"41
+[; ;mecanumDriver.c: 40: }
+"40
 [e :UE 349 ]
 }
