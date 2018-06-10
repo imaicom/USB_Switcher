@@ -42,12 +42,12 @@ void main(void)
     PORTC      = 0b00000000 ; // Initialization of RC output pin (all set to LOW)
 
      while(1) { // LeftFront RightFront LeftRear RightRear
-        while(!RB0) PORTC = 0b10101010; // Forward    10 10 10 10
-        while(!RB1) PORTC = 0b01010101; // Back       01 01 01 01
-        while(!RB2) PORTC = 0b10011001; // Right Turn 10 01 10 01
-        while(!RB3) PORTC = 0b01100110; // Left Turn  01 10 01 10
-        while(!RB4) PORTC = 0b10010110; // Right      10 01 01 10
-        while(!RB5) PORTC = 0b01101001; // Left       01 10 10 01
-        PORTC = 0;
+        while(!RB0) PORTA = 0b10101010; // Forward    10 10 10 10
+        while(!RB1) PORTA = 0b01010101; // Back       01 01 01 01
+        while(!RB2) PORTA = 0b10011001; // Right Turn 10 01 10 01
+        while(!RB3) PORTA = 0b01100110; // Left Turn  01 10 01 10
+        while(!RB4) PORTA = 0b10010110; // Right      10 01 01 10
+        while(!RB5) PORTA = 0b01101001; // Left       01 10 10 01
+        PORTA = 0;
     }
 }
