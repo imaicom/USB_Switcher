@@ -35,7 +35,7 @@ void main(void)
     TRISA      = 0b00000000 ; // All pins (RA) are assigned to outputs (0: output 1: input)
     TRISB      = 0b00111111 ; // Pin (RB) inputs only RB 0 - 5, all others assign output
     TRISC      = 0b00000000 ; // All pins (RC) are assigned to outputs
-    WPUB       = 0b00111111 ; // RB0 -5 designates an internal pull-up resistor
+    WPUB       = 0b00111111 ; // RB0-5 designates an internal pull-up resistor
      
     PORTA      = 0b00000000 ; // Initialization of RA output pin (all set to LOW)
     PORTB      = 0b00000000 ; // Initialization of RB output pin (all set to LOW)
