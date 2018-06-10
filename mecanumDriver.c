@@ -28,26 +28,26 @@
 
 void main(void)
 {
-    OSCCON     = 0b01110010 ; // 内部クロックは８ＭＨｚとする
-    OPTION_REG = 0b00000000 ; // デジタルI/Oに内部プルアップ抵抗を使用する
-    ANSELA     = 0b00000000 ; // AN0-AN4は使用しない全てデジタルI/Oとする
-    ANSELB     = 0b00000000 ; // AN8-AN13は使用しない全てデジタルI/Oとする
-    TRISA      = 0b00000000 ; // ピン(RA)は全て出力に割当てる(0:出力 1:入力)
-    TRISB      = 0b00111111 ; // ピン(RB)はRB0-5のみ入力、他は全て出力に割当てる
-    TRISC      = 0b00000000 ; // ピン(RC)は全て出力に割当てる
-    WPUB       = 0b00111111 ; // RB0-5は内部プルアップ抵抗を指定する
+    OSCCON     = 0b01110010 ; // Set the internal clock to 8 MHz
+    OPTION_REG = 0b00000000 ; // Use internal pull-up resistor for digital I / O
+    ANSELA     = 0b00000000 ; // AN0 to AN4 are not used. Make it all digital I / O
+    ANSELB     = 0b00000000 ; // AN8 to AN13 are not used. Make it all digital I / O
+    TRISA      = 0b00000000 ; // All pins (RA) are assigned to outputs (0: output 1: input)
+    TRISB      = 0b00111111 ; // Pin (RB) inputs only RB 0 - 5, all others assign output
+    TRISC      = 0b00000000 ; // All pins (RC) are assigned to outputs
+    WPUB       = 0b00111111 ; // RB0 -5 designates an internal pull-up resistor
      
-    PORTA      = 0b00000000 ; // RA出力ピンの初期化(全てLOWにする)
-    PORTB      = 0b00000000 ; // RB出力ピンの初期化(全てLOWにする)
-    PORTC      = 0b00000000 ; // RC出力ピンの初期化(全てLOWにする)
+    PORTA      = 0b00000000 ; // Initialization of RA output pin (all set to LOW)
+    PORTB      = 0b00000000 ; // Initialization of RB output pin (all set to LOW)
+    PORTC      = 0b00000000 ; // Initialization of RC output pin (all set to LOW)
 
-     while(1) { // 左前　右前　左後　左後
-        while(!RB0) PORTC = 0b10101010; // 前進　１０　１０　１０　１０
-        while(!RB1) PORTC = 0b01010101; // 後進　０１　０１　０１　０１
-        while(!RB2) PORTC = 0b10011001; // 右転　１０　０１　１０　０１
-        while(!RB3) PORTC = 0b01100110; // 左転　０１　１０　０１　１０
-        while(!RB4) PORTC = 0b10010110; // 右進　１０　０１　０１　１０
-        while(!RB5) PORTC = 0b01101001; // 左進　０１　１０　１０　０１
+     while(1) { // LeftFront RightFront LeftRear RightRear
+        while(!RB0) PORTC = 0b10101010; // Forward    10 10 10 10
+        while(!RB1) PORTC = 0b01010101; // Back       01 01 01 01
+        while(!RB2) PORTC = 0b10011001; // Right Turn 10 01 10 01
+        while(!RB3) PORTC = 0b01100110; // Left Turn  01 10 01 10
+        while(!RB4) PORTC = 0b10010110; // Right      10 01 01 10
+        while(!RB5) PORTC = 0b01101001; // Left       01 10 10 01
         PORTC = 0;
     }
 }
