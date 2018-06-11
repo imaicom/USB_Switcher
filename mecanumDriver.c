@@ -10,7 +10,7 @@
 //   Power target circuit from PICkit3 [*]
 //   Voltage Level [4.875]or[5.000]
 //
-// USB port cut and plag... RESET
+// USB port cut and plug... RESET
 
 
 
