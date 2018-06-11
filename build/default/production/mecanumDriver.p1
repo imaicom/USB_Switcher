@@ -3038,143 +3038,143 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-"7 mecanumDriver.c
+"22 mecanumDriver.c
 [p x FOSC=INTOSC ]
-"8
-[p x WDTE=OFF ]
-"9
-[p x PWRTE=OFF ]
-"10
-[p x MCLRE=ON ]
-"11
-[p x CP=OFF ]
-"12
-[p x CPD=OFF ]
-"13
-[p x BOREN=OFF ]
-"14
-[p x CLKOUTEN=OFF ]
-"15
-[p x IESO=ON ]
-"16
-[p x FCMEN=OFF ]
-"19
-[p x WRT=OFF ]
-"20
-[p x VCAPEN=OFF ]
-"21
-[p x PLLEN=OFF ]
-"22
-[p x STVREN=ON ]
 "23
-[p x BORV=LO ]
+[p x WDTE=OFF ]
 "24
+[p x PWRTE=OFF ]
+"25
+[p x MCLRE=ON ]
+"26
+[p x CP=OFF ]
+"27
+[p x CPD=OFF ]
+"28
+[p x BOREN=OFF ]
+"29
+[p x CLKOUTEN=OFF ]
+"30
+[p x IESO=ON ]
+"31
+[p x FCMEN=OFF ]
+"34
+[p x WRT=OFF ]
+"35
+[p x VCAPEN=OFF ]
+"36
+[p x PLLEN=OFF ]
+"37
+[p x STVREN=ON ]
+"38
+[p x BORV=LO ]
+"39
 [p x LVP=OFF ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"29
+"44
 [v _main `(v ~T0 @X0 1 ef ]
-"30
+"45
 {
-[; ;mecanumDriver.c: 29: void main(void)
-[; ;mecanumDriver.c: 30: {
+[; ;mecanumDriver.c: 44: void main(void)
+[; ;mecanumDriver.c: 45: {
 [e :U _main ]
 [f ]
-[; ;mecanumDriver.c: 31: OSCCON = 0b01110010 ;
-"31
+[; ;mecanumDriver.c: 46: OSCCON = 0b01110010 ;
+"46
 [e = _OSCCON -> -> 114 `i `uc ]
-[; ;mecanumDriver.c: 32: OPTION_REG = 0b00000000 ;
-"32
+[; ;mecanumDriver.c: 47: OPTION_REG = 0b00000000 ;
+"47
 [e = _OPTION_REG -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 33: ANSELA = 0b00000000 ;
-"33
+[; ;mecanumDriver.c: 48: ANSELA = 0b00000000 ;
+"48
 [e = _ANSELA -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 34: ANSELB = 0b00000000 ;
-"34
+[; ;mecanumDriver.c: 49: ANSELB = 0b00000000 ;
+"49
 [e = _ANSELB -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 35: TRISA = 0b00000000 ;
-"35
+[; ;mecanumDriver.c: 50: TRISA = 0b00000000 ;
+"50
 [e = _TRISA -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 36: TRISB = 0b00111111 ;
-"36
+[; ;mecanumDriver.c: 51: TRISB = 0b00111111 ;
+"51
 [e = _TRISB -> -> 63 `i `uc ]
-[; ;mecanumDriver.c: 37: TRISC = 0b00000000 ;
-"37
+[; ;mecanumDriver.c: 52: TRISC = 0b00000000 ;
+"52
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 38: WPUB = 0b00111111 ;
-"38
+[; ;mecanumDriver.c: 53: WPUB = 0b00111111 ;
+"53
 [e = _WPUB -> -> 63 `i `uc ]
-[; ;mecanumDriver.c: 40: PORTA = 0b00000000 ;
-"40
+[; ;mecanumDriver.c: 55: PORTA = 0b00000000 ;
+"55
 [e = _PORTA -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 41: PORTB = 0b00000000 ;
-"41
+[; ;mecanumDriver.c: 56: PORTB = 0b00000000 ;
+"56
 [e = _PORTB -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 42: PORTC = 0b00000000 ;
-"42
+[; ;mecanumDriver.c: 57: PORTC = 0b00000000 ;
+"57
 [e = _PORTC -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 44: while(1) {
-"44
+[; ;mecanumDriver.c: 59: while(1) {
+"59
 [e :U 351 ]
 {
-[; ;mecanumDriver.c: 45: while(!RB0) PORTA = 0b10101010;
-"45
+[; ;mecanumDriver.c: 60: while(!RB0) PORTA = 0b10101010;
+"60
 [e $U 353  ]
 [e :U 354 ]
 [e = _PORTA -> -> 170 `i `uc ]
 [e :U 353 ]
 [e $ ! _RB0 354  ]
 [e :U 355 ]
-[; ;mecanumDriver.c: 46: while(!RB1) PORTA = 0b01010101;
-"46
+[; ;mecanumDriver.c: 61: while(!RB1) PORTA = 0b01010101;
+"61
 [e $U 356  ]
 [e :U 357 ]
 [e = _PORTA -> -> 85 `i `uc ]
 [e :U 356 ]
 [e $ ! _RB1 357  ]
 [e :U 358 ]
-[; ;mecanumDriver.c: 47: while(!RB2) PORTA = 0b10011001;
-"47
+[; ;mecanumDriver.c: 62: while(!RB2) PORTA = 0b10011001;
+"62
 [e $U 359  ]
 [e :U 360 ]
 [e = _PORTA -> -> 153 `i `uc ]
 [e :U 359 ]
 [e $ ! _RB2 360  ]
 [e :U 361 ]
-[; ;mecanumDriver.c: 48: while(!RB3) PORTA = 0b01100110;
-"48
+[; ;mecanumDriver.c: 63: while(!RB3) PORTA = 0b01100110;
+"63
 [e $U 362  ]
 [e :U 363 ]
 [e = _PORTA -> -> 102 `i `uc ]
 [e :U 362 ]
 [e $ ! _RB3 363  ]
 [e :U 364 ]
-[; ;mecanumDriver.c: 49: while(!RB4) PORTA = 0b10010110;
-"49
+[; ;mecanumDriver.c: 64: while(!RB4) PORTA = 0b10010110;
+"64
 [e $U 365  ]
 [e :U 366 ]
 [e = _PORTA -> -> 150 `i `uc ]
 [e :U 365 ]
 [e $ ! _RB4 366  ]
 [e :U 367 ]
-[; ;mecanumDriver.c: 50: while(!RB5) PORTA = 0b01101001;
-"50
+[; ;mecanumDriver.c: 65: while(!RB5) PORTA = 0b01101001;
+"65
 [e $U 368  ]
 [e :U 369 ]
 [e = _PORTA -> -> 105 `i `uc ]
 [e :U 368 ]
 [e $ ! _RB5 369  ]
 [e :U 370 ]
-[; ;mecanumDriver.c: 51: PORTA = 0;
-"51
+[; ;mecanumDriver.c: 66: PORTA = 0;
+"66
 [e = _PORTA -> -> 0 `i `uc ]
-"52
+"67
 }
 [e :U 350 ]
-"44
+"59
 [e $U 351  ]
 [e :U 352 ]
-[; ;mecanumDriver.c: 52: }
-[; ;mecanumDriver.c: 53: }
-"53
+[; ;mecanumDriver.c: 67: }
+[; ;mecanumDriver.c: 68: }
+"68
 [e :UE 349 ]
 }

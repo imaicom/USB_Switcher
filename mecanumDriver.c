@@ -1,3 +1,18 @@
+// PICKIT3 Setting
+//
+// Program Options
+//   Erase All Before Program [*]
+//   Program Speed [3]
+//   Enable Low Voltage Programming [ ]
+//   Programming Method [Apply Vdd before Vpp]->[Apply Vpp before Vdd(Recommended)]->[Apply Vdd before Vpp]
+//
+// Power
+//   Power target circuit from PICkit3 [*]
+//   Voltage Level [4.875]or[5.000]
+//
+// USB port cut and plag... RESET
+
+
 
 // PIC16F1938 Configuration Bit Settings
 

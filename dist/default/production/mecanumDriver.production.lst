@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Mon Jun 11 17:42:17 2018
+                                                                                               Mon Jun 11 17:50:54 2018
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	16F1938
@@ -264,7 +264,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    250 ;;
    251 ;; *************** function _main *****************
    252 ;; Defined at:
-   253 ;;		line 29 in file "mecanumDriver.c"
+   253 ;;		line 44 in file "mecanumDriver.c"
    254 ;; Parameters:    Size  Location     Type
    255 ;;		None
    256 ;; Auto vars:     Size  Location     Type
@@ -299,7 +299,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    280                           ;psect for function _main
    281  07CB                     _main:	
    282                           
-   283                           ;mecanumDriver.c: 31: OSCCON = 0b01110010 ;
+   283                           ;mecanumDriver.c: 46: OSCCON = 0b01110010 ;
    284                           
    285                           ;incstack = 0
    286                           ; Regs used in _main: [wreg+status,2]
@@ -307,45 +307,45 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    288  07CC  0021               	movlb	1	; select bank1
    289  07CD  0099               	movwf	25	;volatile
    290                           
-   291                           ;mecanumDriver.c: 32: OPTION_REG = 0b00000000 ;
+   291                           ;mecanumDriver.c: 47: OPTION_REG = 0b00000000 ;
    292  07CE  0195               	clrf	21	;volatile
    293                           
-   294                           ;mecanumDriver.c: 33: ANSELA = 0b00000000 ;
+   294                           ;mecanumDriver.c: 48: ANSELA = 0b00000000 ;
    295  07CF  0023               	movlb	3	; select bank3
    296  07D0  018C               	clrf	12	;volatile
    297                           
-   298                           ;mecanumDriver.c: 34: ANSELB = 0b00000000 ;
+   298                           ;mecanumDriver.c: 49: ANSELB = 0b00000000 ;
    299  07D1  018D               	clrf	13	;volatile
    300                           
-   301                           ;mecanumDriver.c: 35: TRISA = 0b00000000 ;
+   301                           ;mecanumDriver.c: 50: TRISA = 0b00000000 ;
    302  07D2  0021               	movlb	1	; select bank1
    303  07D3  018C               	clrf	12	;volatile
    304                           
-   305                           ;mecanumDriver.c: 36: TRISB = 0b00111111 ;
+   305                           ;mecanumDriver.c: 51: TRISB = 0b00111111 ;
    306  07D4  303F               	movlw	63
    307  07D5  008D               	movwf	13	;volatile
    308                           
-   309                           ;mecanumDriver.c: 37: TRISC = 0b00000000 ;
+   309                           ;mecanumDriver.c: 52: TRISC = 0b00000000 ;
    310  07D6  018E               	clrf	14	;volatile
    311                           
-   312                           ;mecanumDriver.c: 38: WPUB = 0b00111111 ;
+   312                           ;mecanumDriver.c: 53: WPUB = 0b00111111 ;
    313  07D7  303F               	movlw	63
    314  07D8  0024               	movlb	4	; select bank4
    315  07D9  008D               	movwf	13	;volatile
    316                           
-   317                           ;mecanumDriver.c: 40: PORTA = 0b00000000 ;
+   317                           ;mecanumDriver.c: 55: PORTA = 0b00000000 ;
    318  07DA  0020               	movlb	0	; select bank0
    319  07DB  018C               	clrf	12	;volatile
    320                           
-   321                           ;mecanumDriver.c: 41: PORTB = 0b00000000 ;
+   321                           ;mecanumDriver.c: 56: PORTB = 0b00000000 ;
    322  07DC  018D               	clrf	13	;volatile
    323                           
-   324                           ;mecanumDriver.c: 42: PORTC = 0b00000000 ;
+   324                           ;mecanumDriver.c: 57: PORTC = 0b00000000 ;
    325  07DD  018E               	clrf	14	;volatile
    326  07DE                     l536:	
-   327                           ;mecanumDriver.c: 45: while(!RB0) PORTA = 0b10101010;
+   327                           ;mecanumDriver.c: 60: while(!RB0) PORTA = 0b10101010;
    328                           
-   329                           ;mecanumDriver.c: 44: while(1) {
+   329                           ;mecanumDriver.c: 59: while(1) {
    330                           
    331  07DE  180D               	btfsc	13,0	;volatile
    332  07DF  2FE5               	goto	l540
@@ -353,7 +353,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    334  07E1  008C               	movwf	12	;volatile
    335  07E2  2FDE               	goto	l536
    336  07E3                     l538:	
-   337                           ;mecanumDriver.c: 46: while(!RB1) PORTA = 0b01010101;
+   337                           ;mecanumDriver.c: 61: while(!RB1) PORTA = 0b01010101;
    338                           
    339  07E3  3055               	movlw	85
    340  07E4  008C               	movwf	12	;volatile
@@ -362,7 +362,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    343  07E6  2FEA               	goto	l544
    344  07E7  2FE3               	goto	l538
    345  07E8                     l542:	
-   346                           ;mecanumDriver.c: 47: while(!RB2) PORTA = 0b10011001;
+   346                           ;mecanumDriver.c: 62: while(!RB2) PORTA = 0b10011001;
    347                           
    348  07E8  3099               	movlw	153
    349  07E9  008C               	movwf	12	;volatile
@@ -371,7 +371,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    352  07EB  2FEF               	goto	l548
    353  07EC  2FE8               	goto	l542
    354  07ED                     l546:	
-   355                           ;mecanumDriver.c: 48: while(!RB3) PORTA = 0b01100110;
+   355                           ;mecanumDriver.c: 63: while(!RB3) PORTA = 0b01100110;
    356                           
    357  07ED  3066               	movlw	102
    358  07EE  008C               	movwf	12	;volatile
@@ -380,7 +380,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    361  07F0  2FF4               	goto	l552
    362  07F1  2FED               	goto	l546
    363  07F2                     l550:	
-   364                           ;mecanumDriver.c: 49: while(!RB4) PORTA = 0b10010110;
+   364                           ;mecanumDriver.c: 64: while(!RB4) PORTA = 0b10010110;
    365                           
    366  07F2  3096               	movlw	150
    367  07F3  008C               	movwf	12	;volatile
@@ -389,7 +389,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    370  07F5  2FF9               	goto	l556
    371  07F6  2FF2               	goto	l550
    372  07F7                     l554:	
-   373                           ;mecanumDriver.c: 50: while(!RB5) PORTA = 0b01101001;
+   373                           ;mecanumDriver.c: 65: while(!RB5) PORTA = 0b01101001;
    374                           
    375  07F7  3069               	movlw	105
    376  07F8  008C               	movwf	12	;volatile
@@ -397,7 +397,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    378  07F9  1E8D               	btfss	13,5	;volatile
    379  07FA  2FF7               	goto	l554
    380                           
-   381                           ;mecanumDriver.c: 51: PORTA = 0;
+   381                           ;mecanumDriver.c: 66: PORTA = 0;
    382  07FB  018C               	clrf	12	;volatile
    383  07FC  2FDE               	goto	l536
    384  07FD                     __end_of_main:	
@@ -608,7 +608,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Mon Jun 11 17:42:17 2018
+Symbol Table                                                                                   Mon Jun 11 17:50:54 2018
 
             __CFG_CP$OFF 0000                      l540 07E5                      l550 07F2  
                     l542 07E8                      l552 07F4                      l544 07EA  
