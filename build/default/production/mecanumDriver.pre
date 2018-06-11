@@ -4217,8 +4217,6 @@ while(!RB2) PORTA = 0b10011001;
 while(!RB3) PORTA = 0b01100110;
 while(!RB4) PORTA = 0b10010110;
 while(!RB5) PORTA = 0b01101001;
-while(!RB6) PORTA = 0b01101001;
-while(!RB7) PORTA = 0b01101001;
 PORTA = 0;
 }
 }
