@@ -13,8 +13,8 @@
 %PSECTS
 $dist/default/production/mecanumDriver.production.obj
 cinit CODE 0 7FD 7FD 3 2
-maintext CODE 0 7C6 7C6 37 2
-$/tmp/xcjfm1BFN.obj
+maintext CODE 0 7C1 7C1 3C 2
+$/tmp/xclwG6724.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 2 2
@@ -47,9 +47,9 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 4-7C5 2
+CONST 4-7C0 2
 CONST 800-3FFF 2
-ENTRY 4-7C5 2
+ENTRY 4-7C0 2
 ENTRY 800-3FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
@@ -75,7 +75,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2000-23EF 1
-CODE 4-7C5 2
+CODE 4-7C0 2
 CODE 800-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -93,9 +93,9 @@ BANK12 620-64F 1
 BIGRAM 2000-23EF 1
 COMMON 70-7D 1
 EEDATA F000-F0FF 2
-STRCODE 4-7C5 2
+STRCODE 4-7C0 2
 STRCODE 800-3FFF 2
-STRING 4-7C5 2
+STRING 4-7C0 2
 STRING 800-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -111,31 +111,32 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/mecanumDriver.production.obj
-7FD cinit CODE >435:/tmp/xcFxFJOqQ
-7FD cinit CODE >438:/tmp/xcFxFJOqQ
-7FD cinit CODE >444:/tmp/xcFxFJOqQ
-7FD cinit CODE >446:/tmp/xcFxFJOqQ
-7FE cinit CODE >447:/tmp/xcFxFJOqQ
-7C6 maintext CODE >29:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7C6 maintext CODE >31:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7C9 maintext CODE >32:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7CA maintext CODE >33:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7CC maintext CODE >34:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7CD maintext CODE >35:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7CF maintext CODE >36:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7D1 maintext CODE >37:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7D2 maintext CODE >38:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7D5 maintext CODE >40:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7D7 maintext CODE >41:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7D8 maintext CODE >42:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7D9 maintext CODE >45:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7DE maintext CODE >46:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7E3 maintext CODE >47:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7E8 maintext CODE >48:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7ED maintext CODE >49:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7F2 maintext CODE >50:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7F7 maintext CODE >51:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
-7FB maintext CODE >52:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7FD cinit CODE >437:/tmp/xcfHQixoC
+7FD cinit CODE >440:/tmp/xcfHQixoC
+7FD cinit CODE >446:/tmp/xcfHQixoC
+7FD cinit CODE >448:/tmp/xcfHQixoC
+7FE cinit CODE >449:/tmp/xcfHQixoC
+7C1 maintext CODE >29:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7C1 maintext CODE >31:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7C4 maintext CODE >32:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7C5 maintext CODE >33:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7C7 maintext CODE >34:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7C8 maintext CODE >35:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7CA maintext CODE >36:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7CC maintext CODE >37:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7CD maintext CODE >38:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7D0 maintext CODE >40:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7D2 maintext CODE >41:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7D3 maintext CODE >42:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7D4 maintext CODE >45:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7D9 maintext CODE >46:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7DE maintext CODE >47:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7E3 maintext CODE >48:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7E8 maintext CODE >49:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7ED maintext CODE >50:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7F2 maintext CODE >51:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7F7 maintext CODE >52:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
+7FB maintext CODE >53:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
 7FC maintext CODE >44:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
@@ -158,19 +159,19 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __Hstrings 0 0 ABS 0 strings -
 _WPUB 20D 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
-___sp 0 0 STACK 2 stack /tmp/xcjfm1BFN.obj
-_main F8C 0 CODE 0 maintext dist/default/production/mecanumDriver.production.obj
+___sp 0 0 STACK 2 stack /tmp/xclwG6724.obj
+_main F82 0 CODE 0 maintext dist/default/production/mecanumDriver.production.obj
 btemp 7E 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
-start 4 0 CODE 0 init /tmp/xcjfm1BFN.obj
+start 4 0 CODE 0 init /tmp/xclwG6724.obj
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab /tmp/xcjfm1BFN.obj
-intlevel1 0 0 ENTRY 0 functab /tmp/xcjfm1BFN.obj
-intlevel2 0 0 ENTRY 0 functab /tmp/xcjfm1BFN.obj
-intlevel3 0 0 ENTRY 0 functab /tmp/xcjfm1BFN.obj
-intlevel4 0 0 ENTRY 0 functab /tmp/xcjfm1BFN.obj
-intlevel5 0 0 ENTRY 0 functab /tmp/xcjfm1BFN.obj
+intlevel0 0 0 ENTRY 0 functab /tmp/xclwG6724.obj
+intlevel1 0 0 ENTRY 0 functab /tmp/xclwG6724.obj
+intlevel2 0 0 ENTRY 0 functab /tmp/xclwG6724.obj
+intlevel3 0 0 ENTRY 0 functab /tmp/xclwG6724.obj
+intlevel4 0 0 ENTRY 0 functab /tmp/xclwG6724.obj
+intlevel5 0 0 ENTRY 0 functab /tmp/xclwG6724.obj
 wtemp0 7E 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -181,7 +182,7 @@ _OPTION_REG 95 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 start_initialization FFA 0 CODE 0 cinit dist/default/production/mecanumDriver.production.obj
 _OSCCON 99 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
-___int_sp 0 0 STACK 2 stack /tmp/xcjfm1BFN.obj
+___int_sp 0 0 STACK 2 stack /tmp/xclwG6724.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -315,12 +316,13 @@ _RB3 6B 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 _RB4 6C 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 _RB5 6D 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 _RB6 6E 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
+_RB7 6F 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __S0 8009 0 ABS 0 - -
 __S1 0 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec /tmp/xcjfm1BFN.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/xclwG6724.obj
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -343,7 +345,7 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext F8C 0 CODE 0 maintext dist/default/production/mecanumDriver.production.obj
+__pmaintext F82 0 CODE 0 maintext dist/default/production/mecanumDriver.production.obj
 __Lbigram 0 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __Lcommon 0 0 ABS 0 common -
@@ -352,8 +354,8 @@ __CFG_CP$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __CFG_IESO$ON 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
-stackhi 23EF 0 ABS 0 - /tmp/xcjfm1BFN.obj
-stacklo 2000 0 ABS 0 - /tmp/xcjfm1BFN.obj
+stackhi 23EF 0 ABS 0 - /tmp/xclwG6724.obj
+stacklo 2000 0 ABS 0 - /tmp/xclwG6724.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
@@ -415,6 +417,6 @@ __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FD FFA 3 2
-maintext 0 7C6 F8C 37 2
+maintext 0 7C1 F82 3C 2
 reset_vec 0 0 0 4 2
 config 0 8007 1000E 2 2

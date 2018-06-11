@@ -49,6 +49,7 @@ void main(void)
         while(!RB4) PORTA = 0b10010110; // Right      10 01 01 10
         while(!RB5) PORTA = 0b01101001; // Left       01 10 10 01
         while(!RB6) PORTA = 0b01101001; // Left       01 10 10 01
+        while(!RB7) PORTA = 0b01101001; // Left       01 10 10 01
         PORTA = 0;
     }
 }
