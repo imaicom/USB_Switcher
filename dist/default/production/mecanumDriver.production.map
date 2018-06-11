@@ -5,7 +5,7 @@ Linker command line:
 --edf=/Applications/microchip/xc8/v1.45/dat/en_msgs.txt -cs \
   -h+dist/default/production/mecanumDriver.production.sym \
   --cmf=dist/default/production/mecanumDriver.production.cmf -z -Q16F1938 \
-  -o/tmp/xcK8b9dka -Mdist/default/production/mecanumDriver.production.map \
+  -o/tmp/xc9T5yxrA -Mdist/default/production/mecanumDriver.production.map \
   -E1 -ver=XC8 -ASTACK=02000h-023efh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
   -AENTRY=00h-0FFhx64 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
@@ -30,7 +30,7 @@ Linker command line:
   -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-08008h -pconfig=CONFIG \
   -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
-  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcYBOn3WB.obj \
+  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcDLzRkQh.obj \
   dist/default/production/mecanumDriver.production.obj 
 
 Object code version is 3.11
@@ -40,13 +40,13 @@ Machine type is 16F1938
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcYBOn3WB.obj
+/tmp/xcDLzRkQh.obj
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
 dist/default/production/mecanumDriver.production.obj
                 cinit                               7FD      7FD        3      FFA       0
-                maintext                            7C6      7C6       37      F8C       0
+                maintext                            7CB      7CB       32      F96       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -55,7 +55,7 @@ TOTAL           Name                               Link     Load   Length     Sp
                 end_init                              2        2        2         0
                 cinit                               7FD      7FD        3         0
                 reset_vec                             0        0        2         0
-                maintext                            7C6      7C6       37         0
+                maintext                            7CB      7CB       32         0
 
         CLASS   STRCODE        
 
@@ -214,7 +214,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000004  000004         0       0  CODE        2
-                maintext                       0007C6  000037  0007FD       F8C       0  CODE        2
+                maintext                       0007CB  000032  0007FD       F96       0  CODE        2
                 cinit                          0007FD  000003  000800       FFA       0  CODE        2
                 config                         008007  000002  008009     1000E       0  CONFIG      2
 
@@ -236,13 +236,13 @@ UNUSED ADDRESS RANGES
         BANK8            00420-0046F              50           1
         BANK9            004A0-004EF              50           1
         BIGRAM           02000-023EF             3F0           1
-        CODE             00004-007C5             7C2           2
+        CODE             00004-007CA             7C7           2
                          00800-03FFF             800
         COMMON           00070-0007D               E           1
-        CONST            00004-007C5             100           2
+        CONST            00004-007CA             100           2
                          00800-03FFF             100
         EEDATA           0F000-0F0FF             100           2
-        ENTRY            00004-007C5             100           2
+        ENTRY            00004-007CA             100           2
                          00800-03FFF             100
         IDLOC            08000-08003               4           2
         RAM              00020-0006F              50           1
@@ -291,9 +291,9 @@ UNUSED ADDRESS RANGES
         SFR8             00400-0041F              20           1
         SFR9             00480-0049F              20           1
         STACK            02000-023EF             3F0           1
-        STRCODE          00004-007C5             7C2           2
+        STRCODE          00004-007CA             7C7           2
                          00800-03FFF            3800
-        STRING           00004-007C5             100           2
+        STRING           00004-007CA             100           2
                          00800-03FFF             100
 
                                   Symbol Table
@@ -520,9 +520,9 @@ __end_of__initialization cinit        007FD
 __end_of_main            maintext     007FD
 __initialization         cinit        007FD
 __pcstackCOMMON          cstackCOMMON 00000
-__pmaintext              maintext     007C6
+__pmaintext              maintext     007CB
 __size_of_main           (abs)        00000
-_main                    maintext     007C6
+_main                    maintext     007CB
 btemp                    (abs)        0007E
 end_of_initialization    cinit        007FD
 intlevel0                functab      00000
@@ -574,9 +574,9 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 mecanumDriver.c
-		_main          		CODE           	07C6	0000	56
+		_main          		CODE           	07CB	0000	51
 
-mecanumDriver.c estimated size: 56
+mecanumDriver.c estimated size: 51
 
 shared
 		__initialization		CODE           	07FD	0000	1

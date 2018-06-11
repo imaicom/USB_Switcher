@@ -3116,80 +3116,65 @@ Version 3.2 HI-TECH Software Intermediate Code
 "44
 [e :U 351 ]
 {
-[; ;mecanumDriver.c: 45: while(!RB0) { PORTC = 0b10101010; }; PORTC = 0;
+[; ;mecanumDriver.c: 45: while(!RB0) PORTA = 0b10101010;
 "45
 [e $U 353  ]
 [e :U 354 ]
-{
-[e = _PORTC -> -> 170 `i `uc ]
-}
+[e = _PORTA -> -> 170 `i `uc ]
 [e :U 353 ]
 [e $ ! _RB0 354  ]
 [e :U 355 ]
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 46: while(!RB1) { PORTC = 0b01010101; }; PORTC = 0;
+[; ;mecanumDriver.c: 46: while(!RB1) PORTA = 0b01010101;
 "46
 [e $U 356  ]
 [e :U 357 ]
-{
-[e = _PORTC -> -> 85 `i `uc ]
-}
+[e = _PORTA -> -> 85 `i `uc ]
 [e :U 356 ]
 [e $ ! _RB1 357  ]
 [e :U 358 ]
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 47: while(!RB2) { PORTC = 0b10011001; }; PORTC = 0;
+[; ;mecanumDriver.c: 47: while(!RB2) PORTA = 0b10011001;
 "47
 [e $U 359  ]
 [e :U 360 ]
-{
-[e = _PORTC -> -> 153 `i `uc ]
-}
+[e = _PORTA -> -> 153 `i `uc ]
 [e :U 359 ]
 [e $ ! _RB2 360  ]
 [e :U 361 ]
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 48: while(!RB3) { PORTC = 0b01100110; }; PORTC = 0;
+[; ;mecanumDriver.c: 48: while(!RB3) PORTA = 0b01100110;
 "48
 [e $U 362  ]
 [e :U 363 ]
-{
-[e = _PORTC -> -> 102 `i `uc ]
-}
+[e = _PORTA -> -> 102 `i `uc ]
 [e :U 362 ]
 [e $ ! _RB3 363  ]
 [e :U 364 ]
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 49: while(!RB4) { PORTC = 0b10010110; }; PORTC = 0;
+[; ;mecanumDriver.c: 49: while(!RB4) PORTA = 0b10010110;
 "49
 [e $U 365  ]
 [e :U 366 ]
-{
-[e = _PORTC -> -> 150 `i `uc ]
-}
+[e = _PORTA -> -> 150 `i `uc ]
 [e :U 365 ]
 [e $ ! _RB4 366  ]
 [e :U 367 ]
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;mecanumDriver.c: 50: while(!RB5) { PORTC = 0b01101001; }; PORTC = 0;
+[; ;mecanumDriver.c: 50: while(!RB5) PORTA = 0b01101001;
 "50
 [e $U 368  ]
 [e :U 369 ]
-{
-[e = _PORTC -> -> 105 `i `uc ]
-}
+[e = _PORTA -> -> 105 `i `uc ]
 [e :U 368 ]
 [e $ ! _RB5 369  ]
 [e :U 370 ]
-[e = _PORTC -> -> 0 `i `uc ]
+[; ;mecanumDriver.c: 51: PORTA = 0;
 "51
+[e = _PORTA -> -> 0 `i `uc ]
+"52
 }
 [e :U 350 ]
 "44
 [e $U 351  ]
 [e :U 352 ]
-[; ;mecanumDriver.c: 51: }
 [; ;mecanumDriver.c: 52: }
-"52
+[; ;mecanumDriver.c: 53: }
+"53
 [e :UE 349 ]
 }
