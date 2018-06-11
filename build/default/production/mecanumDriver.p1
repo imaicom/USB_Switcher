@@ -34,6 +34,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _RB4 `Vb ~T0 @X0 0 e@108 ]
 "7822
 [v _RB5 `Vb ~T0 @X0 0 e@109 ]
+"7824
+[v _RB6 `Vb ~T0 @X0 0 e@110 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -3164,17 +3166,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 368 ]
 [e $ ! _RB5 369  ]
 [e :U 370 ]
-[; ;mecanumDriver.c: 51: PORTA = 0;
+[; ;mecanumDriver.c: 51: while(!RB6) PORTA = 0b01101001;
 "51
-[e = _PORTA -> -> 0 `i `uc ]
+[e $U 371  ]
+[e :U 372 ]
+[e = _PORTA -> -> 105 `i `uc ]
+[e :U 371 ]
+[e $ ! _RB6 372  ]
+[e :U 373 ]
+[; ;mecanumDriver.c: 52: PORTA = 0;
 "52
+[e = _PORTA -> -> 0 `i `uc ]
+"53
 }
 [e :U 350 ]
 "44
 [e $U 351  ]
 [e :U 352 ]
-[; ;mecanumDriver.c: 52: }
 [; ;mecanumDriver.c: 53: }
-"53
+[; ;mecanumDriver.c: 54: }
+"54
 [e :UE 349 ]
 }
