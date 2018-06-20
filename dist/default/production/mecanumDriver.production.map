@@ -5,7 +5,7 @@ Linker command line:
 --edf=/Applications/microchip/xc8/v1.45/dat/en_msgs.txt -cs \
   -h+dist/default/production/mecanumDriver.production.sym \
   --cmf=dist/default/production/mecanumDriver.production.cmf -z -Q16F1938 \
-  -o/tmp/xctSbiRDb -Mdist/default/production/mecanumDriver.production.map \
+  -o/tmp/xcUtce08i -Mdist/default/production/mecanumDriver.production.map \
   -E1 -ver=XC8 -ASTACK=02000h-023efh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
   -AENTRY=00h-0FFhx64 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
@@ -30,7 +30,7 @@ Linker command line:
   -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-08008h -pconfig=CONFIG \
   -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -AEEDATA=00h-0FFh/0F000h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
-  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcXsq7Tmy.obj \
+  -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k /tmp/xcFmz8qgN.obj \
   dist/default/production/mecanumDriver.production.obj 
 
 Object code version is 3.11
@@ -40,7 +40,7 @@ Machine type is 16F1938
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcXsq7Tmy.obj
+/tmp/xcFmz8qgN.obj
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
@@ -305,12 +305,12 @@ _OSCCON                  (abs)        00099
 _PORTA                   (abs)        0000C
 _PORTB                   (abs)        0000D
 _PORTC                   (abs)        0000E
-_RB0                     (abs)        00068
-_RB1                     (abs)        00069
 _RB2                     (abs)        0006A
 _RB3                     (abs)        0006B
 _RB4                     (abs)        0006C
 _RB5                     (abs)        0006D
+_RB6                     (abs)        0006E
+_RB7                     (abs)        0006F
 _TRISA                   (abs)        0008C
 _TRISB                   (abs)        0008D
 _TRISC                   (abs)        0008E

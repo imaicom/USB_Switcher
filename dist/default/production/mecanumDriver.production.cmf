@@ -11,13 +11,13 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcXsq7Tmy.obj
-reset_vec CODE 0 0 0 2 2
-end_init CODE 0 2 2 2 2
-config CONFIG 0 8007 8007 2 2
 $dist/default/production/mecanumDriver.production.obj
 cinit CODE 0 7FD 7FD 3 2
 maintext CODE 0 7CB 7CB 32 2
+$/tmp/xcFmz8qgN.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 0 8007 8007 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -111,11 +111,11 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/mecanumDriver.production.obj
-7FD cinit CODE >433:/tmp/xc3je8Q3t
-7FD cinit CODE >436:/tmp/xc3je8Q3t
-7FD cinit CODE >442:/tmp/xc3je8Q3t
-7FD cinit CODE >444:/tmp/xc3je8Q3t
-7FE cinit CODE >445:/tmp/xc3je8Q3t
+7FD cinit CODE >433:/tmp/xctUsNLHB
+7FD cinit CODE >436:/tmp/xctUsNLHB
+7FD cinit CODE >442:/tmp/xctUsNLHB
+7FD cinit CODE >444:/tmp/xctUsNLHB
+7FE cinit CODE >445:/tmp/xctUsNLHB
 7CB maintext CODE >44:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
 7CB maintext CODE >46:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
 7CE maintext CODE >47:/Users/meka/MPLABXProjects/mecanumDriver/mecanumDriver.c
@@ -157,19 +157,19 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __Hstrings 0 0 ABS 0 strings -
 _WPUB 20D 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
-___sp 0 0 STACK 2 stack /tmp/xcXsq7Tmy.obj
+___sp 0 0 STACK 2 stack /tmp/xcFmz8qgN.obj
 _main F96 0 CODE 0 maintext dist/default/production/mecanumDriver.production.obj
 btemp 7E 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
-start 4 0 CODE 0 init /tmp/xcXsq7Tmy.obj
+start 4 0 CODE 0 init /tmp/xcFmz8qgN.obj
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab /tmp/xcXsq7Tmy.obj
-intlevel1 0 0 ENTRY 0 functab /tmp/xcXsq7Tmy.obj
-intlevel2 0 0 ENTRY 0 functab /tmp/xcXsq7Tmy.obj
-intlevel3 0 0 ENTRY 0 functab /tmp/xcXsq7Tmy.obj
-intlevel4 0 0 ENTRY 0 functab /tmp/xcXsq7Tmy.obj
-intlevel5 0 0 ENTRY 0 functab /tmp/xcXsq7Tmy.obj
+intlevel0 0 0 ENTRY 0 functab /tmp/xcFmz8qgN.obj
+intlevel1 0 0 ENTRY 0 functab /tmp/xcFmz8qgN.obj
+intlevel2 0 0 ENTRY 0 functab /tmp/xcFmz8qgN.obj
+intlevel3 0 0 ENTRY 0 functab /tmp/xcFmz8qgN.obj
+intlevel4 0 0 ENTRY 0 functab /tmp/xcFmz8qgN.obj
+intlevel5 0 0 ENTRY 0 functab /tmp/xcFmz8qgN.obj
 wtemp0 7E 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -180,7 +180,7 @@ _OPTION_REG 95 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 start_initialization FFA 0 CODE 0 cinit dist/default/production/mecanumDriver.production.obj
 _OSCCON 99 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
-___int_sp 0 0 STACK 2 stack /tmp/xcXsq7Tmy.obj
+___int_sp 0 0 STACK 2 stack /tmp/xcFmz8qgN.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -307,18 +307,18 @@ __Lsfr8 0 0 ABS 0 sfr8 -
 __Lsfr9 0 0 ABS 0 sfr9 -
 __Ltext 0 0 ABS 0 text -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-_RB0 68 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
-_RB1 69 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 _RB2 6A 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 _RB3 6B 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 _RB4 6C 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 _RB5 6D 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
+_RB6 6E 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
+_RB7 6F 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __S0 8009 0 ABS 0 - -
 __S1 0 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec /tmp/xcXsq7Tmy.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcFmz8qgN.obj
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -350,8 +350,8 @@ __CFG_CP$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __CFG_IESO$ON 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
-stackhi 23EF 0 ABS 0 - /tmp/xcXsq7Tmy.obj
-stacklo 2000 0 ABS 0 - /tmp/xcXsq7Tmy.obj
+stackhi 23EF 0 ABS 0 - /tmp/xcFmz8qgN.obj
+stacklo 2000 0 ABS 0 - /tmp/xcFmz8qgN.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/mecanumDriver.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -

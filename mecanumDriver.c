@@ -48,21 +48,21 @@ void main(void)
     ANSELA     = 0b00000000 ; // AN0 to AN4 are not used. Make it all digital I / O
     ANSELB     = 0b00000000 ; // AN8 to AN13 are not used. Make it all digital I / O
     TRISA      = 0b00000000 ; // All pins (RA) are assigned to outputs (0: output 1: input)
-    TRISB      = 0b00111111 ; // Pin (RB) inputs only RB 0 - 5, all others assign output
+    TRISB      = 0b11111100 ; // Pin (RB) inputs only RB2-7, all others assign output
     TRISC      = 0b00000000 ; // All pins (RC) are assigned to outputs
-    WPUB       = 0b00111111 ; // RB0-5 designates an internal pull-up resistor
+    WPUB       = 0b11111100 ; // RB2-7 designates an internal pull-up resistor
      
     PORTA      = 0b00000000 ; // Initialization of RA output pin (all set to LOW)
     PORTB      = 0b00000000 ; // Initialization of RB output pin (all set to LOW)
     PORTC      = 0b00000000 ; // Initialization of RC output pin (all set to LOW)
 
      while(1) { // LeftFront RightFront LeftRear RightRear
-        while(!RB0) PORTA = 0b10101010; // Forward    10 10 10 10
-        while(!RB1) PORTA = 0b01010101; // Back       01 01 01 01
-        while(!RB2) PORTA = 0b10011001; // Right Turn 10 01 10 01
-        while(!RB3) PORTA = 0b01100110; // Left Turn  01 10 01 10
-        while(!RB4) PORTA = 0b10010110; // Right      10 01 01 10
-        while(!RB5) PORTA = 0b01101001; // Left       01 10 10 01
+        while(!RB7) PORTA = 0b10101010; // Forward    10 10 10 10
+        while(!RB6) PORTA = 0b01010101; // Back       01 01 01 01
+        while(!RB5) PORTA = 0b10011001; // Right Turn 10 01 10 01
+        while(!RB4) PORTA = 0b01100110; // Left Turn  01 10 01 10
+        while(!RB3) PORTA = 0b10010110; // Right      10 01 01 10
+        while(!RB2) PORTA = 0b01101001; // Left       01 10 10 01
         PORTA = 0;
     }
 }

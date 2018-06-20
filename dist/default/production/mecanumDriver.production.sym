@@ -1,10 +1,10 @@
 __CFG_WRT$OFF 0 0 ABS 0
-_RB0 68 0 ABS 0
-_RB1 69 0 ABS 0
 _RB2 6A 0 ABS 0
 _RB3 6B 0 ABS 0
 _RB4 6C 0 ABS 0
 _RB5 6D 0 ABS 0
+_RB6 6E 0 ABS 0
+_RB7 6F 0 ABS 0
 __S0 8009 0 ABS 0
 __S1 0 0 ABS 0
 __S2 0 0 ABS 0
@@ -244,7 +244,7 @@ config 1000E 10011 CONFIG 1000E 0
 maintext F96 FF9 CODE F96 0
 %locals
 dist/default/production/mecanumDriver.production.obj
-/tmp/xc3je8Q3t
+/tmp/xctUsNLHB
 433 7FD 0 CODE 0
 436 7FD 0 CODE 0
 442 7FD 0 CODE 0
