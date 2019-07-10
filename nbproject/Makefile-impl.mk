@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=mecanumDriver
+PROJECTNAME=USB_Switcher
 
 # Active Configuration
 DEFAULTCONF=default
