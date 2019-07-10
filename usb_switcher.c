@@ -56,7 +56,7 @@ void main(void)
     PORTB      = 0b00000000 ; // Initialization of RB output pin (all set to LOW)
     PORTC      = 0b00000000 ; // Initialization of RC output pin (all set to LOW)
 
-     while(1) { // LeftFront RightFront LeftRear RightRear
+     while(1) { // 
         while(!RB7) PORTA = 0b10101010; // Forward    10 10 10 10
         while(!RB6) PORTA = 0b01010101; // Back       01 01 01 01
         while(!RB5) PORTA = 0b10011001; // Right Turn 10 01 10 01

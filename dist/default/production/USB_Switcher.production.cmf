@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcuYU4XD6.obj
+$/tmp/xcAgBSjdZ.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 2 2
@@ -111,11 +111,11 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/USB_Switcher.production.obj
-7FD cinit CODE >433:/tmp/xcUTWAKP1
-7FD cinit CODE >436:/tmp/xcUTWAKP1
-7FD cinit CODE >442:/tmp/xcUTWAKP1
-7FD cinit CODE >444:/tmp/xcUTWAKP1
-7FE cinit CODE >445:/tmp/xcUTWAKP1
+7FD cinit CODE >433:/tmp/xclRcFtjU
+7FD cinit CODE >436:/tmp/xclRcFtjU
+7FD cinit CODE >442:/tmp/xclRcFtjU
+7FD cinit CODE >444:/tmp/xclRcFtjU
+7FE cinit CODE >445:/tmp/xclRcFtjU
 7CB maintext CODE >44:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
 7CB maintext CODE >46:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
 7CE maintext CODE >47:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
@@ -157,19 +157,19 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __Hstrings 0 0 ABS 0 strings -
 _WPUB 20D 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
-___sp 0 0 STACK 2 stack /tmp/xcuYU4XD6.obj
+___sp 0 0 STACK 2 stack /tmp/xcAgBSjdZ.obj
 _main F96 0 CODE 0 maintext dist/default/production/USB_Switcher.production.obj
 btemp 7E 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
-start 4 0 CODE 0 init /tmp/xcuYU4XD6.obj
+start 4 0 CODE 0 init /tmp/xcAgBSjdZ.obj
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab /tmp/xcuYU4XD6.obj
-intlevel1 0 0 ENTRY 0 functab /tmp/xcuYU4XD6.obj
-intlevel2 0 0 ENTRY 0 functab /tmp/xcuYU4XD6.obj
-intlevel3 0 0 ENTRY 0 functab /tmp/xcuYU4XD6.obj
-intlevel4 0 0 ENTRY 0 functab /tmp/xcuYU4XD6.obj
-intlevel5 0 0 ENTRY 0 functab /tmp/xcuYU4XD6.obj
+intlevel0 0 0 ENTRY 0 functab /tmp/xcAgBSjdZ.obj
+intlevel1 0 0 ENTRY 0 functab /tmp/xcAgBSjdZ.obj
+intlevel2 0 0 ENTRY 0 functab /tmp/xcAgBSjdZ.obj
+intlevel3 0 0 ENTRY 0 functab /tmp/xcAgBSjdZ.obj
+intlevel4 0 0 ENTRY 0 functab /tmp/xcAgBSjdZ.obj
+intlevel5 0 0 ENTRY 0 functab /tmp/xcAgBSjdZ.obj
 wtemp0 7E 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -180,7 +180,7 @@ _OPTION_REG 95 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 start_initialization FFA 0 CODE 0 cinit dist/default/production/USB_Switcher.production.obj
 _OSCCON 99 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
-___int_sp 0 0 STACK 2 stack /tmp/xcuYU4XD6.obj
+___int_sp 0 0 STACK 2 stack /tmp/xcAgBSjdZ.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -318,7 +318,7 @@ __S1 0 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec /tmp/xcuYU4XD6.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcAgBSjdZ.obj
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -350,8 +350,8 @@ __CFG_CP$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __CFG_IESO$ON 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
-stackhi 23EF 0 ABS 0 - /tmp/xcuYU4XD6.obj
-stacklo 2000 0 ABS 0 - /tmp/xcuYU4XD6.obj
+stackhi 23EF 0 ABS 0 - /tmp/xcAgBSjdZ.obj
+stacklo 2000 0 ABS 0 - /tmp/xcAgBSjdZ.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
