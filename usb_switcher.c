@@ -51,8 +51,7 @@ void main(void)
 {
     
     int i = 0;
-    int j = 0;
-    long t = 0;
+    int t = 0;
     OSCCON     = 0b01110010 ; // Set the internal clock to 8 MHz
     OPTION_REG = 0b00000000 ; // Use internal pull-up resistor for digital I / O
     ANSELA     = 0b00000000 ; // AN0 to AN4 are not used. Make it all digital I / O
@@ -67,10 +66,13 @@ void main(void)
     PORTC      = 0b00000000 ; // Initialization of RC output pin (all set to LOW)
 
      while(1) {
+         
         while(!RB7) { 
             while(!RB7) {Delay_ms(10);}
             i++; if(i>=7) i = 0;
+            t = 1;
         };    
+        
         if(i==0) PORTA = 0b00000001;
         if(i==1) PORTA = 0b00000010;
         if(i==2) PORTA = 0b00000100;
@@ -79,18 +81,19 @@ void main(void)
         if(i==5) PORTA = 0b00100000;
         if(i==6) PORTA = 0b01000000;
         if(i==7) PORTA = 0b10000000;
-        if(i!=j) {Delay_ms(10); t++; PORTC = 0b00000000;};
+        
+        if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
+        
         if(t>=100) {
-            j = i;
             t = 0;
-            if(j==0) PORTC = 0b00000001;
-            if(j==1) PORTC = 0b00000010;
-            if(j==2) PORTC = 0b00000100;
-            if(j==3) PORTC = 0b00001000;
-            if(j==4) PORTC = 0b00010000;
-            if(j==5) PORTC = 0b00100000;
-            if(j==6) PORTC = 0b01000000;
-            if(j==7) PORTC = 0b10000000;
-        };
-    };
+            if(i==0) PORTC = 0b00000001;
+            if(i==1) PORTC = 0b00000010;
+            if(i==2) PORTC = 0b00000100;
+            if(i==3) PORTC = 0b00001000;
+            if(i==4) PORTC = 0b00010000;
+            if(i==5) PORTC = 0b00100000;
+            if(i==6) PORTC = 0b01000000;
+            if(i==7) PORTC = 0b10000000;
+        }; // if(t>=100)
+    }; // while(1)
 }
