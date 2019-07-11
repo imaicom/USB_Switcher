@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Fri Jul 12 04:13:48 2019
+                                                                                               Fri Jul 12 04:20:16 2019
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	16F1938
@@ -352,15 +352,15 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    333  072C  0021               	movlb	1	; select bank1
    334  072D  018C               	clrf	12	;volatile
    335                           
-   336                           ;usb_switcher.c: 60: TRISB = 0b11111100 ;
-   337  072E  30FC               	movlw	252
+   336                           ;usb_switcher.c: 60: TRISB = 0b10000000 ;
+   337  072E  3080               	movlw	128
    338  072F  008D               	movwf	13	;volatile
    339                           
    340                           ;usb_switcher.c: 61: TRISC = 0b00000000 ;
    341  0730  018E               	clrf	14	;volatile
    342                           
-   343                           ;usb_switcher.c: 62: WPUB = 0b11111100 ;
-   344  0731  30FC               	movlw	252
+   343                           ;usb_switcher.c: 62: WPUB = 0b10000000 ;
+   344  0731  3080               	movlw	128
    345  0732  0024               	movlb	4	; select bank4
    346  0733  008D               	movwf	13	;volatile
    347                           
@@ -926,7 +926,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Fri Jul 12 04:13:48 2019
+Symbol Table                                                                                   Fri Jul 12 04:20:16 2019
 
             __CFG_CP$OFF 0000                       l29 070D                      l703 078E  
                     l707 0796                      l741 07E4                      l733 07D4  

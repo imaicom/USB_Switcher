@@ -3128,15 +3128,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;usb_switcher.c: 59: TRISA = 0b00000000 ;
 "59
 [e = _TRISA -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 60: TRISB = 0b11111100 ;
+[; ;usb_switcher.c: 60: TRISB = 0b10000000 ;
 "60
-[e = _TRISB -> -> 252 `i `uc ]
+[e = _TRISB -> -> 128 `i `uc ]
 [; ;usb_switcher.c: 61: TRISC = 0b00000000 ;
 "61
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 62: WPUB = 0b11111100 ;
+[; ;usb_switcher.c: 62: WPUB = 0b10000000 ;
 "62
-[e = _WPUB -> -> 252 `i `uc ]
+[e = _WPUB -> -> 128 `i `uc ]
 [; ;usb_switcher.c: 64: PORTA = 0b00000000 ;
 "64
 [e = _PORTA -> -> 0 `i `uc ]
