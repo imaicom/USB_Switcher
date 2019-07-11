@@ -4195,6 +4195,12 @@ extern __bank0 __bit __timeout;
 
 
 
+static void Delay_ms(unsigned int DELAY_CNT) {
+for (unsigned int i = 0; i < DELAY_CNT; i++) {
+_delay((unsigned long)((1)*(8000000/4000.0)));
+}
+}
+
 void main(void)
 {
 OSCCON = 0b01110010 ;
@@ -4211,12 +4217,13 @@ PORTB = 0b00000000 ;
 PORTC = 0b00000000 ;
 
 while(1) {
-while(!RB7) PORTA = 0b10101010;
-while(!RB6) PORTA = 0b01010101;
-while(!RB5) PORTA = 0b10011001;
-while(!RB4) PORTA = 0b01100110;
-while(!RB3) PORTA = 0b10010110;
-while(!RB2) PORTA = 0b01101001;
+while(!RB7) { PORTA = 0b10101010; PORTC = 0b10101010; };
+while(!RB6) { PORTA = 0b01010101; PORTC = 0b01010101; };
+while(!RB5) { PORTA = 0b10011001; PORTC = 0b10011001; };
+while(!RB4) { PORTA = 0b01100110; PORTC = 0b01100110; };
+while(!RB3) { PORTA = 0b10010110; PORTC = 0b10010110; };
+while(!RB2) { PORTA = 0b01101001; PORTC = 0b01101001; };
 PORTA = 0;
+PORTC = 0;
 }
 }

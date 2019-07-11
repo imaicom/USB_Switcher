@@ -41,6 +41,12 @@
 // Internal OSC: 8MHz
 #define _XTAL_FREQ 8000000      //  __delay_ms(), __delay_us()
 
+static void Delay_ms(unsigned int DELAY_CNT) {
+    for (unsigned int i = 0; i < DELAY_CNT; i++) {
+        __delay_ms(1);
+    }
+}
+
 void main(void)
 {
     OSCCON     = 0b01110010 ; // Set the internal clock to 8 MHz
@@ -57,12 +63,13 @@ void main(void)
     PORTC      = 0b00000000 ; // Initialization of RC output pin (all set to LOW)
 
      while(1) { // 
-        while(!RB7) PORTA = 0b10101010; // Forward    10 10 10 10
-        while(!RB6) PORTA = 0b01010101; // Back       01 01 01 01
-        while(!RB5) PORTA = 0b10011001; // Right Turn 10 01 10 01
-        while(!RB4) PORTA = 0b01100110; // Left Turn  01 10 01 10
-        while(!RB3) PORTA = 0b10010110; // Right      10 01 01 10
-        while(!RB2) PORTA = 0b01101001; // Left       01 10 10 01
+        while(!RB7) { PORTA = 0b10101010; PORTC = 0b10101010; };
+        while(!RB6) { PORTA = 0b01010101; PORTC = 0b01010101; };
+        while(!RB5) { PORTA = 0b10011001; PORTC = 0b10011001; }; 
+        while(!RB4) { PORTA = 0b01100110; PORTC = 0b01100110; }; 
+        while(!RB3) { PORTA = 0b10010110; PORTC = 0b10010110; }; 
+        while(!RB2) { PORTA = 0b01101001; PORTC = 0b01101001; };
         PORTA = 0;
+        PORTC = 0;
     }
 }
