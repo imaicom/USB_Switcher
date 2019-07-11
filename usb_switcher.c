@@ -69,7 +69,7 @@ void main(void)
      while(1) {
         while(!RB7) { 
             while(!RB7) {Delay_ms(10);}
-            i++; if(i>7) i = 0;
+            i++; if(i>=7) i = 0;
         };    
         if(i==0) PORTA = 0b00000001;
         if(i==1) PORTA = 0b00000010;
@@ -79,8 +79,18 @@ void main(void)
         if(i==5) PORTA = 0b00100000;
         if(i==6) PORTA = 0b01000000;
         if(i==7) PORTA = 0b10000000;
-        if(i==j) t = 0;
-        if(i!=j) {Delay_ms(10); t++;};
-        if(t>100) ;
-     }
+        if(i!=j) {Delay_ms(10); t++; PORTC = 0b00000000;};
+        if(t>=100) {
+            j = i;
+            t = 0;
+            if(j==0) PORTC = 0b00000001;
+            if(j==1) PORTC = 0b00000010;
+            if(j==2) PORTC = 0b00000100;
+            if(j==3) PORTC = 0b00001000;
+            if(j==4) PORTC = 0b00010000;
+            if(j==5) PORTC = 0b00100000;
+            if(j==6) PORTC = 0b01000000;
+            if(j==7) PORTC = 0b10000000;
+        };
+    };
 }

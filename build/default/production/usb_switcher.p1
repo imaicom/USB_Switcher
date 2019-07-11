@@ -3169,10 +3169,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 361 ]
 [e $ ! _RB7 362  ]
 [e :U 363 ]
-[; ;usb_switcher.c: 72: i++; if(i>7) i = 0;
+[; ;usb_switcher.c: 72: i++; if(i>=7) i = 0;
 "72
 [e ++ _i -> 1 `i ]
-[e $ ! > _i -> 7 `i 364  ]
+[e $ ! >= _i -> 7 `i 364  ]
 [e = _i -> 0 `i ]
 [e :U 364 ]
 "73
@@ -3222,27 +3222,77 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e $ ! == _i -> 7 `i 372  ]
 [e = _PORTA -> -> 128 `i `uc ]
 [e :U 372 ]
-[; ;usb_switcher.c: 82: if(i==j) t = 0;
+[; ;usb_switcher.c: 82: if(i!=j) {Delay_ms(10); t++; PORTC = 0b00000000;};
 "82
-[e $ ! == _i _j 373  ]
-[e = _t -> -> 0 `i `l ]
-[e :U 373 ]
-[; ;usb_switcher.c: 83: if(i!=j) {Delay_ms(10); t++;};
-"83
-[e $ ! != _i _j 374  ]
+[e $ ! != _i _j 373  ]
 {
 [e ( _Delay_ms (1 -> -> 10 `i `ui ]
 [e ++ _t -> -> 1 `i `l ]
+[e = _PORTC -> -> 0 `i `uc ]
+}
+[e :U 373 ]
+[; ;usb_switcher.c: 83: if(t>=100) {
+"83
+[e $ ! >= _t -> -> 100 `i `l 374  ]
+{
+[; ;usb_switcher.c: 84: j = i;
+"84
+[e = _j _i ]
+[; ;usb_switcher.c: 85: t = 0;
+"85
+[e = _t -> -> 0 `i `l ]
+[; ;usb_switcher.c: 86: if(j==0) PORTC = 0b00000001;
+"86
+[e $ ! == _j -> 0 `i 375  ]
+[e = _PORTC -> -> 1 `i `uc ]
+[e :U 375 ]
+[; ;usb_switcher.c: 87: if(j==1) PORTC = 0b00000010;
+"87
+[e $ ! == _j -> 1 `i 376  ]
+[e = _PORTC -> -> 2 `i `uc ]
+[e :U 376 ]
+[; ;usb_switcher.c: 88: if(j==2) PORTC = 0b00000100;
+"88
+[e $ ! == _j -> 2 `i 377  ]
+[e = _PORTC -> -> 4 `i `uc ]
+[e :U 377 ]
+[; ;usb_switcher.c: 89: if(j==3) PORTC = 0b00001000;
+"89
+[e $ ! == _j -> 3 `i 378  ]
+[e = _PORTC -> -> 8 `i `uc ]
+[e :U 378 ]
+[; ;usb_switcher.c: 90: if(j==4) PORTC = 0b00010000;
+"90
+[e $ ! == _j -> 4 `i 379  ]
+[e = _PORTC -> -> 16 `i `uc ]
+[e :U 379 ]
+[; ;usb_switcher.c: 91: if(j==5) PORTC = 0b00100000;
+"91
+[e $ ! == _j -> 5 `i 380  ]
+[e = _PORTC -> -> 32 `i `uc ]
+[e :U 380 ]
+[; ;usb_switcher.c: 92: if(j==6) PORTC = 0b01000000;
+"92
+[e $ ! == _j -> 6 `i 381  ]
+[e = _PORTC -> -> 64 `i `uc ]
+[e :U 381 ]
+[; ;usb_switcher.c: 93: if(j==7) PORTC = 0b10000000;
+"93
+[e $ ! == _j -> 7 `i 382  ]
+[e = _PORTC -> -> 128 `i `uc ]
+[e :U 382 ]
+"94
 }
 [e :U 374 ]
-"84
+[; ;usb_switcher.c: 94: };
+"95
 }
 [e :U 355 ]
 "69
 [e $U 356  ]
 [e :U 357 ]
-[; ;usb_switcher.c: 84: }
-[; ;usb_switcher.c: 85: }
-"85
+[; ;usb_switcher.c: 95: };
+[; ;usb_switcher.c: 96: }
+"96
 [e :UE 354 ]
 }
