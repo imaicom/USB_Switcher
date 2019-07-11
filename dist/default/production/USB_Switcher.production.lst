@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Fri Jul 12 04:20:16 2019
+                                                                                               Fri Jul 12 04:42:47 2019
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	16F1938
@@ -243,7 +243,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    229                           
    230  07FD                     __end_of__initialization:	
    231  07FD  0020               	movlb	0
-   232  07FE  3187  2F21         	ljmp	_main	;jump to C main() function
+   232  07FE  3187  2F61         	ljmp	_main	;jump to C main() function
    233                           
    234                           	psect	cstackCOMMON
    235  0070                     __pcstackCOMMON:	
@@ -279,7 +279,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    265  0078                     	ds	2
    266                           
    267                           	psect	maintext
-   268  0721                     __pmaintext:	
+   268  0761                     __pmaintext:	
    269 ;;
    270 ;;Main: autosize = 0, tempsize = 1, incstack = 0, save=0
    271 ;;
@@ -320,401 +320,313 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    301                           
    302                           
    303                           ;psect for function _main
-   304  0721                     _main:	
+   304  0761                     _main:	
    305                           
    306                           ;usb_switcher.c: 53: int i = 0;
    307                           
    308                           ;incstack = 0
    309                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
-   310  0721  01F8               	clrf	main@i
-   311  0722  01F9               	clrf	main@i+1
+   310  0761  01F8               	clrf	main@i
+   311  0762  01F9               	clrf	main@i+1
    312                           
    313                           ;usb_switcher.c: 54: int t = 0;
-   314  0723  01F6               	clrf	main@t
-   315  0724  01F7               	clrf	main@t+1
+   314  0763  01F6               	clrf	main@t
+   315  0764  01F7               	clrf	main@t+1
    316                           
    317                           ;usb_switcher.c: 55: OSCCON = 0b01110010 ;
-   318  0725  3072               	movlw	114
-   319  0726  0021               	movlb	1	; select bank1
-   320  0727  0099               	movwf	25	;volatile
+   318  0765  3072               	movlw	114
+   319  0766  0021               	movlb	1	; select bank1
+   320  0767  0099               	movwf	25	;volatile
    321                           
    322                           ;usb_switcher.c: 56: OPTION_REG = 0b00000000 ;
-   323  0728  0195               	clrf	21	;volatile
+   323  0768  0195               	clrf	21	;volatile
    324                           
    325                           ;usb_switcher.c: 57: ANSELA = 0b00000000 ;
-   326  0729  0023               	movlb	3	; select bank3
-   327  072A  018C               	clrf	12	;volatile
+   326  0769  0023               	movlb	3	; select bank3
+   327  076A  018C               	clrf	12	;volatile
    328                           
    329                           ;usb_switcher.c: 58: ANSELB = 0b00000000 ;
-   330  072B  018D               	clrf	13	;volatile
+   330  076B  018D               	clrf	13	;volatile
    331                           
    332                           ;usb_switcher.c: 59: TRISA = 0b00000000 ;
-   333  072C  0021               	movlb	1	; select bank1
-   334  072D  018C               	clrf	12	;volatile
+   333  076C  0021               	movlb	1	; select bank1
+   334  076D  018C               	clrf	12	;volatile
    335                           
    336                           ;usb_switcher.c: 60: TRISB = 0b10000000 ;
-   337  072E  3080               	movlw	128
-   338  072F  008D               	movwf	13	;volatile
+   337  076E  3080               	movlw	128
+   338  076F  008D               	movwf	13	;volatile
    339                           
    340                           ;usb_switcher.c: 61: TRISC = 0b00000000 ;
-   341  0730  018E               	clrf	14	;volatile
+   341  0770  018E               	clrf	14	;volatile
    342                           
    343                           ;usb_switcher.c: 62: WPUB = 0b10000000 ;
-   344  0731  3080               	movlw	128
-   345  0732  0024               	movlb	4	; select bank4
-   346  0733  008D               	movwf	13	;volatile
+   344  0771  3080               	movlw	128
+   345  0772  0024               	movlb	4	; select bank4
+   346  0773  008D               	movwf	13	;volatile
    347                           
    348                           ;usb_switcher.c: 64: PORTA = 0b00000000 ;
-   349  0734  0020               	movlb	0	; select bank0
-   350  0735  018C               	clrf	12	;volatile
+   349  0774  0020               	movlb	0	; select bank0
+   350  0775  018C               	clrf	12	;volatile
    351                           
    352                           ;usb_switcher.c: 65: PORTB = 0b00000000 ;
-   353  0736  018D               	clrf	13	;volatile
+   353  0776  018D               	clrf	13	;volatile
    354                           
    355                           ;usb_switcher.c: 66: PORTC = 0b00000000 ;
-   356  0737  018E               	clrf	14	;volatile
+   356  0777  018E               	clrf	14	;volatile
    357                           
    358                           ;usb_switcher.c: 70: while(!RB7) {
    359                           
    360                           ;usb_switcher.c: 68: while(1) {
-   361  0738  2F96               	goto	l707
-   362  0739                     l665:	
+   361  0778  2FB6               	goto	l651
+   362  0779                     l625:	
    363                           ;usb_switcher.c: 71: while(!RB7) Delay_ms(10);
    364                           
-   365  0739  300A               	movlw	10
-   366  073A  00F0               	movwf	Delay_ms@DELAY_CNT
-   367  073B  3000               	movlw	0
-   368  073C  00F1               	movwf	Delay_ms@DELAY_CNT+1
-   369  073D  3187  270B  3187   	fcall	_Delay_ms
-   370  0740                     l667:	
-   371  0740  0020               	movlb	0	; select bank0
-   372  0741  1F8D               	btfss	13,7	;volatile
-   373  0742  2F39               	goto	l665
+   365  0779  300A               	movlw	10
+   366  077A  00F0               	movwf	Delay_ms@DELAY_CNT
+   367  077B  3000               	movlw	0
+   368  077C  00F1               	movwf	Delay_ms@DELAY_CNT+1
+   369  077D  3187  274B  3187   	fcall	_Delay_ms
+   370  0780                     l627:	
+   371  0780  0020               	movlb	0	; select bank0
+   372  0781  1F8D               	btfss	13,7	;volatile
+   373  0782  2F79               	goto	l625
    374                           
-   375                           ;usb_switcher.c: 72: i++; if(i>=7) i = 0;
-   376  0743  3001               	movlw	1
-   377  0744  07F8               	addwf	main@i,f
-   378  0745  3000               	movlw	0
-   379  0746  3DF9               	addwfc	main@i+1,f
-   380  0747  0879               	movf	main@i+1,w
-   381  0748  3A80               	xorlw	128
-   382  0749  00F5               	movwf	??_main
-   383  074A  3080               	movlw	128
-   384  074B  0275               	subwf	??_main,w
-   385  074C  1D03               	skipz
-   386  074D  2F50               	goto	u255
-   387  074E  3007               	movlw	7
-   388  074F  0278               	subwf	main@i,w
-   389  0750                     u255:	
-   390  0750  1C03               	skipc
-   391  0751  2F54               	goto	l673
-   392  0752  01F8               	clrf	main@i
-   393  0753  01F9               	clrf	main@i+1
-   394  0754                     l673:	
+   375                           ;usb_switcher.c: 72: i++; if(i>=4) i = 0;
+   376  0783  3001               	movlw	1
+   377  0784  07F8               	addwf	main@i,f
+   378  0785  3000               	movlw	0
+   379  0786  3DF9               	addwfc	main@i+1,f
+   380  0787  0879               	movf	main@i+1,w
+   381  0788  3A80               	xorlw	128
+   382  0789  00F5               	movwf	??_main
+   383  078A  3080               	movlw	128
+   384  078B  0275               	subwf	??_main,w
+   385  078C  1D03               	skipz
+   386  078D  2F90               	goto	u175
+   387  078E  3004               	movlw	4
+   388  078F  0278               	subwf	main@i,w
+   389  0790                     u175:	
+   390  0790  1C03               	skipc
+   391  0791  2F94               	goto	l633
+   392  0792  01F8               	clrf	main@i
+   393  0793  01F9               	clrf	main@i+1
+   394  0794                     l633:	
    395                           
-   396                           ;usb_switcher.c: 73: t = 1;
-   397  0754  3001               	movlw	1
-   398  0755  00F6               	movwf	main@t
-   399  0756  3000               	movlw	0
-   400  0757  00F7               	movwf	main@t+1
+   396                           ;usb_switcher.c: 74: t = 1;
+   397  0794  3001               	movlw	1
+   398  0795  00F6               	movwf	main@t
+   399  0796  3000               	movlw	0
+   400  0797  00F7               	movwf	main@t+1
    401                           
-   402                           ;usb_switcher.c: 75: if(i==0) PORTA = 0b00000001;
-   403  0758  0878               	movf	main@i,w
-   404  0759  0479               	iorwf	main@i+1,w
-   405  075A  1D03               	btfss	3,2
-   406  075B  2F5F               	goto	l679
-   407  075C  3001               	movlw	1
-   408  075D  0020               	movlb	0	; select bank0
-   409  075E  008C               	movwf	12	;volatile
-   410  075F                     l679:	
+   402                           ;usb_switcher.c: 76: if(i==0) PORTA = 0b00000001;
+   403  0798  0878               	movf	main@i,w
+   404  0799  0479               	iorwf	main@i+1,w
+   405  079A  1D03               	btfss	3,2
+   406  079B  2F9F               	goto	l639
+   407  079C  3001               	movlw	1
+   408  079D  0020               	movlb	0	; select bank0
+   409  079E  008C               	movwf	12	;volatile
+   410  079F                     l639:	
    411                           
-   412                           ;usb_switcher.c: 76: if(i==1) PORTA = 0b00000010;
-   413  075F  0378               	decf	main@i,w
-   414  0760  0479               	iorwf	main@i+1,w
-   415  0761  1D03               	btfss	3,2
-   416  0762  2F66               	goto	l683
-   417  0763  3002               	movlw	2
-   418  0764  0020               	movlb	0	; select bank0
-   419  0765  008C               	movwf	12	;volatile
-   420  0766                     l683:	
+   412                           ;usb_switcher.c: 77: if(i==1) PORTA = 0b00000010;
+   413  079F  0378               	decf	main@i,w
+   414  07A0  0479               	iorwf	main@i+1,w
+   415  07A1  1D03               	btfss	3,2
+   416  07A2  2FA6               	goto	l643
+   417  07A3  3002               	movlw	2
+   418  07A4  0020               	movlb	0	; select bank0
+   419  07A5  008C               	movwf	12	;volatile
+   420  07A6                     l643:	
    421                           
-   422                           ;usb_switcher.c: 77: if(i==2) PORTA = 0b00000100;
-   423  0766  3002               	movlw	2
-   424  0767  0678               	xorwf	main@i,w
-   425  0768  0479               	iorwf	main@i+1,w
-   426  0769  1D03               	btfss	3,2
-   427  076A  2F6E               	goto	l687
-   428  076B  3004               	movlw	4
-   429  076C  0020               	movlb	0	; select bank0
-   430  076D  008C               	movwf	12	;volatile
-   431  076E                     l687:	
+   422                           ;usb_switcher.c: 78: if(i==2) PORTA = 0b00000100;
+   423  07A6  3002               	movlw	2
+   424  07A7  0678               	xorwf	main@i,w
+   425  07A8  0479               	iorwf	main@i+1,w
+   426  07A9  1D03               	btfss	3,2
+   427  07AA  2FAE               	goto	l647
+   428  07AB  3004               	movlw	4
+   429  07AC  0020               	movlb	0	; select bank0
+   430  07AD  008C               	movwf	12	;volatile
+   431  07AE                     l647:	
    432                           
-   433                           ;usb_switcher.c: 78: if(i==3) PORTA = 0b00001000;
-   434  076E  3003               	movlw	3
-   435  076F  0678               	xorwf	main@i,w
-   436  0770  0479               	iorwf	main@i+1,w
-   437  0771  1D03               	btfss	3,2
-   438  0772  2F76               	goto	l691
-   439  0773  3008               	movlw	8
-   440  0774  0020               	movlb	0	; select bank0
-   441  0775  008C               	movwf	12	;volatile
-   442  0776                     l691:	
-   443                           
-   444                           ;usb_switcher.c: 79: if(i==4) PORTA = 0b00010000;
-   445  0776  3004               	movlw	4
-   446  0777  0678               	xorwf	main@i,w
-   447  0778  0479               	iorwf	main@i+1,w
-   448  0779  1D03               	btfss	3,2
-   449  077A  2F7E               	goto	l695
-   450  077B  3010               	movlw	16
-   451  077C  0020               	movlb	0	; select bank0
-   452  077D  008C               	movwf	12	;volatile
-   453  077E                     l695:	
-   454                           
-   455                           ;usb_switcher.c: 80: if(i==5) PORTA = 0b00100000;
-   456  077E  3005               	movlw	5
-   457  077F  0678               	xorwf	main@i,w
-   458  0780  0479               	iorwf	main@i+1,w
-   459  0781  1D03               	btfss	3,2
-   460  0782  2F86               	goto	l699
-   461  0783  3020               	movlw	32
-   462  0784  0020               	movlb	0	; select bank0
-   463  0785  008C               	movwf	12	;volatile
-   464  0786                     l699:	
-   465                           
-   466                           ;usb_switcher.c: 81: if(i==6) PORTA = 0b01000000;
-   467  0786  3006               	movlw	6
-   468  0787  0678               	xorwf	main@i,w
-   469  0788  0479               	iorwf	main@i+1,w
-   470  0789  1D03               	btfss	3,2
-   471  078A  2F8E               	goto	l703
-   472  078B  3040               	movlw	64
-   473  078C  0020               	movlb	0	; select bank0
-   474  078D  008C               	movwf	12	;volatile
-   475  078E                     l703:	
-   476                           
-   477                           ;usb_switcher.c: 82: if(i==7) PORTA = 0b10000000;
-   478  078E  3007               	movlw	7
-   479  078F  0678               	xorwf	main@i,w
-   480  0790  0479               	iorwf	main@i+1,w
-   481  0791  1D03               	btfss	3,2
-   482  0792  2F96               	goto	l707
-   483  0793  3080               	movlw	128
-   484  0794  0020               	movlb	0	; select bank0
-   485  0795  008C               	movwf	12	;volatile
-   486  0796                     l707:	
-   487  0796  0020               	movlb	0	; select bank0
-   488  0797  1F8D               	btfss	13,7	;volatile
-   489  0798  2F40               	goto	l667
-   490                           
-   491                           ;usb_switcher.c: 83: };
-   492                           ;usb_switcher.c: 85: if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
-   493  0799  0877               	movf	main@t+1,w
-   494  079A  3A80               	xorlw	128
-   495  079B  00F5               	movwf	??_main
-   496  079C  3080               	movlw	128
-   497  079D  0275               	subwf	??_main,w
-   498  079E  1D03               	skipz
-   499  079F  2FA2               	goto	u355
-   500  07A0  3001               	movlw	1
-   501  07A1  0276               	subwf	main@t,w
-   502  07A2                     u355:	
-   503  07A2  1C03               	skipc
-   504  07A3  2FB1               	goto	l717
-   505  07A4  300A               	movlw	10
-   506  07A5  00F0               	movwf	Delay_ms@DELAY_CNT
-   507  07A6  3000               	movlw	0
-   508  07A7  00F1               	movwf	Delay_ms@DELAY_CNT+1
-   509  07A8  3187  270B  3187   	fcall	_Delay_ms
-   510  07AB  3001               	movlw	1
-   511  07AC  07F6               	addwf	main@t,f
-   512  07AD  3000               	movlw	0
-   513  07AE  3DF7               	addwfc	main@t+1,f
-   514  07AF  0020               	movlb	0	; select bank0
-   515  07B0  018E               	clrf	14	;volatile
-   516  07B1                     l717:	
-   517                           
-   518                           ;usb_switcher.c: 87: if(t>=100) {
-   519  07B1  0877               	movf	main@t+1,w
-   520  07B2  3A80               	xorlw	128
-   521  07B3  00F5               	movwf	??_main
-   522  07B4  3080               	movlw	128
-   523  07B5  0275               	subwf	??_main,w
-   524  07B6  1D03               	skipz
-   525  07B7  2FBA               	goto	u365
-   526  07B8  3064               	movlw	100
-   527  07B9  0276               	subwf	main@t,w
-   528  07BA                     u365:	
-   529  07BA  1C03               	skipc
-   530  07BB  2F96               	goto	l707
-   531                           
-   532                           ;usb_switcher.c: 88: t = 0;
-   533  07BC  01F6               	clrf	main@t
-   534  07BD  01F7               	clrf	main@t+1
-   535                           
-   536                           ;usb_switcher.c: 89: if(i==0) PORTC = 0b00000001;
-   537  07BE  0878               	movf	main@i,w
-   538  07BF  0479               	iorwf	main@i+1,w
-   539  07C0  1D03               	btfss	3,2
-   540  07C1  2FC5               	goto	l725
-   541  07C2  3001               	movlw	1
-   542  07C3  0020               	movlb	0	; select bank0
-   543  07C4  008E               	movwf	14	;volatile
-   544  07C5                     l725:	
-   545                           
-   546                           ;usb_switcher.c: 90: if(i==1) PORTC = 0b00000010;
-   547  07C5  0378               	decf	main@i,w
-   548  07C6  0479               	iorwf	main@i+1,w
-   549  07C7  1D03               	btfss	3,2
-   550  07C8  2FCC               	goto	l729
-   551  07C9  3002               	movlw	2
-   552  07CA  0020               	movlb	0	; select bank0
-   553  07CB  008E               	movwf	14	;volatile
-   554  07CC                     l729:	
-   555                           
-   556                           ;usb_switcher.c: 91: if(i==2) PORTC = 0b00000100;
-   557  07CC  3002               	movlw	2
-   558  07CD  0678               	xorwf	main@i,w
-   559  07CE  0479               	iorwf	main@i+1,w
-   560  07CF  1D03               	btfss	3,2
-   561  07D0  2FD4               	goto	l733
-   562  07D1  3004               	movlw	4
-   563  07D2  0020               	movlb	0	; select bank0
-   564  07D3  008E               	movwf	14	;volatile
-   565  07D4                     l733:	
-   566                           
-   567                           ;usb_switcher.c: 92: if(i==3) PORTC = 0b00001000;
-   568  07D4  3003               	movlw	3
-   569  07D5  0678               	xorwf	main@i,w
-   570  07D6  0479               	iorwf	main@i+1,w
-   571  07D7  1D03               	btfss	3,2
-   572  07D8  2FDC               	goto	l737
-   573  07D9  3008               	movlw	8
-   574  07DA  0020               	movlb	0	; select bank0
-   575  07DB  008E               	movwf	14	;volatile
-   576  07DC                     l737:	
-   577                           
-   578                           ;usb_switcher.c: 93: if(i==4) PORTC = 0b00010000;
-   579  07DC  3004               	movlw	4
-   580  07DD  0678               	xorwf	main@i,w
-   581  07DE  0479               	iorwf	main@i+1,w
-   582  07DF  1D03               	btfss	3,2
-   583  07E0  2FE4               	goto	l741
-   584  07E1  3010               	movlw	16
-   585  07E2  0020               	movlb	0	; select bank0
-   586  07E3  008E               	movwf	14	;volatile
-   587  07E4                     l741:	
-   588                           
-   589                           ;usb_switcher.c: 94: if(i==5) PORTC = 0b00100000;
-   590  07E4  3005               	movlw	5
-   591  07E5  0678               	xorwf	main@i,w
-   592  07E6  0479               	iorwf	main@i+1,w
-   593  07E7  1D03               	btfss	3,2
-   594  07E8  2FEC               	goto	l745
-   595  07E9  3020               	movlw	32
-   596  07EA  0020               	movlb	0	; select bank0
-   597  07EB  008E               	movwf	14	;volatile
-   598  07EC                     l745:	
-   599                           
-   600                           ;usb_switcher.c: 95: if(i==6) PORTC = 0b01000000;
-   601  07EC  3006               	movlw	6
-   602  07ED  0678               	xorwf	main@i,w
-   603  07EE  0479               	iorwf	main@i+1,w
-   604  07EF  1D03               	btfss	3,2
-   605  07F0  2FF4               	goto	l749
-   606  07F1  3040               	movlw	64
-   607  07F2  0020               	movlb	0	; select bank0
-   608  07F3  008E               	movwf	14	;volatile
-   609  07F4                     l749:	
-   610                           
-   611                           ;usb_switcher.c: 96: if(i==7) PORTC = 0b10000000;
-   612  07F4  3007               	movlw	7
-   613  07F5  0678               	xorwf	main@i,w
-   614  07F6  0479               	iorwf	main@i+1,w
-   615  07F7  1D03               	btfss	3,2
-   616  07F8  2F96               	goto	l707
-   617  07F9  3080               	movlw	128
-   618  07FA  0020               	movlb	0	; select bank0
-   619  07FB  008E               	movwf	14	;volatile
-   620                           
-   621                           ;usb_switcher.c: 97: };
-   622  07FC  2F96               	goto	l707
-   623  07FD                     __end_of_main:	
-   624                           
-   625                           	psect	text1
-   626  070B                     __ptext1:	
-   627 ;; *************** function _Delay_ms *****************
-   628 ;; Defined at:
-   629 ;;		line 44 in file "usb_switcher.c"
-   630 ;; Parameters:    Size  Location     Type
-   631 ;;  DELAY_CNT       2    0[COMMON] unsigned int 
-   632 ;; Auto vars:     Size  Location     Type
-   633 ;;  i               2    3[COMMON] unsigned int 
-   634 ;; Return value:  Size  Location     Type
-   635 ;;                  1    wreg      void 
-   636 ;; Registers used:
-   637 ;;		wreg, status,2
-   638 ;; Tracked objects:
-   639 ;;		On entry : 0/0
-   640 ;;		On exit  : 0/0
-   641 ;;		Unchanged: 0/0
-   642 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+   433                           ;usb_switcher.c: 79: if(i==3) PORTA = 0b00001000;
+   434  07AE  3003               	movlw	3
+   435  07AF  0678               	xorwf	main@i,w
+   436  07B0  0479               	iorwf	main@i+1,w
+   437  07B1  1D03               	btfss	3,2
+   438  07B2  2FB6               	goto	l651
+   439  07B3  3008               	movlw	8
+   440  07B4  0020               	movlb	0	; select bank0
+   441  07B5  008C               	movwf	12	;volatile
+   442  07B6                     l651:	
+   443  07B6  0020               	movlb	0	; select bank0
+   444  07B7  1F8D               	btfss	13,7	;volatile
+   445  07B8  2F80               	goto	l627
+   446                           
+   447                           ;usb_switcher.c: 84: };
+   448                           ;usb_switcher.c: 86: if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
+   449  07B9  0877               	movf	main@t+1,w
+   450  07BA  3A80               	xorlw	128
+   451  07BB  00F5               	movwf	??_main
+   452  07BC  3080               	movlw	128
+   453  07BD  0275               	subwf	??_main,w
+   454  07BE  1D03               	skipz
+   455  07BF  2FC2               	goto	u235
+   456  07C0  3001               	movlw	1
+   457  07C1  0276               	subwf	main@t,w
+   458  07C2                     u235:	
+   459  07C2  1C03               	skipc
+   460  07C3  2FD1               	goto	l661
+   461  07C4  300A               	movlw	10
+   462  07C5  00F0               	movwf	Delay_ms@DELAY_CNT
+   463  07C6  3000               	movlw	0
+   464  07C7  00F1               	movwf	Delay_ms@DELAY_CNT+1
+   465  07C8  3187  274B  3187   	fcall	_Delay_ms
+   466  07CB  3001               	movlw	1
+   467  07CC  07F6               	addwf	main@t,f
+   468  07CD  3000               	movlw	0
+   469  07CE  3DF7               	addwfc	main@t+1,f
+   470  07CF  0020               	movlb	0	; select bank0
+   471  07D0  018E               	clrf	14	;volatile
+   472  07D1                     l661:	
+   473                           
+   474                           ;usb_switcher.c: 88: if(t>=100) {
+   475  07D1  0877               	movf	main@t+1,w
+   476  07D2  3A80               	xorlw	128
+   477  07D3  00F5               	movwf	??_main
+   478  07D4  3080               	movlw	128
+   479  07D5  0275               	subwf	??_main,w
+   480  07D6  1D03               	skipz
+   481  07D7  2FDA               	goto	u245
+   482  07D8  3064               	movlw	100
+   483  07D9  0276               	subwf	main@t,w
+   484  07DA                     u245:	
+   485  07DA  1C03               	skipc
+   486  07DB  2FB6               	goto	l651
+   487                           
+   488                           ;usb_switcher.c: 89: t = 0;
+   489  07DC  01F6               	clrf	main@t
+   490  07DD  01F7               	clrf	main@t+1
+   491                           
+   492                           ;usb_switcher.c: 90: if(i==0) PORTC = 0b00000001;
+   493  07DE  0878               	movf	main@i,w
+   494  07DF  0479               	iorwf	main@i+1,w
+   495  07E0  1D03               	btfss	3,2
+   496  07E1  2FE5               	goto	l669
+   497  07E2  3001               	movlw	1
+   498  07E3  0020               	movlb	0	; select bank0
+   499  07E4  008E               	movwf	14	;volatile
+   500  07E5                     l669:	
+   501                           
+   502                           ;usb_switcher.c: 91: if(i==1) PORTC = 0b00000010;
+   503  07E5  0378               	decf	main@i,w
+   504  07E6  0479               	iorwf	main@i+1,w
+   505  07E7  1D03               	btfss	3,2
+   506  07E8  2FEC               	goto	l673
+   507  07E9  3002               	movlw	2
+   508  07EA  0020               	movlb	0	; select bank0
+   509  07EB  008E               	movwf	14	;volatile
+   510  07EC                     l673:	
+   511                           
+   512                           ;usb_switcher.c: 92: if(i==2) PORTC = 0b00000100;
+   513  07EC  3002               	movlw	2
+   514  07ED  0678               	xorwf	main@i,w
+   515  07EE  0479               	iorwf	main@i+1,w
+   516  07EF  1D03               	btfss	3,2
+   517  07F0  2FF4               	goto	l677
+   518  07F1  3004               	movlw	4
+   519  07F2  0020               	movlb	0	; select bank0
+   520  07F3  008E               	movwf	14	;volatile
+   521  07F4                     l677:	
+   522                           
+   523                           ;usb_switcher.c: 93: if(i==3) PORTC = 0b00001000;
+   524  07F4  3003               	movlw	3
+   525  07F5  0678               	xorwf	main@i,w
+   526  07F6  0479               	iorwf	main@i+1,w
+   527  07F7  1D03               	btfss	3,2
+   528  07F8  2FB6               	goto	l651
+   529  07F9  3008               	movlw	8
+   530  07FA  0020               	movlb	0	; select bank0
+   531  07FB  008E               	movwf	14	;volatile
+   532                           
+   533                           ;usb_switcher.c: 98: };
+   534  07FC  2FB6               	goto	l651
+   535  07FD                     __end_of_main:	
+   536                           
+   537                           	psect	text1
+   538  074B                     __ptext1:	
+   539 ;; *************** function _Delay_ms *****************
+   540 ;; Defined at:
+   541 ;;		line 44 in file "usb_switcher.c"
+   542 ;; Parameters:    Size  Location     Type
+   543 ;;  DELAY_CNT       2    0[COMMON] unsigned int 
+   544 ;; Auto vars:     Size  Location     Type
+   545 ;;  i               2    3[COMMON] unsigned int 
+   546 ;; Return value:  Size  Location     Type
+   547 ;;                  1    wreg      void 
+   548 ;; Registers used:
+   549 ;;		wreg, status,2
+   550 ;; Tracked objects:
+   551 ;;		On entry : 0/0
+   552 ;;		On exit  : 0/0
+   553 ;;		Unchanged: 0/0
+   554 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
       +1  BANK12
-   643 ;;      Params:         2       0       0       0       0       0       0       0       0       0       0       0       
+   555 ;;      Params:         2       0       0       0       0       0       0       0       0       0       0       0       
       +0       0
-   644 ;;      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       
+   556 ;;      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       
       +0       0
-   645 ;;      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       
+   557 ;;      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       
       +0       0
-   646 ;;      Totals:         5       0       0       0       0       0       0       0       0       0       0       0       
+   558 ;;      Totals:         5       0       0       0       0       0       0       0       0       0       0       0       
       +0       0
-   647 ;;Total ram usage:        5 bytes
-   648 ;; Hardware stack levels used:    1
-   649 ;; This function calls:
-   650 ;;		Nothing
-   651 ;; This function is called by:
-   652 ;;		_main
-   653 ;; This function uses a non-reentrant model
-   654 ;;
-   655                           
-   656                           
-   657                           ;psect for function _Delay_ms
-   658  070B                     _Delay_ms:	
-   659                           
-   660                           ;usb_switcher.c: 45: for (unsigned int i = 0; i < DELAY_CNT; i++) {
-   661                           
-   662                           ;incstack = 0
-   663                           ; Regs used in _Delay_ms: [wreg+status,2]
-   664  070B  01F3               	clrf	Delay_ms@i
-   665  070C  01F4               	clrf	Delay_ms@i+1
-   666  070D                     l29:	
-   667  070D  0871               	movf	Delay_ms@DELAY_CNT+1,w
-   668  070E  0274               	subwf	Delay_ms@i+1,w
-   669  070F  1D03               	skipz
-   670  0710  2F13               	goto	u235
-   671  0711  0870               	movf	Delay_ms@DELAY_CNT,w
-   672  0712  0273               	subwf	Delay_ms@i,w
-   673  0713                     u235:	
-   674  0713  1803               	btfsc	3,0
-   675  0714  0008               	return
-   676                           
-   677                           ;usb_switcher.c: 46: _delay((unsigned long)((1)*(8000000/4000.0)));
-   678  0715  3003               	movlw	3
-   679  0716  00F2               	movwf	??_Delay_ms
-   680  0717  3098               	movlw	152
-   681  0718                     u457:	
-   682  0718  0B89               	decfsz	9,f
-   683  0719  2F18               	goto	u457
-   684  071A  0BF2               	decfsz	??_Delay_ms,f
-   685  071B  2F18               	goto	u457
-   686  071C  3001               	movlw	1
-   687  071D  07F3               	addwf	Delay_ms@i,f
-   688  071E  3000               	movlw	0
-   689  071F  3DF4               	addwfc	Delay_ms@i+1,f
-   690  0720  2F0D               	goto	l29
-   691  0721                     __end_of_Delay_ms:	
-   692  007E                     btemp	set	126	;btemp
-   693  007E                     wtemp0	set	126
+   559 ;;Total ram usage:        5 bytes
+   560 ;; Hardware stack levels used:    1
+   561 ;; This function calls:
+   562 ;;		Nothing
+   563 ;; This function is called by:
+   564 ;;		_main
+   565 ;; This function uses a non-reentrant model
+   566 ;;
+   567                           
+   568                           
+   569                           ;psect for function _Delay_ms
+   570  074B                     _Delay_ms:	
+   571                           
+   572                           ;usb_switcher.c: 45: for (unsigned int i = 0; i < DELAY_CNT; i++) {
+   573                           
+   574                           ;incstack = 0
+   575                           ; Regs used in _Delay_ms: [wreg+status,2]
+   576  074B  01F3               	clrf	Delay_ms@i
+   577  074C  01F4               	clrf	Delay_ms@i+1
+   578  074D                     l29:	
+   579  074D  0871               	movf	Delay_ms@DELAY_CNT+1,w
+   580  074E  0274               	subwf	Delay_ms@i+1,w
+   581  074F  1D03               	skipz
+   582  0750  2F53               	goto	u155
+   583  0751  0870               	movf	Delay_ms@DELAY_CNT,w
+   584  0752  0273               	subwf	Delay_ms@i,w
+   585  0753                     u155:	
+   586  0753  1803               	btfsc	3,0
+   587  0754  0008               	return
+   588                           
+   589                           ;usb_switcher.c: 46: _delay((unsigned long)((1)*(8000000/4000.0)));
+   590  0755  3003               	movlw	3
+   591  0756  00F2               	movwf	??_Delay_ms
+   592  0757  3098               	movlw	152
+   593  0758                     u297:	
+   594  0758  0B89               	decfsz	9,f
+   595  0759  2F58               	goto	u297
+   596  075A  0BF2               	decfsz	??_Delay_ms,f
+   597  075B  2F58               	goto	u297
+   598  075C  3001               	movlw	1
+   599  075D  07F3               	addwf	Delay_ms@i,f
+   600  075E  3000               	movlw	0
+   601  075F  3DF4               	addwfc	Delay_ms@i+1,f
+   602  0760  2F4D               	goto	l29
+   603  0761                     __end_of_Delay_ms:	
+   604  007E                     btemp	set	126	;btemp
+   605  007E                     wtemp0	set	126
 
 
 Data Sizes:
@@ -807,7 +719,7 @@ Call Graph Tables:
  ---------------------------------------------------------------------------------
  (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
  ---------------------------------------------------------------------------------
- (0) _main                                                 5     5      0     577
+ (0) _main                                                 5     5      0     401
                                               5 COMMON     5     5      0
                            _Delay_ms
  ---------------------------------------------------------------------------------
@@ -926,32 +838,29 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Fri Jul 12 04:20:16 2019
+Symbol Table                                                                                   Fri Jul 12 04:42:47 2019
 
-            __CFG_CP$OFF 0000                       l29 070D                      l703 078E  
-                    l707 0796                      l741 07E4                      l733 07D4  
-                    l725 07C5                      l717 07B1                      l745 07EC  
-                    l737 07DC                      l729 07CC                      l673 0754  
-                    l665 0739                      l691 0776                      l683 0766  
-                    l667 0740                      l749 07F4                      l695 077E  
-                    l687 076E                      l679 075F                      l699 0786  
-                    _RB7 006F                      u235 0713                      u255 0750  
-           __CFG_CPD$OFF 0000                      u355 07A2                      u365 07BA  
-                    u457 0718             __CFG_BORV$LO 0000                      wreg 0009  
-           __CFG_IESO$ON 0000             __CFG_LVP$OFF 0000                     _WPUB 020D  
-           __CFG_WRT$OFF 0000                     _main 0721                     btemp 007E  
-                   start 0002            __CFG_MCLRE$ON 0000                    ?_main 0070  
-          __CFG_WDTE$OFF 0000                    _PORTA 000C                    _PORTB 000D  
-                  _PORTC 000E                    _TRISA 008C                    _TRISB 008D  
-                  _TRISC 008E           __CFG_FCMEN$OFF 0000                    main@i 0078  
-                  main@t 0076           __CFG_BOREN$OFF 0000                    status 0003  
-                  wtemp0 007E        Delay_ms@DELAY_CNT 0070         __end_of_Delay_ms 0721  
-        __initialization 07FD             __end_of_main 07FD                   ??_main 0075  
-         __CFG_PLLEN$OFF 0000                   _ANSELA 018C                   _ANSELB 018D  
-                 _OSCCON 0099           __CFG_PWRTE$OFF 0000           __CFG_STVREN$ON 0000  
-__end_of__initialization 07FD           __pcstackCOMMON 0070                ?_Delay_ms 0070  
-        __CFG_VCAPEN$OFF 0000               __pmaintext 0721               ??_Delay_ms 0072  
-                __ptext1 070B     end_of_initialization 07FD                Delay_ms@i 0073  
-       __CFG_FOSC$INTOSC 0000      start_initialization 07FD        __size_of_Delay_ms 0016  
-              ___latbits 0003                 _Delay_ms 070B            __size_of_main 00DC  
-      __CFG_CLKOUTEN$OFF 0000               _OPTION_REG 0095  
+            __CFG_CP$OFF 0000                       l29 074D                      l633 0794  
+                    l625 0779                      l643 07A6                      l627 0780  
+                    l651 07B6                      l661 07D1                      l647 07AE  
+                    l639 079F                      l673 07EC                      l677 07F4  
+                    l669 07E5                      _RB7 006F                      u155 0753  
+                    u235 07C2                      u245 07DA                      u175 0790  
+           __CFG_CPD$OFF 0000                      u297 0758             __CFG_BORV$LO 0000  
+                    wreg 0009             __CFG_IESO$ON 0000             __CFG_LVP$OFF 0000  
+                   _WPUB 020D             __CFG_WRT$OFF 0000                     _main 0761  
+                   btemp 007E                     start 0002            __CFG_MCLRE$ON 0000  
+                  ?_main 0070            __CFG_WDTE$OFF 0000                    _PORTA 000C  
+                  _PORTB 000D                    _PORTC 000E                    _TRISA 008C  
+                  _TRISB 008D                    _TRISC 008E           __CFG_FCMEN$OFF 0000  
+                  main@i 0078                    main@t 0076           __CFG_BOREN$OFF 0000  
+                  status 0003                    wtemp0 007E        Delay_ms@DELAY_CNT 0070  
+       __end_of_Delay_ms 0761          __initialization 07FD             __end_of_main 07FD  
+                 ??_main 0075           __CFG_PLLEN$OFF 0000                   _ANSELA 018C  
+                 _ANSELB 018D                   _OSCCON 0099           __CFG_PWRTE$OFF 0000  
+         __CFG_STVREN$ON 0000  __end_of__initialization 07FD           __pcstackCOMMON 0070  
+              ?_Delay_ms 0070          __CFG_VCAPEN$OFF 0000               __pmaintext 0761  
+             ??_Delay_ms 0072                  __ptext1 074B     end_of_initialization 07FD  
+              Delay_ms@i 0073         __CFG_FOSC$INTOSC 0000      start_initialization 07FD  
+      __size_of_Delay_ms 0016                ___latbits 0003                 _Delay_ms 074B  
+          __size_of_main 009C        __CFG_CLKOUTEN$OFF 0000               _OPTION_REG 0095  
