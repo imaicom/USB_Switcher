@@ -28,16 +28,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTC `Vuc ~T0 @X0 0 e@14 ]
 "7826
 [v _RB7 `Vb ~T0 @X0 0 e@111 ]
-"7824
-[v _RB6 `Vb ~T0 @X0 0 e@110 ]
-"7822
-[v _RB5 `Vb ~T0 @X0 0 e@109 ]
-"7820
-[v _RB4 `Vb ~T0 @X0 0 e@108 ]
-"7818
-[v _RB3 `Vb ~T0 @X0 0 e@107 ]
-"7816
-[v _RB2 `Vb ~T0 @X0 0 e@106 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -3115,123 +3105,144 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;usb_switcher.c: 51: {
 [e :U _main ]
 [f ]
-[; ;usb_switcher.c: 52: OSCCON = 0b01110010 ;
-"52
-[e = _OSCCON -> -> 114 `i `uc ]
-[; ;usb_switcher.c: 53: OPTION_REG = 0b00000000 ;
 "53
-[e = _OPTION_REG -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 54: ANSELA = 0b00000000 ;
+[v _i `i ~T0 @X0 1 a ]
+[; ;usb_switcher.c: 53: int i = 0;
+[e = _i -> 0 `i ]
 "54
-[e = _ANSELA -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 55: ANSELB = 0b00000000 ;
+[v _j `i ~T0 @X0 1 a ]
+[; ;usb_switcher.c: 54: int j = 0;
+[e = _j -> 0 `i ]
 "55
-[e = _ANSELB -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 56: TRISA = 0b00000000 ;
+[v _t `l ~T0 @X0 1 a ]
+[; ;usb_switcher.c: 55: long t = 0;
+[e = _t -> -> 0 `i `l ]
+[; ;usb_switcher.c: 56: OSCCON = 0b01110010 ;
 "56
-[e = _TRISA -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 57: TRISB = 0b11111100 ;
+[e = _OSCCON -> -> 114 `i `uc ]
+[; ;usb_switcher.c: 57: OPTION_REG = 0b00000000 ;
 "57
-[e = _TRISB -> -> 252 `i `uc ]
-[; ;usb_switcher.c: 58: TRISC = 0b00000000 ;
+[e = _OPTION_REG -> -> 0 `i `uc ]
+[; ;usb_switcher.c: 58: ANSELA = 0b00000000 ;
 "58
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 59: WPUB = 0b11111100 ;
+[e = _ANSELA -> -> 0 `i `uc ]
+[; ;usb_switcher.c: 59: ANSELB = 0b00000000 ;
 "59
-[e = _WPUB -> -> 252 `i `uc ]
-[; ;usb_switcher.c: 61: PORTA = 0b00000000 ;
+[e = _ANSELB -> -> 0 `i `uc ]
+[; ;usb_switcher.c: 60: TRISA = 0b00000000 ;
+"60
+[e = _TRISA -> -> 0 `i `uc ]
+[; ;usb_switcher.c: 61: TRISB = 0b11111100 ;
 "61
-[e = _PORTA -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 62: PORTB = 0b00000000 ;
+[e = _TRISB -> -> 252 `i `uc ]
+[; ;usb_switcher.c: 62: TRISC = 0b00000000 ;
 "62
-[e = _PORTB -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 63: PORTC = 0b00000000 ;
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;usb_switcher.c: 63: WPUB = 0b11111100 ;
 "63
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 65: while(1) {
+[e = _WPUB -> -> 252 `i `uc ]
+[; ;usb_switcher.c: 65: PORTA = 0b00000000 ;
 "65
+[e = _PORTA -> -> 0 `i `uc ]
+[; ;usb_switcher.c: 66: PORTB = 0b00000000 ;
+"66
+[e = _PORTB -> -> 0 `i `uc ]
+[; ;usb_switcher.c: 67: PORTC = 0b00000000 ;
+"67
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;usb_switcher.c: 69: while(1) {
+"69
 [e :U 356 ]
 {
-[; ;usb_switcher.c: 66: while(!RB7) { PORTA = 0b10101010; PORTC = 0b10101010; };
-"66
+[; ;usb_switcher.c: 70: while(!RB7) {
+"70
 [e $U 358  ]
 [e :U 359 ]
 {
-[e = _PORTA -> -> 170 `i `uc ]
-[e = _PORTC -> -> 170 `i `uc ]
-}
-[e :U 358 ]
-[e $ ! _RB7 359  ]
-[e :U 360 ]
-[; ;usb_switcher.c: 67: while(!RB6) { PORTA = 0b01010101; PORTC = 0b01010101; };
-"67
+[; ;usb_switcher.c: 71: while(!RB7) {Delay_ms(10);}
+"71
 [e $U 361  ]
 [e :U 362 ]
 {
-[e = _PORTA -> -> 85 `i `uc ]
-[e = _PORTC -> -> 85 `i `uc ]
+[e ( _Delay_ms (1 -> -> 10 `i `ui ]
 }
 [e :U 361 ]
-[e $ ! _RB6 362  ]
+[e $ ! _RB7 362  ]
 [e :U 363 ]
-[; ;usb_switcher.c: 68: while(!RB5) { PORTA = 0b10011001; PORTC = 0b10011001; };
-"68
-[e $U 364  ]
-[e :U 365 ]
-{
-[e = _PORTA -> -> 153 `i `uc ]
-[e = _PORTC -> -> 153 `i `uc ]
-}
-[e :U 364 ]
-[e $ ! _RB5 365  ]
-[e :U 366 ]
-[; ;usb_switcher.c: 69: while(!RB4) { PORTA = 0b01100110; PORTC = 0b01100110; };
-"69
-[e $U 367  ]
-[e :U 368 ]
-{
-[e = _PORTA -> -> 102 `i `uc ]
-[e = _PORTC -> -> 102 `i `uc ]
-}
-[e :U 367 ]
-[e $ ! _RB4 368  ]
-[e :U 369 ]
-[; ;usb_switcher.c: 70: while(!RB3) { PORTA = 0b10010110; PORTC = 0b10010110; };
-"70
-[e $U 370  ]
-[e :U 371 ]
-{
-[e = _PORTA -> -> 150 `i `uc ]
-[e = _PORTC -> -> 150 `i `uc ]
-}
-[e :U 370 ]
-[e $ ! _RB3 371  ]
-[e :U 372 ]
-[; ;usb_switcher.c: 71: while(!RB2) { PORTA = 0b01101001; PORTC = 0b01101001; };
-"71
-[e $U 373  ]
-[e :U 374 ]
-{
-[e = _PORTA -> -> 105 `i `uc ]
-[e = _PORTC -> -> 105 `i `uc ]
-}
-[e :U 373 ]
-[e $ ! _RB2 374  ]
-[e :U 375 ]
-[; ;usb_switcher.c: 72: PORTA = 0;
+[; ;usb_switcher.c: 72: i++; if(i>7) i = 0;
 "72
-[e = _PORTA -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 73: PORTC = 0;
+[e ++ _i -> 1 `i ]
+[e $ ! > _i -> 7 `i 364  ]
+[e = _i -> 0 `i ]
+[e :U 364 ]
 "73
-[e = _PORTC -> -> 0 `i `uc ]
+}
+[e :U 358 ]
+"70
+[e $ ! _RB7 359  ]
+[e :U 360 ]
+[; ;usb_switcher.c: 73: };
+[; ;usb_switcher.c: 74: if(i==0) PORTA = 0b00000001;
 "74
+[e $ ! == _i -> 0 `i 365  ]
+[e = _PORTA -> -> 1 `i `uc ]
+[e :U 365 ]
+[; ;usb_switcher.c: 75: if(i==1) PORTA = 0b00000010;
+"75
+[e $ ! == _i -> 1 `i 366  ]
+[e = _PORTA -> -> 2 `i `uc ]
+[e :U 366 ]
+[; ;usb_switcher.c: 76: if(i==2) PORTA = 0b00000100;
+"76
+[e $ ! == _i -> 2 `i 367  ]
+[e = _PORTA -> -> 4 `i `uc ]
+[e :U 367 ]
+[; ;usb_switcher.c: 77: if(i==3) PORTA = 0b00001000;
+"77
+[e $ ! == _i -> 3 `i 368  ]
+[e = _PORTA -> -> 8 `i `uc ]
+[e :U 368 ]
+[; ;usb_switcher.c: 78: if(i==4) PORTA = 0b00010000;
+"78
+[e $ ! == _i -> 4 `i 369  ]
+[e = _PORTA -> -> 16 `i `uc ]
+[e :U 369 ]
+[; ;usb_switcher.c: 79: if(i==5) PORTA = 0b00100000;
+"79
+[e $ ! == _i -> 5 `i 370  ]
+[e = _PORTA -> -> 32 `i `uc ]
+[e :U 370 ]
+[; ;usb_switcher.c: 80: if(i==6) PORTA = 0b01000000;
+"80
+[e $ ! == _i -> 6 `i 371  ]
+[e = _PORTA -> -> 64 `i `uc ]
+[e :U 371 ]
+[; ;usb_switcher.c: 81: if(i==7) PORTA = 0b10000000;
+"81
+[e $ ! == _i -> 7 `i 372  ]
+[e = _PORTA -> -> 128 `i `uc ]
+[e :U 372 ]
+[; ;usb_switcher.c: 82: if(i==j) t = 0;
+"82
+[e $ ! == _i _j 373  ]
+[e = _t -> -> 0 `i `l ]
+[e :U 373 ]
+[; ;usb_switcher.c: 83: if(i!=j) {Delay_ms(10); t++;};
+"83
+[e $ ! != _i _j 374  ]
+{
+[e ( _Delay_ms (1 -> -> 10 `i `ui ]
+[e ++ _t -> -> 1 `i `l ]
+}
+[e :U 374 ]
+"84
 }
 [e :U 355 ]
-"65
+"69
 [e $U 356  ]
 [e :U 357 ]
-[; ;usb_switcher.c: 74: }
-[; ;usb_switcher.c: 75: }
-"75
+[; ;usb_switcher.c: 84: }
+[; ;usb_switcher.c: 85: }
+"85
 [e :UE 354 ]
 }

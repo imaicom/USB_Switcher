@@ -11,7 +11,9 @@
 [v _eecpymem eecpymem `(v  1 e 1 0 ]
 "39
 [v _memcpyee memcpyee `(v  1 e 1 0 ]
-"50 /Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+"44 /Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+[v _Delay_ms Delay_ms `(v  1 s 1 Delay_ms ]
+"50
 [v _main main `(v  1 e 1 0 ]
 "427 /Applications/microchip/xc8/v1.45/include/pic16f1938.h
 [v _PORTA PORTA `VEuc  1 e 1 @12 ]
@@ -35,20 +37,25 @@
 [v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
 "3700
 [v _WPUB WPUB `VEuc  1 e 1 @525 ]
-"7816
-[v _RB2 RB2 `VEb  1 e 0 @106 ]
-"7818
-[v _RB3 RB3 `VEb  1 e 0 @107 ]
-"7820
-[v _RB4 RB4 `VEb  1 e 0 @108 ]
-"7822
-[v _RB5 RB5 `VEb  1 e 0 @109 ]
-"7824
-[v _RB6 RB6 `VEb  1 e 0 @110 ]
 "7826
 [v _RB7 RB7 `VEb  1 e 0 @111 ]
 "50 /Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
 [v _main main `(v  1 e 1 0 ]
 {
-"75
+"55
+[v main@t t `l  1 a 4 6 ]
+"53
+[v main@i i `i  1 a 2 12 ]
+"54
+[v main@j j `i  1 a 2 10 ]
+"85
+} 0
+"44
+[v _Delay_ms Delay_ms `(v  1 s 1 Delay_ms ]
+{
+"45
+[v Delay_ms@i i `ui  1 a 2 3 ]
+"44
+[v Delay_ms@DELAY_CNT DELAY_CNT `ui  1 p 2 0 ]
+"48
 } 0
