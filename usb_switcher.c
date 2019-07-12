@@ -61,9 +61,9 @@ void main(void)
     TRISC      = 0b00000000 ; // All pins (RC) are assigned to outputs
     WPUB       = 0b10000000 ; // RB7 designates an internal pull-up resistor
      
-    PORTA      = 0b00000000 ; // Initialization of RA output pin (all set to LOW)
-    PORTB      = 0b00000000 ; // Initialization of RB output pin (all set to LOW)
-    PORTC      = 0b00000000 ; // Initialization of RC output pin (all set to LOW)
+    PORTA      = 0b00000001 ;
+    PORTB      = 0b00000000 ;
+    PORTC      = 0b00000001 ;
 
      while(1) {
          

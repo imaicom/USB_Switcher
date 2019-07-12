@@ -3137,15 +3137,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;usb_switcher.c: 62: WPUB = 0b10000000 ;
 "62
 [e = _WPUB -> -> 128 `i `uc ]
-[; ;usb_switcher.c: 64: PORTA = 0b00000000 ;
+[; ;usb_switcher.c: 64: PORTA = 0b00000001 ;
 "64
-[e = _PORTA -> -> 0 `i `uc ]
+[e = _PORTA -> -> 1 `i `uc ]
 [; ;usb_switcher.c: 65: PORTB = 0b00000000 ;
 "65
 [e = _PORTB -> -> 0 `i `uc ]
-[; ;usb_switcher.c: 66: PORTC = 0b00000000 ;
+[; ;usb_switcher.c: 66: PORTC = 0b00000001 ;
 "66
-[e = _PORTC -> -> 0 `i `uc ]
+[e = _PORTC -> -> 1 `i `uc ]
 [; ;usb_switcher.c: 68: while(1) {
 "68
 [e :U 356 ]
