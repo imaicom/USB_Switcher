@@ -61,9 +61,9 @@ void main(void)
     TRISC      = 0b00000000 ; // All pins (RC) are assigned to outputs
     WPUB       = 0b10000000 ; // RB7 designates an internal pull-up resistor
      
-    PORTA      = 0b00000001 ;
+    PORTA      = 0b00000001 ; // LED (It is good without it. However, only if the relay has a light)
     PORTB      = 0b00000000 ;
-    PORTC      = 0b00000001 ;
+    PORTC      = 0b00000001 ; // RELAY
 
      while(1) {
          
