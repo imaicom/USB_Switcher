@@ -37,8 +37,6 @@
 [v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
 "3700
 [v _WPUB WPUB `VEuc  1 e 1 @525 ]
-"7824
-[v _RB6 RB6 `VEb  1 e 0 @110 ]
 "7826
 [v _RB7 RB7 `VEb  1 e 0 @111 ]
 "50 /Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c

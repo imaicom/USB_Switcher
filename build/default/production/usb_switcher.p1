@@ -28,8 +28,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTC `Vuc ~T0 @X0 0 e@14 ]
 "7826
 [v _RB7 `Vb ~T0 @X0 0 e@111 ]
-"7824
-[v _RB6 `Vb ~T0 @X0 0 e@110 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -3165,12 +3163,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 361 ]
 [e $ ! _RB7 362  ]
 [e :U 363 ]
-[; ;usb_switcher.c: 73: RB6=1;Delay_ms(5);RB6=0;Delay_ms(5);
-"73
-[e = _RB6 -> -> 1 `i `b ]
-[e ( _Delay_ms (1 -> -> 5 `i `ui ]
-[e = _RB6 -> -> 0 `i `b ]
-[e ( _Delay_ms (1 -> -> 5 `i `ui ]
 [; ;usb_switcher.c: 74: i++; if(i>=4) i = 0;
 "74
 [e ++ _i -> 1 `i ]
