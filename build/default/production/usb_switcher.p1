@@ -28,6 +28,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTC `Vuc ~T0 @X0 0 e@14 ]
 "7826
 [v _RB7 `Vb ~T0 @X0 0 e@111 ]
+"7824
+[v _RB6 `Vb ~T0 @X0 0 e@110 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -3163,44 +3165,50 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 361 ]
 [e $ ! _RB7 362  ]
 [e :U 363 ]
-[; ;usb_switcher.c: 72: i++; if(i>=4) i = 0;
-"72
+[; ;usb_switcher.c: 73: RB6=1;Delay_ms(5);RB6=0;Delay_ms(5);
+"73
+[e = _RB6 -> -> 1 `i `b ]
+[e ( _Delay_ms (1 -> -> 5 `i `ui ]
+[e = _RB6 -> -> 0 `i `b ]
+[e ( _Delay_ms (1 -> -> 5 `i `ui ]
+[; ;usb_switcher.c: 74: i++; if(i>=4) i = 0;
+"74
 [e ++ _i -> 1 `i ]
 [e $ ! >= _i -> 4 `i 364  ]
 [e = _i -> 0 `i ]
 [e :U 364 ]
-[; ;usb_switcher.c: 74: t = 1;
-"74
-[e = _t -> 1 `i ]
-[; ;usb_switcher.c: 76: if(i==0) PORTA = 0b00000001;
+[; ;usb_switcher.c: 76: t = 1;
 "76
+[e = _t -> 1 `i ]
+[; ;usb_switcher.c: 78: if(i==0) PORTA = 0b00000001;
+"78
 [e $ ! == _i -> 0 `i 365  ]
 [e = _PORTA -> -> 1 `i `uc ]
 [e :U 365 ]
-[; ;usb_switcher.c: 77: if(i==1) PORTA = 0b00000010;
-"77
+[; ;usb_switcher.c: 79: if(i==1) PORTA = 0b00000010;
+"79
 [e $ ! == _i -> 1 `i 366  ]
 [e = _PORTA -> -> 2 `i `uc ]
 [e :U 366 ]
-[; ;usb_switcher.c: 78: if(i==2) PORTA = 0b00000100;
-"78
+[; ;usb_switcher.c: 80: if(i==2) PORTA = 0b00000100;
+"80
 [e $ ! == _i -> 2 `i 367  ]
 [e = _PORTA -> -> 4 `i `uc ]
 [e :U 367 ]
-[; ;usb_switcher.c: 79: if(i==3) PORTA = 0b00001000;
-"79
+[; ;usb_switcher.c: 81: if(i==3) PORTA = 0b00001000;
+"81
 [e $ ! == _i -> 3 `i 368  ]
 [e = _PORTA -> -> 8 `i `uc ]
 [e :U 368 ]
-"84
+"86
 }
 [e :U 358 ]
 "70
 [e $ ! _RB7 359  ]
 [e :U 360 ]
-[; ;usb_switcher.c: 84: };
-[; ;usb_switcher.c: 86: if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
-"86
+[; ;usb_switcher.c: 86: };
+[; ;usb_switcher.c: 88: if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
+"88
 [e $ ! >= _t -> 1 `i 369  ]
 {
 [e ( _Delay_ms (1 -> -> 10 `i `ui ]
@@ -3208,45 +3216,45 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _PORTC -> -> 0 `i `uc ]
 }
 [e :U 369 ]
-[; ;usb_switcher.c: 88: if(t>=100) {
-"88
+[; ;usb_switcher.c: 90: if(t>=100) {
+"90
 [e $ ! >= _t -> 100 `i 370  ]
 {
-[; ;usb_switcher.c: 89: t = 0;
-"89
+[; ;usb_switcher.c: 91: t = 0;
+"91
 [e = _t -> 0 `i ]
-[; ;usb_switcher.c: 90: if(i==0) PORTC = 0b00000001;
-"90
+[; ;usb_switcher.c: 92: if(i==0) PORTC = 0b00000001;
+"92
 [e $ ! == _i -> 0 `i 371  ]
 [e = _PORTC -> -> 1 `i `uc ]
 [e :U 371 ]
-[; ;usb_switcher.c: 91: if(i==1) PORTC = 0b00000010;
-"91
+[; ;usb_switcher.c: 93: if(i==1) PORTC = 0b00000010;
+"93
 [e $ ! == _i -> 1 `i 372  ]
 [e = _PORTC -> -> 2 `i `uc ]
 [e :U 372 ]
-[; ;usb_switcher.c: 92: if(i==2) PORTC = 0b00000100;
-"92
+[; ;usb_switcher.c: 94: if(i==2) PORTC = 0b00000100;
+"94
 [e $ ! == _i -> 2 `i 373  ]
 [e = _PORTC -> -> 4 `i `uc ]
 [e :U 373 ]
-[; ;usb_switcher.c: 93: if(i==3) PORTC = 0b00001000;
-"93
+[; ;usb_switcher.c: 95: if(i==3) PORTC = 0b00001000;
+"95
 [e $ ! == _i -> 3 `i 374  ]
 [e = _PORTC -> -> 8 `i `uc ]
 [e :U 374 ]
-"98
+"100
 }
 [e :U 370 ]
-[; ;usb_switcher.c: 98: };
-"100
+[; ;usb_switcher.c: 100: };
+"102
 }
 [e :U 355 ]
 "68
 [e $U 356  ]
 [e :U 357 ]
-[; ;usb_switcher.c: 100: };
-[; ;usb_switcher.c: 102: }
-"102
+[; ;usb_switcher.c: 102: };
+[; ;usb_switcher.c: 104: }
+"104
 [e :UE 354 ]
 }

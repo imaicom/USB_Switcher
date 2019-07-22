@@ -37,6 +37,8 @@
 [v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
 "3700
 [v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"7824
+[v _RB6 RB6 `VEb  1 e 0 @110 ]
 "7826
 [v _RB7 RB7 `VEb  1 e 0 @111 ]
 "50 /Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
@@ -46,7 +48,7 @@
 [v main@i i `i  1 a 2 8 ]
 "54
 [v main@t t `i  1 a 2 6 ]
-"102
+"104
 } 0
 "44
 [v _Delay_ms Delay_ms `(v  1 s 1 Delay_ms ]

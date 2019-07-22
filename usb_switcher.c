@@ -69,6 +69,8 @@ void main(void)
          
         while(!RB7) { 
             while(!RB7) Delay_ms(10);
+//            Delay_ms(5); RB6 = 1;Delay_ms(5); RB6 = 0;
+            RB6=1;Delay_ms(5);RB6=0;Delay_ms(5);
             i++; if(i>=4) i = 0;
 //            i++; if(i>=7) i = 0;
             t = 1;
