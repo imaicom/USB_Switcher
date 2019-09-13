@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Mon Jul 22 11:55:41 2019
+                                                                                               Fri Sep 13 14:08:49 2019
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	16F1938
@@ -285,7 +285,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    271 ;;
    272 ;; *************** function _main *****************
    273 ;; Defined at:
-   274 ;;		line 50 in file "usb_switcher.c"
+   274 ;;		line 65 in file "usb_switcher.c"
    275 ;; Parameters:    Size  Location     Type
    276 ;;		None
    277 ;; Auto vars:     Size  Location     Type
@@ -322,65 +322,65 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    303                           ;psect for function _main
    304  075F                     _main:	
    305                           
-   306                           ;usb_switcher.c: 53: int i = 0;
+   306                           ;usb_switcher.c: 68: int i = 0;
    307                           
    308                           ;incstack = 0
    309                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
    310  075F  01F8               	clrf	main@i
    311  0760  01F9               	clrf	main@i+1
    312                           
-   313                           ;usb_switcher.c: 54: int t = 0;
+   313                           ;usb_switcher.c: 69: int t = 0;
    314  0761  01F6               	clrf	main@t
    315  0762  01F7               	clrf	main@t+1
    316                           
-   317                           ;usb_switcher.c: 55: OSCCON = 0b01110010 ;
+   317                           ;usb_switcher.c: 70: OSCCON = 0b01110010 ;
    318  0763  3072               	movlw	114
    319  0764  0021               	movlb	1	; select bank1
    320  0765  0099               	movwf	25	;volatile
    321                           
-   322                           ;usb_switcher.c: 56: OPTION_REG = 0b00000000 ;
+   322                           ;usb_switcher.c: 71: OPTION_REG = 0b00000000 ;
    323  0766  0195               	clrf	21	;volatile
    324                           
-   325                           ;usb_switcher.c: 57: ANSELA = 0b00000000 ;
+   325                           ;usb_switcher.c: 72: ANSELA = 0b00000000 ;
    326  0767  0023               	movlb	3	; select bank3
    327  0768  018C               	clrf	12	;volatile
    328                           
-   329                           ;usb_switcher.c: 58: ANSELB = 0b00000000 ;
+   329                           ;usb_switcher.c: 73: ANSELB = 0b00000000 ;
    330  0769  018D               	clrf	13	;volatile
    331                           
-   332                           ;usb_switcher.c: 59: TRISA = 0b00000000 ;
+   332                           ;usb_switcher.c: 74: TRISA = 0b00000000 ;
    333  076A  0021               	movlb	1	; select bank1
    334  076B  018C               	clrf	12	;volatile
    335                           
-   336                           ;usb_switcher.c: 60: TRISB = 0b10000000 ;
+   336                           ;usb_switcher.c: 75: TRISB = 0b10000000 ;
    337  076C  3080               	movlw	128
    338  076D  008D               	movwf	13	;volatile
    339                           
-   340                           ;usb_switcher.c: 61: TRISC = 0b00000000 ;
+   340                           ;usb_switcher.c: 76: TRISC = 0b00000000 ;
    341  076E  018E               	clrf	14	;volatile
    342                           
-   343                           ;usb_switcher.c: 62: WPUB = 0b10000000 ;
+   343                           ;usb_switcher.c: 77: WPUB = 0b10000000 ;
    344  076F  3080               	movlw	128
    345  0770  0024               	movlb	4	; select bank4
    346  0771  008D               	movwf	13	;volatile
    347                           
-   348                           ;usb_switcher.c: 64: PORTA = 0b00000001 ;
+   348                           ;usb_switcher.c: 79: PORTA = 0b00000001 ;
    349  0772  3001               	movlw	1
    350  0773  0020               	movlb	0	; select bank0
    351  0774  008C               	movwf	12	;volatile
    352                           
-   353                           ;usb_switcher.c: 65: PORTB = 0b00000000 ;
+   353                           ;usb_switcher.c: 80: PORTB = 0b00000000 ;
    354  0775  018D               	clrf	13	;volatile
    355                           
-   356                           ;usb_switcher.c: 66: PORTC = 0b00000001 ;
+   356                           ;usb_switcher.c: 81: PORTC = 0b00000001 ;
    357  0776  3001               	movlw	1
    358  0777  2FFB               	goto	L1
    359  0778                     l623:	
-   360                           ;usb_switcher.c: 71: while(!RB7) Delay_ms(10);
+   360                           ;usb_switcher.c: 86: while(!RB7) Delay_ms(10);
    361                           
-   362                           ;usb_switcher.c: 70: while(!RB7) {
+   362                           ;usb_switcher.c: 85: while(!RB7) {
    363                           
-   364                           ;usb_switcher.c: 68: while(1) {
+   364                           ;usb_switcher.c: 83: while(1) {
    365                           
    366  0778  0020               	movlb	0	; select bank0
    367  0779  1B8D               	btfsc	13,7	;volatile
@@ -393,7 +393,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    374  0782  2F78               	goto	l623
    375  0783                     l625:	
    376                           
-   377                           ;usb_switcher.c: 74: i++; if(i>=4) i = 0;
+   377                           ;usb_switcher.c: 89: i++; if(i>=4) i = 0;
    378  0783  3001               	movlw	1
    379  0784  07F8               	addwf	main@i,f
    380  0785  3000               	movlw	0
@@ -414,13 +414,13 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    395  0793  01F9               	clrf	main@i+1
    396  0794                     l629:	
    397                           
-   398                           ;usb_switcher.c: 76: t = 1;
+   398                           ;usb_switcher.c: 91: t = 1;
    399  0794  3001               	movlw	1
    400  0795  00F6               	movwf	main@t
    401  0796  3000               	movlw	0
    402  0797  00F7               	movwf	main@t+1
    403                           
-   404                           ;usb_switcher.c: 78: if(i==0) PORTA = 0b00000001;
+   404                           ;usb_switcher.c: 93: if(i==0) PORTA = 0b00000001;
    405  0798  0878               	movf	main@i,w
    406  0799  0479               	iorwf	main@i+1,w
    407  079A  1D03               	btfss	3,2
@@ -430,7 +430,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    411  079E  008C               	movwf	12	;volatile
    412  079F                     l635:	
    413                           
-   414                           ;usb_switcher.c: 79: if(i==1) PORTA = 0b00000010;
+   414                           ;usb_switcher.c: 94: if(i==1) PORTA = 0b00000010;
    415  079F  0378               	decf	main@i,w
    416  07A0  0479               	iorwf	main@i+1,w
    417  07A1  1D03               	btfss	3,2
@@ -440,7 +440,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    421  07A5  008C               	movwf	12	;volatile
    422  07A6                     l639:	
    423                           
-   424                           ;usb_switcher.c: 80: if(i==2) PORTA = 0b00000100;
+   424                           ;usb_switcher.c: 95: if(i==2) PORTA = 0b00000100;
    425  07A6  3002               	movlw	2
    426  07A7  0678               	xorwf	main@i,w
    427  07A8  0479               	iorwf	main@i+1,w
@@ -451,7 +451,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    432  07AD  008C               	movwf	12	;volatile
    433  07AE                     l643:	
    434                           
-   435                           ;usb_switcher.c: 81: if(i==3) PORTA = 0b00001000;
+   435                           ;usb_switcher.c: 96: if(i==3) PORTA = 0b00001000;
    436  07AE  3003               	movlw	3
    437  07AF  0678               	xorwf	main@i,w
    438  07B0  0479               	iorwf	main@i+1,w
@@ -465,8 +465,8 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    446  07B7  1F8D               	btfss	13,7	;volatile
    447  07B8  2F78               	goto	l623
    448                           
-   449                           ;usb_switcher.c: 86: };
-   450                           ;usb_switcher.c: 88: if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
+   449                           ;usb_switcher.c: 101: };
+   450                           ;usb_switcher.c: 103: if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
    451  07B9  0877               	movf	main@t+1,w
    452  07BA  3A80               	xorlw	128
    453  07BB  00F5               	movwf	??_main
@@ -492,7 +492,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    473  07D0  018E               	clrf	14	;volatile
    474  07D1                     l657:	
    475                           
-   476                           ;usb_switcher.c: 90: if(t>=100) {
+   476                           ;usb_switcher.c: 105: if(t>=100) {
    477  07D1  0877               	movf	main@t+1,w
    478  07D2  3A80               	xorlw	128
    479  07D3  00F5               	movwf	??_main
@@ -506,11 +506,11 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    487  07DA  1C03               	skipc
    488  07DB  2FB6               	goto	l647
    489                           
-   490                           ;usb_switcher.c: 91: t = 0;
+   490                           ;usb_switcher.c: 106: t = 0;
    491  07DC  01F6               	clrf	main@t
    492  07DD  01F7               	clrf	main@t+1
    493                           
-   494                           ;usb_switcher.c: 92: if(i==0) PORTC = 0b00000001;
+   494                           ;usb_switcher.c: 107: if(i==0) PORTC = 0b00000001;
    495  07DE  0878               	movf	main@i,w
    496  07DF  0479               	iorwf	main@i+1,w
    497  07E0  1D03               	btfss	3,2
@@ -520,7 +520,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    501  07E4  008E               	movwf	14	;volatile
    502  07E5                     l665:	
    503                           
-   504                           ;usb_switcher.c: 93: if(i==1) PORTC = 0b00000010;
+   504                           ;usb_switcher.c: 108: if(i==1) PORTC = 0b00000010;
    505  07E5  0378               	decf	main@i,w
    506  07E6  0479               	iorwf	main@i+1,w
    507  07E7  1D03               	btfss	3,2
@@ -530,7 +530,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    511  07EB  008E               	movwf	14	;volatile
    512  07EC                     l669:	
    513                           
-   514                           ;usb_switcher.c: 94: if(i==2) PORTC = 0b00000100;
+   514                           ;usb_switcher.c: 109: if(i==2) PORTC = 0b00000100;
    515  07EC  3002               	movlw	2
    516  07ED  0678               	xorwf	main@i,w
    517  07EE  0479               	iorwf	main@i+1,w
@@ -541,7 +541,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    522  07F3  008E               	movwf	14	;volatile
    523  07F4                     l673:	
    524                           
-   525                           ;usb_switcher.c: 95: if(i==3) PORTC = 0b00001000;
+   525                           ;usb_switcher.c: 110: if(i==3) PORTC = 0b00001000;
    526  07F4  3003               	movlw	3
    527  07F5  0678               	xorwf	main@i,w
    528  07F6  0479               	iorwf	main@i+1,w
@@ -552,7 +552,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    533  07FB                     L1:	
    534  07FB  008E               	movwf	14	;volatile
    535                           
-   536                           ;usb_switcher.c: 100: };
+   536                           ;usb_switcher.c: 115: };
    537  07FC  2FB6               	goto	l647
    538  07FD                     __end_of_main:	
    539                           
@@ -560,7 +560,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    541  0749                     __ptext1:	
    542 ;; *************** function _Delay_ms *****************
    543 ;; Defined at:
-   544 ;;		line 44 in file "usb_switcher.c"
+   544 ;;		line 59 in file "usb_switcher.c"
    545 ;; Parameters:    Size  Location     Type
    546 ;;  DELAY_CNT       2    0[COMMON] unsigned int 
    547 ;; Auto vars:     Size  Location     Type
@@ -596,7 +596,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    572                           ;psect for function _Delay_ms
    573  0749                     _Delay_ms:	
    574                           
-   575                           ;usb_switcher.c: 45: for (unsigned int i = 0; i < DELAY_CNT; i++) {
+   575                           ;usb_switcher.c: 60: for (unsigned int i = 0; i < DELAY_CNT; i++) {
    576                           
    577                           ;incstack = 0
    578                           ; Regs used in _Delay_ms: [wreg+status,2]
@@ -613,7 +613,7 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
    589  0751  1803               	btfsc	3,0
    590  0752  0008               	return
    591                           
-   592                           ;usb_switcher.c: 46: _delay((unsigned long)((1)*(8000000/4000.0)));
+   592                           ;usb_switcher.c: 61: _delay((unsigned long)((1)*(8000000/4000.0)));
    593  0753  3003               	movlw	3
    594  0754  00F2               	movwf	??_Delay_ms
    595  0755  3098               	movlw	152
@@ -841,7 +841,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Mon Jul 22 11:55:41 2019
+Symbol Table                                                                                   Fri Sep 13 14:08:49 2019
 
             __CFG_CP$OFF 0000                       l29 074B                      l623 0778  
                     l625 0783                      l643 07AE                      l635 079F  

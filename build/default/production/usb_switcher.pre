@@ -4172,7 +4172,7 @@ extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
 
-# 22 "usb_switcher.c"
+# 37 "usb_switcher.c"
 #pragma config FOSC = INTOSC
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
