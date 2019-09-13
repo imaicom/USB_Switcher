@@ -11,14 +11,14 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcV5YvuJb.obj
+$/tmp/xcB8VuZ3c.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 2 2
 $dist/default/production/USB_Switcher.production.obj
 cinit CODE 0 7FD 7FD 3 2
-text1 CODE 0 749 749 16 2
-maintext CODE 0 75F 75F 9E 2
+text1 CODE 0 70A 70A 16 2
+maintext CODE 0 720 720 DD 2
 cstackCOMMON COMMON 1 70 70 A 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -49,9 +49,9 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 4-748 2
+CONST 4-709 2
 CONST 800-3FFF 2
-ENTRY 4-748 2
+ENTRY 4-709 2
 ENTRY 800-3FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
@@ -77,7 +77,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2000-23EF 1
-CODE 4-748 2
+CODE 4-709 2
 CODE 800-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -95,9 +95,9 @@ BANK12 620-64F 1
 BIGRAM 2000-23EF 1
 COMMON 7A-7D 1
 EEDATA F000-F0FF 2
-STRCODE 4-748 2
+STRCODE 4-709 2
 STRCODE 800-3FFF 2
-STRING 4-748 2
+STRING 4-709 2
 STRING 800-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -113,44 +113,52 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/USB_Switcher.production.obj
-7FD cinit CODE >424:/tmp/xcIexL9M5
-7FD cinit CODE >427:/tmp/xcIexL9M5
-7FD cinit CODE >433:/tmp/xcIexL9M5
-7FD cinit CODE >435:/tmp/xcIexL9M5
-7FE cinit CODE >436:/tmp/xcIexL9M5
-749 text1 CODE >59:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-749 text1 CODE >60:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-753 text1 CODE >61:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-75A text1 CODE >60:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-75F maintext CODE >65:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-75F maintext CODE >68:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-761 maintext CODE >69:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-763 maintext CODE >70:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-766 maintext CODE >71:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-767 maintext CODE >72:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-769 maintext CODE >73:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-76A maintext CODE >74:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-76C maintext CODE >75:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-76E maintext CODE >76:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-76F maintext CODE >77:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-772 maintext CODE >79:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-775 maintext CODE >80:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-776 maintext CODE >81:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-778 maintext CODE >86:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-783 maintext CODE >89:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-794 maintext CODE >91:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-798 maintext CODE >93:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-79F maintext CODE >94:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7A6 maintext CODE >95:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7AE maintext CODE >96:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7B6 maintext CODE >85:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7B9 maintext CODE >103:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7D1 maintext CODE >105:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7DC maintext CODE >106:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7DE maintext CODE >107:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7E5 maintext CODE >108:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7EC maintext CODE >109:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
-7F4 maintext CODE >110:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7FD cinit CODE >424:/tmp/xcRsy7mbx
+7FD cinit CODE >427:/tmp/xcRsy7mbx
+7FD cinit CODE >433:/tmp/xcRsy7mbx
+7FD cinit CODE >435:/tmp/xcRsy7mbx
+7FE cinit CODE >436:/tmp/xcRsy7mbx
+70A text1 CODE >59:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+70A text1 CODE >60:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+714 text1 CODE >61:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+71B text1 CODE >60:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+720 maintext CODE >65:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+720 maintext CODE >68:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+722 maintext CODE >69:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+724 maintext CODE >70:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+727 maintext CODE >71:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+728 maintext CODE >72:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+72A maintext CODE >73:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+72B maintext CODE >74:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+72D maintext CODE >75:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+72F maintext CODE >76:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+730 maintext CODE >77:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+733 maintext CODE >79:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+736 maintext CODE >80:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+737 maintext CODE >81:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+739 maintext CODE >86:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+744 maintext CODE >90:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+754 maintext CODE >91:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+758 maintext CODE >93:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+75F maintext CODE >94:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+766 maintext CODE >95:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+76E maintext CODE >96:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+776 maintext CODE >97:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+77E maintext CODE >98:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+786 maintext CODE >99:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+78E maintext CODE >100:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+796 maintext CODE >85:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+799 maintext CODE >103:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7B1 maintext CODE >105:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7BC maintext CODE >106:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7BE maintext CODE >107:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7C5 maintext CODE >108:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7CC maintext CODE >109:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7D4 maintext CODE >110:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7DC maintext CODE >111:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7E4 maintext CODE >112:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7EC maintext CODE >113:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
+7F4 maintext CODE >114:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
 7FC maintext CODE >83:/Users/meka/MPLABXProjects/USB_Switcher/usb_switcher.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
@@ -175,19 +183,19 @@ main@i 78 0 COMMON 1 cstackCOMMON dist/default/production/USB_Switcher.productio
 main@t 76 0 COMMON 1 cstackCOMMON dist/default/production/USB_Switcher.production.obj
 __Hstrings 0 0 ABS 0 strings -
 _WPUB 20D 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
-___sp 0 0 STACK 2 stack /tmp/xcV5YvuJb.obj
-_main EBE 0 CODE 0 maintext dist/default/production/USB_Switcher.production.obj
+___sp 0 0 STACK 2 stack /tmp/xcB8VuZ3c.obj
+_main E40 0 CODE 0 maintext dist/default/production/USB_Switcher.production.obj
 btemp 7E 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
-start 4 0 CODE 0 init /tmp/xcV5YvuJb.obj
+start 4 0 CODE 0 init /tmp/xcB8VuZ3c.obj
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab /tmp/xcV5YvuJb.obj
-intlevel1 0 0 ENTRY 0 functab /tmp/xcV5YvuJb.obj
-intlevel2 0 0 ENTRY 0 functab /tmp/xcV5YvuJb.obj
-intlevel3 0 0 ENTRY 0 functab /tmp/xcV5YvuJb.obj
-intlevel4 0 0 ENTRY 0 functab /tmp/xcV5YvuJb.obj
-intlevel5 0 0 ENTRY 0 functab /tmp/xcV5YvuJb.obj
+intlevel0 0 0 ENTRY 0 functab /tmp/xcB8VuZ3c.obj
+intlevel1 0 0 ENTRY 0 functab /tmp/xcB8VuZ3c.obj
+intlevel2 0 0 ENTRY 0 functab /tmp/xcB8VuZ3c.obj
+intlevel3 0 0 ENTRY 0 functab /tmp/xcB8VuZ3c.obj
+intlevel4 0 0 ENTRY 0 functab /tmp/xcB8VuZ3c.obj
+intlevel5 0 0 ENTRY 0 functab /tmp/xcB8VuZ3c.obj
 wtemp0 7E 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -197,12 +205,12 @@ _ANSELB 18D 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 Delay_ms@i 73 0 COMMON 1 cstackCOMMON dist/default/production/USB_Switcher.production.obj
 __Lmaintext 0 0 ABS 0 maintext -
 _OPTION_REG 95 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
-_Delay_ms E92 0 CODE 0 text1 dist/default/production/USB_Switcher.production.obj
+_Delay_ms E14 0 CODE 0 text1 dist/default/production/USB_Switcher.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 start_initialization FFA 0 CODE 0 cinit dist/default/production/USB_Switcher.production.obj
 _OSCCON 99 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
-__end_of_Delay_ms EBE 0 CODE 0 text1 dist/default/production/USB_Switcher.production.obj
-___int_sp 0 0 STACK 2 stack /tmp/xcV5YvuJb.obj
+__end_of_Delay_ms E40 0 CODE 0 text1 dist/default/production/USB_Switcher.production.obj
+___int_sp 0 0 STACK 2 stack /tmp/xcB8VuZ3c.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -335,7 +343,7 @@ __S1 7A 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec /tmp/xcV5YvuJb.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcB8VuZ3c.obj
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -
@@ -358,7 +366,7 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext EBE 0 CODE 0 maintext dist/default/production/USB_Switcher.production.obj
+__pmaintext E40 0 CODE 0 maintext dist/default/production/USB_Switcher.production.obj
 __Lbigram 0 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __Lcommon 0 0 ABS 0 common -
@@ -367,8 +375,8 @@ __CFG_CP$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __CFG_IESO$ON 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __CFG_VCAPEN$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
-stackhi 23EF 0 ABS 0 - /tmp/xcV5YvuJb.obj
-stacklo 2000 0 ABS 0 - /tmp/xcV5YvuJb.obj
+stackhi 23EF 0 ABS 0 - /tmp/xcB8VuZ3c.obj
+stacklo 2000 0 ABS 0 - /tmp/xcB8VuZ3c.obj
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
@@ -381,7 +389,7 @@ __Hintentry 4 0 CODE 0 intentry -
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 E92 0 CODE 0 text1 dist/default/production/USB_Switcher.production.obj
+__ptext1 E14 0 CODE 0 text1 dist/default/production/USB_Switcher.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -432,8 +440,8 @@ __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production/USB_Switcher.production.obj
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7FD FFA 3 2
-text1 0 749 E92 16 2
-maintext 0 75F EBE 9E 2
+text1 0 70A E14 16 2
+maintext 0 720 E40 DD 2
 cstackCOMMON 1 70 70 A 1
 reset_vec 0 0 0 4 2
 config 0 8007 1000E 2 2

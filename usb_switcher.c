@@ -86,18 +86,18 @@ void main(void)
             while(!RB7) Delay_ms(10);
 //            Delay_ms(5); RB6 = 1;Delay_ms(5); RB6 = 0;
 //            RB6=1;Delay_ms(5);RB6=0;Delay_ms(5);
-            i++; if(i>=4) i = 0;
-//            i++; if(i>=7) i = 0;
+//            i++; if(i>=4) i = 0;
+            i++; if(i>=8) i = 0;
             t = 1;
             
             if(i==0) PORTA = 0b00000001;
             if(i==1) PORTA = 0b00000010;
             if(i==2) PORTA = 0b00000100;
             if(i==3) PORTA = 0b00001000;
-//            if(i==4) PORTA = 0b00010000;
-//            if(i==5) PORTA = 0b00100000;
-//            if(i==6) PORTA = 0b01000000;
-//            if(i==7) PORTA = 0b10000000;
+            if(i==4) PORTA = 0b00010000;
+            if(i==5) PORTA = 0b00100000;
+            if(i==6) PORTA = 0b01000000;
+            if(i==7) PORTA = 0b10000000;
         }; // while(!RB7)    
         
         if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
@@ -108,10 +108,10 @@ void main(void)
             if(i==1) PORTC = 0b00000010;
             if(i==2) PORTC = 0b00000100;
             if(i==3) PORTC = 0b00001000;
-//            if(i==4) PORTC = 0b00010000;
-//            if(i==5) PORTC = 0b00100000;
-//            if(i==6) PORTC = 0b01000000;
-//            if(i==7) PORTC = 0b10000000;
+            if(i==4) PORTC = 0b00010000;
+            if(i==5) PORTC = 0b00100000;
+            if(i==6) PORTC = 0b01000000;
+            if(i==7) PORTC = 0b10000000;
         }; // if(t>=100)
         
     }; // while(1)
