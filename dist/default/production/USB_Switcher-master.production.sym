@@ -233,13 +233,13 @@ maintext D16 FF9 CODE D16 0
 text1 CE4 D15 CODE CE4 0
 %locals
 dist/default/production\USB_Switcher-master.production.o
-C:\Users\kurako\AppData\Local\Temp\sks.s
+C:\Users\kurako\AppData\Local\Temp\sgj0.s
 808 7FD 0 CODE 0
 811 7FD 0 CODE 0
 817 7FD 0 CODE 0
 819 7FD 0 CODE 0
 820 7FE 0 CODE 0
-usb_switcher2-2.c
+usb_switcher2.c
 65 68B 0 CODE 0
 68 68B 0 CODE 0
 69 68D 0 CODE 0

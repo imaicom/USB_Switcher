@@ -66,13 +66,14 @@ void main(void)
 {
     
     int i = 0;
+    int j = 0;
     int t = 0;
     OSCCON     = 0b01110010 ; // Set the internal clock to 8 MHz
     OPTION_REG = 0b00000000 ; // Use internal pull-up resistor for digital I / O
     ANSELA     = 0b00000000 ; // AN0 to AN4 are not used. Make it all digital I / O
     ANSELB     = 0b00000000 ; // AN8 to AN13 are not used. Make it all digital I / O
     TRISA      = 0b00000000 ; // All pins (RA) are assigned to outputs (0: output 1: input)
-    TRISB      = 0b10100000 ; // Pin (RB) inputs only RB7,RB5, all others assign output
+    TRISB      = 0b10111000 ; // Pin (RB) inputs only RB7,RB5,RB4,RB3, all others assign output
     TRISC      = 0b00000000 ; // All pins (RC) are assigned to outputs
     WPUB       = 0b10100000 ; // RB7,RB5 designates an internal pull-up resistor
      
@@ -112,10 +113,18 @@ void main(void)
             if(i==7) PORTA = 0b10000000;
         }; // while(!RB5)    
        
-        if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
+        if(t>=1) {
+            if (!RB4 &&  RB3) t = 1; 
+            if ( RB4 && !RB3) t = 1; 
+            t++;
+        };
         
-        if(t>=100) { // after 1sec (10ms x 100 times)
+        
+        if(t>=3) {
             t = 0;
+            
+            PORTC = 0b00000000;
+            for(j=0;j<100;j++) Delay_ms(10);    // after 1sec (10ms x 100 times)
             if(i==0) PORTC = 0b00000001;
             if(i==1) PORTC = 0b00000010;
             if(i==2) PORTC = 0b00000100;

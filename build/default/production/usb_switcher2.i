@@ -4858,7 +4858,7 @@ void main(void)
     ANSELA = 0b00000000 ;
     ANSELB = 0b00000000 ;
     TRISA = 0b00000000 ;
-    TRISB = 0b10100000 ;
+    TRISB = 0b10111000 ;
     TRISC = 0b00000000 ;
     WPUB = 0b10100000 ;
 

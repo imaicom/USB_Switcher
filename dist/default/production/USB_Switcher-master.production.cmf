@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\kurako\AppData\Local\Temp\sks.o
+$C:\Users\kurako\AppData\Local\Temp\sgj0.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 4 8007 8007 2 2
@@ -114,66 +114,66 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\USB_Switcher-master.production.o
-7FD cinit CODE >808:C:\Users\kurako\AppData\Local\Temp\sks.s
-7FD cinit CODE >811:C:\Users\kurako\AppData\Local\Temp\sks.s
-7FD cinit CODE >817:C:\Users\kurako\AppData\Local\Temp\sks.s
-7FD cinit CODE >819:C:\Users\kurako\AppData\Local\Temp\sks.s
-7FE cinit CODE >820:C:\Users\kurako\AppData\Local\Temp\sks.s
-672 text1 CODE >59:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-672 text1 CODE >60:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-675 text1 CODE >61:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-67C text1 CODE >62:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-68A text1 CODE >63:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-68B maintext CODE >65:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-68B maintext CODE >68:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-68D maintext CODE >69:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-68F maintext CODE >70:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-692 maintext CODE >71:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-693 maintext CODE >72:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-695 maintext CODE >73:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-696 maintext CODE >74:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-698 maintext CODE >75:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-69A maintext CODE >76:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-69B maintext CODE >77:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-69E maintext CODE >79:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6A1 maintext CODE >80:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6A2 maintext CODE >81:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6A5 maintext CODE >86:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6B1 maintext CODE >87:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6C4 maintext CODE >88:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6C8 maintext CODE >90:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6D1 maintext CODE >91:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6DA maintext CODE >92:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6E4 maintext CODE >93:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6EE maintext CODE >94:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-6F8 maintext CODE >95:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-702 maintext CODE >96:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-70C maintext CODE >97:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-717 maintext CODE >85:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-717 maintext CODE >98:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-71D maintext CODE >101:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-729 maintext CODE >102:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-735 maintext CODE >103:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-739 maintext CODE >105:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-741 maintext CODE >106:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-749 maintext CODE >107:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-752 maintext CODE >108:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-75B maintext CODE >109:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-764 maintext CODE >110:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-76D maintext CODE >111:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-776 maintext CODE >112:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-77F maintext CODE >100:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-783 maintext CODE >115:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-79D maintext CODE >117:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-7AA maintext CODE >118:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-7AC maintext CODE >119:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-7B5 maintext CODE >120:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-7BE maintext CODE >121:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-7C8 maintext CODE >122:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-7D2 maintext CODE >123:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-7DC maintext CODE >124:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-7E6 maintext CODE >125:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
-7F0 maintext CODE >126:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
+7FD cinit CODE >808:C:\Users\kurako\AppData\Local\Temp\sgj0.s
+7FD cinit CODE >811:C:\Users\kurako\AppData\Local\Temp\sgj0.s
+7FD cinit CODE >817:C:\Users\kurako\AppData\Local\Temp\sgj0.s
+7FD cinit CODE >819:C:\Users\kurako\AppData\Local\Temp\sgj0.s
+7FE cinit CODE >820:C:\Users\kurako\AppData\Local\Temp\sgj0.s
+672 text1 CODE >59:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+672 text1 CODE >60:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+675 text1 CODE >61:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+67C text1 CODE >62:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+68A text1 CODE >63:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+68B maintext CODE >65:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+68B maintext CODE >68:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+68D maintext CODE >69:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+68F maintext CODE >70:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+692 maintext CODE >71:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+693 maintext CODE >72:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+695 maintext CODE >73:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+696 maintext CODE >74:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+698 maintext CODE >75:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+69A maintext CODE >76:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+69B maintext CODE >77:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+69E maintext CODE >79:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6A1 maintext CODE >80:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6A2 maintext CODE >81:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6A5 maintext CODE >86:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6B1 maintext CODE >87:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6C4 maintext CODE >88:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6C8 maintext CODE >90:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6D1 maintext CODE >91:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6DA maintext CODE >92:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6E4 maintext CODE >93:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6EE maintext CODE >94:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+6F8 maintext CODE >95:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+702 maintext CODE >96:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+70C maintext CODE >97:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+717 maintext CODE >85:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+717 maintext CODE >98:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+71D maintext CODE >101:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+729 maintext CODE >102:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+735 maintext CODE >103:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+739 maintext CODE >105:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+741 maintext CODE >106:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+749 maintext CODE >107:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+752 maintext CODE >108:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+75B maintext CODE >109:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+764 maintext CODE >110:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+76D maintext CODE >111:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+776 maintext CODE >112:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+77F maintext CODE >100:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+783 maintext CODE >115:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+79D maintext CODE >117:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+7AA maintext CODE >118:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+7AC maintext CODE >119:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+7B5 maintext CODE >120:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+7BE maintext CODE >121:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+7C8 maintext CODE >122:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+7D2 maintext CODE >123:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+7DC maintext CODE >124:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+7E6 maintext CODE >125:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
+7F0 maintext CODE >126:C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -197,18 +197,18 @@ main@i 78 0 COMMON 1 cstackCOMMON dist/default/production\USB_Switcher-master.pr
 main@t 76 0 COMMON 1 cstackCOMMON dist/default/production\USB_Switcher-master.production.o
 __Hstrings 0 0 ABS 0 strings -
 _WPUB 20D 0 ABS 0 - dist/default/production\USB_Switcher-master.production.o
-___sp 0 0 STACK 2 stack C:\Users\kurako\AppData\Local\Temp\sks.o
+___sp 0 0 STACK 2 stack C:\Users\kurako\AppData\Local\Temp\sgj0.o
 _main D16 0 CODE 0 maintext dist/default/production\USB_Switcher-master.production.o
 btemp 7E 0 ABS 0 - dist/default/production\USB_Switcher-master.production.o
-start 4 0 CODE 0 init C:\Users\kurako\AppData\Local\Temp\sks.o
+start 4 0 CODE 0 init C:\Users\kurako\AppData\Local\Temp\sgj0.o
 __size_of_main 0 0 ABS 0 - dist/default/production\USB_Switcher-master.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sks.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sks.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sks.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sks.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sks.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sks.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sgj0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sgj0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sgj0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sgj0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sgj0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\kurako\AppData\Local\Temp\sgj0.o
 wtemp0 7E 0 ABS 0 - dist/default/production\USB_Switcher-master.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
@@ -218,13 +218,13 @@ _ANSELB 18D 0 ABS 0 - dist/default/production\USB_Switcher-master.production.o
 Delay_ms@i 73 0 COMMON 1 cstackCOMMON dist/default/production\USB_Switcher-master.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 _OPTION_REG 95 0 ABS 0 - dist/default/production\USB_Switcher-master.production.o
-___stackhi 23EF 0 ABS 0 - C:\Users\kurako\AppData\Local\Temp\sks.o
-___stacklo 2000 0 ABS 0 - C:\Users\kurako\AppData\Local\Temp\sks.o
+___stackhi 23EF 0 ABS 0 - C:\Users\kurako\AppData\Local\Temp\sgj0.o
+___stacklo 2000 0 ABS 0 - C:\Users\kurako\AppData\Local\Temp\sgj0.o
 _Delay_ms CE4 0 CODE 0 text1 dist/default/production\USB_Switcher-master.production.o
 start_initialization FFA 0 CODE 0 cinit dist/default/production\USB_Switcher-master.production.o
 _OSCCON 99 0 ABS 0 - dist/default/production\USB_Switcher-master.production.o
 __end_of_Delay_ms D16 0 CODE 0 text1 dist/default/production\USB_Switcher-master.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\kurako\AppData\Local\Temp\sks.o
+___int_sp 0 0 STACK 2 stack C:\Users\kurako\AppData\Local\Temp\sgj0.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -355,7 +355,7 @@ __S1 7A 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\kurako\AppData\Local\Temp\sks.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\kurako\AppData\Local\Temp\sgj0.o
 __Lbank10 0 0 ABS 0 bank10 -
 __Lbank11 0 0 ABS 0 bank11 -
 __Lbank12 0 0 ABS 0 bank12 -

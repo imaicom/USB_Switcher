@@ -72,7 +72,7 @@ void main(void)
     ANSELA     = 0b00000000 ; // AN0 to AN4 are not used. Make it all digital I / O
     ANSELB     = 0b00000000 ; // AN8 to AN13 are not used. Make it all digital I / O
     TRISA      = 0b00000000 ; // All pins (RA) are assigned to outputs (0: output 1: input)
-    TRISB      = 0b10100000 ; // Pin (RB) inputs only RB7,RB5, all others assign output
+    TRISB      = 0b10111000 ; // Pin (RB) inputs only RB7,RB5,RB4,RB3, all others assign output
     TRISC      = 0b00000000 ; // All pins (RC) are assigned to outputs
     WPUB       = 0b10100000 ; // RB7,RB5 designates an internal pull-up resistor
      

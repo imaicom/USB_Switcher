@@ -11,7 +11,7 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"59 C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
+"59 C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
 [v _Delay_ms Delay_ms `(v  1 s 1 Delay_ms ]
 "65
 [v _main main `(v  1 e 1 0 ]
@@ -41,7 +41,7 @@
 [v _RB5 RB5 `VEb  1 e 0 @109 ]
 "8179
 [v _RB7 RB7 `VEb  1 e 0 @111 ]
-"65 C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
+"65 C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2.c
 [v _main main `(v  1 e 1 0 ]
 {
 "68
