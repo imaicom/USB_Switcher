@@ -1,0 +1,61 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1938 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"59 C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
+[v _Delay_ms Delay_ms `(v  1 s 1 Delay_ms ]
+"65
+[v _main main `(v  1 e 1 0 ]
+"429 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1938.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"491
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"553
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"1228
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1290
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1352
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1600
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"1851
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"3077
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3135
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3702
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"8173
+[v _RB5 RB5 `VEb  1 e 0 @109 ]
+"8179
+[v _RB7 RB7 `VEb  1 e 0 @111 ]
+"65 C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
+[v _main main `(v  1 e 1 0 ]
+{
+"68
+[v main@i i `i  1 a 2 8 ]
+"69
+[v main@t t `i  1 a 2 6 ]
+"131
+} 0
+"59
+[v _Delay_ms Delay_ms `(v  1 s 1 Delay_ms ]
+{
+"60
+[v Delay_ms@i i `ui  1 a 2 3 ]
+"59
+[v Delay_ms@DELAY_CNT DELAY_CNT `ui  1 p 2 0 ]
+"63
+} 0

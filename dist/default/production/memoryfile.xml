@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production/USB_Switcher.production.hex">
+  <executable name="dist/default/production\USB_Switcher-master.production.hex">
     <memory name="program">
       <units>words</units>
       <length>16384</length>
-      <used>328</used>
-      <free>16056</free>
+      <used>402</used>
+      <free>15982</free>
     </memory>
     <memory name="data">
       <units>bytes</units>

@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/USB_Switcher.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=USB_Switcher.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=usbswitcher/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/USB_Switcher-master.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=USB_Switcher-master.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=usbswitcher-master/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/usbswitcher/bin
+makeDirectory ${TMPDIR}/usbswitcher-master/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/usbswitcher.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/usbswitcher-master.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/usbswitcher.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/usbswitcher-master.tar *
 checkReturnCode
 
 # Cleanup

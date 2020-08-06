@@ -538,63 +538,63 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7105
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1938.h: 7105: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"37 usb_switcher2.c
-[; ;usb_switcher2.c: 37:             if(i==3) PORTA = 0b00001000;
+"37 usb_switcher2-2.c
+[; ;usb_switcher2-2.c: 37:             if(i==3) PORTA = 0b00001000;
 [p x FOSC = INTOSC ]
 "38
-[; ;usb_switcher2.c: 38:             if(i==4) PORTA = 0b00010000;
+[; ;usb_switcher2-2.c: 38:             if(i==4) PORTA = 0b00010000;
 [p x WDTE = OFF ]
 "39
-[; ;usb_switcher2.c: 39:             if(i==5) PORTA = 0b00100000;
+[; ;usb_switcher2-2.c: 39:             if(i==5) PORTA = 0b00100000;
 [p x PWRTE = OFF ]
 "40
-[; ;usb_switcher2.c: 40:             if(i==6) PORTA = 0b01000000;
+[; ;usb_switcher2-2.c: 40:             if(i==6) PORTA = 0b01000000;
 [p x MCLRE = ON ]
 "41
-[; ;usb_switcher2.c: 41:             if(i==7) PORTA = 0b10000000;
+[; ;usb_switcher2-2.c: 41:             if(i==7) PORTA = 0b10000000;
 [p x CP = OFF ]
 "42
-[; ;usb_switcher2.c: 42:         };
+[; ;usb_switcher2-2.c: 42:         };
 [p x CPD = OFF ]
 "43
-[; ;usb_switcher2.c: 43: 
+[; ;usb_switcher2-2.c: 43: 
 [p x BOREN = OFF ]
 "44
-[; ;usb_switcher2.c: 44:         while(!RB7) {
+[; ;usb_switcher2-2.c: 44:         while(!RB7) {
 [p x CLKOUTEN = OFF ]
 "45
-[; ;usb_switcher2.c: 45:             while(!RB7) Delay_ms(10);
+[; ;usb_switcher2-2.c: 45:             while(!RB7) Delay_ms(10);
 [p x IESO = ON ]
 "46
-[; ;usb_switcher2.c: 46:             i--; if(i<0) i = 7;
+[; ;usb_switcher2-2.c: 46:             i--; if(i<0) i = 7;
 [p x FCMEN = OFF ]
 "49
-[; ;usb_switcher2.c: 49:             if(i==0) PORTA = 0b00000001;
+[; ;usb_switcher2-2.c: 49:             if(i==0) PORTA = 0b00000001;
 [p x WRT = OFF ]
 "50
-[; ;usb_switcher2.c: 50:             if(i==1) PORTA = 0b00000010;
+[; ;usb_switcher2-2.c: 50:             if(i==1) PORTA = 0b00000010;
 [p x VCAPEN = OFF ]
 "51
-[; ;usb_switcher2.c: 51:             if(i==2) PORTA = 0b00000100;
+[; ;usb_switcher2-2.c: 51:             if(i==2) PORTA = 0b00000100;
 [p x PLLEN = OFF ]
 "52
-[; ;usb_switcher2.c: 52:             if(i==3) PORTA = 0b00001000;
+[; ;usb_switcher2-2.c: 52:             if(i==3) PORTA = 0b00001000;
 [p x STVREN = ON ]
 "53
-[; ;usb_switcher2.c: 53:             if(i==4) PORTA = 0b00010000;
+[; ;usb_switcher2-2.c: 53:             if(i==4) PORTA = 0b00010000;
 [p x BORV = LO ]
 "54
-[; ;usb_switcher2.c: 54:             if(i==5) PORTA = 0b00100000;
+[; ;usb_switcher2-2.c: 54:             if(i==5) PORTA = 0b00100000;
 [p x LVP = OFF ]
 "59
-[; ;usb_switcher2.c: 59:         if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
+[; ;usb_switcher2-2.c: 59:         if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
 [v _Delay_ms `(v ~T0 @X0 1 sf1`ui ]
 {
 [e :U _Delay_ms ]
 [v _DELAY_CNT `ui ~T0 @X0 1 r1 ]
 [f ]
 "60
-[; ;usb_switcher2.c: 60: 
+[; ;usb_switcher2-2.c: 60: 
 {
 [v _i `ui ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `ui ]
@@ -602,10 +602,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 355 ]
 {
 "61
-[; ;usb_switcher2.c: 61:         if(t>=100) {
+[; ;usb_switcher2-2.c: 61:         if(t>=100) {
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "62
-[; ;usb_switcher2.c: 62:             t = 0;
+[; ;usb_switcher2-2.c: 62:             t = 0;
 }
 [e ++ _i -> -> 1 `i `ui ]
 [e :U 358 ]
@@ -613,43 +613,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 356 ]
 }
 "63
-[; ;usb_switcher2.c: 63:             if(i==0) PORTC = 0b00000001;
+[; ;usb_switcher2-2.c: 63:             if(i==0) PORTC = 0b00000001;
 [e :UE 354 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
 "65
-[; ;usb_switcher2.c: 65:             if(i==2) PORTC = 0b00000100;
+[; ;usb_switcher2-2.c: 65:             if(i==2) PORTC = 0b00000100;
 [v _main `(v ~T0 @X0 1 ef ]
 "66
-[; ;usb_switcher2.c: 66:             if(i==3) PORTC = 0b00001000;
+[; ;usb_switcher2-2.c: 66:             if(i==3) PORTC = 0b00001000;
 {
 [e :U _main ]
 [f ]
 "68
-[; ;usb_switcher2.c: 68:             if(i==5) PORTC = 0b00100000;
+[; ;usb_switcher2-2.c: 68:             if(i==5) PORTC = 0b00100000;
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 "69
-[; ;usb_switcher2.c: 69:             if(i==6) PORTC = 0b01000000;
+[; ;usb_switcher2-2.c: 69:             if(i==6) PORTC = 0b01000000;
 [v _t `i ~T0 @X0 1 a ]
 [e = _t -> 0 `i ]
 "70
-[; ;usb_switcher2.c: 70:             if(i==7) PORTC = 0b10000000;
+[; ;usb_switcher2-2.c: 70:             if(i==7) PORTC = 0b10000000;
 [e = _OSCCON -> -> 114 `i `uc ]
 "71
-[; ;usb_switcher2.c: 71:         };
+[; ;usb_switcher2-2.c: 71:         };
 [e = _OPTION_REG -> -> 0 `i `uc ]
 "72
-[; ;usb_switcher2.c: 72: 
+[; ;usb_switcher2-2.c: 72: 
 [e = _ANSELA -> -> 0 `i `uc ]
 "73
-[; ;usb_switcher2.c: 73:     };
+[; ;usb_switcher2-2.c: 73:     };
 [e = _ANSELB -> -> 0 `i `uc ]
 "74
-[; ;usb_switcher2.c: 74: 
+[; ;usb_switcher2-2.c: 74: 
 [e = _TRISA -> -> 0 `i `uc ]
 "75
-[; ;usb_switcher2.c: 75: }
+[; ;usb_switcher2-2.c: 75: }
 [e = _TRISB -> -> 160 `i `uc ]
 "76
 [e = _TRISC -> -> 0 `i `uc ]

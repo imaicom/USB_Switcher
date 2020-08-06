@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=USB_Switcher
+PROJECTNAME=USB_Switcher-master
 
 # Active Configuration
 DEFAULTCONF=default
