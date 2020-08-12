@@ -66,7 +66,6 @@ void main(void)
 {
     
     int i = 0;
-    int j = 0;
     int t = 0;
     OSCCON     = 0b01110010 ; // Set the internal clock to 8 MHz
     OPTION_REG = 0b00000000 ; // Use internal pull-up resistor for digital I / O
@@ -113,18 +112,10 @@ void main(void)
             if(i==7) PORTA = 0b10000000;
         }; // while(!RB5)    
        
-        if(t>=1) {
-            if (!RB4 &&  RB3) t = 1; 
-            if ( RB4 && !RB3) t = 1; 
-            t++;
-        };
+        if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
         
-        
-        if(t>=3) {
+        if(t>=100) { // after 1sec (10ms x 100 times)
             t = 0;
-            
-            PORTC = 0b00000000;
-            for(j=0;j<100;j++) Delay_ms(10);    // after 1sec (10ms x 100 times)
             if(i==0) PORTC = 0b00000001;
             if(i==1) PORTC = 0b00000010;
             if(i==2) PORTC = 0b00000100;

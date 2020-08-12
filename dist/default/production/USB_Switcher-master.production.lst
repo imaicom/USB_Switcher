@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.20 build 20200408173844 
-                                                                                               Fri Aug 07 00:14:44 2020
+                                                                                               Wed Aug 12 13:19:50 2020
 
 Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1 
      1                           	processor	16F1938
@@ -452,7 +452,7 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
    438 ;;
    439 ;; *************** function _main *****************
    440 ;; Defined at:
-   441 ;;		line 65 in file "usb_switcher2.c"
+   441 ;;		line 65 in file "usb_switcher2-2.c"
    442 ;; Parameters:    Size  Location     Type
    443 ;;		None
    444 ;; Auto vars:     Size  Location     Type
@@ -493,40 +493,40 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
    474                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
    475                           
    476                           
-   477                           ;usb_switcher2.c: 68:             if(i==5) PORTC = 0b00100000;
+   477                           ;usb_switcher2-2.c: 68:             if(i==5) PORTC = 0b00100000;
    478  068B  01F8               	clrf	main@i
    479  068C  01F9               	clrf	main@i+1
    480                           
-   481                           ;usb_switcher2.c: 69:             if(i==6) PORTC = 0b01000000;
+   481                           ;usb_switcher2-2.c: 69:             if(i==6) PORTC = 0b01000000;
    482  068D  01F6               	clrf	main@t
    483  068E  01F7               	clrf	main@t+1
    484  068F                     l852:
    485                           
-   486                           ;usb_switcher2.c: 70:             if(i==7) PORTC = 0b10000000;
+   486                           ;usb_switcher2-2.c: 70:             if(i==7) PORTC = 0b10000000;
    487  068F  3072               	movlw	114
    488  0690  0021               	movlb	1	; select bank1
    489  0691  0099               	movwf	25	;volatile
    490  0692                     l854:
    491                           
-   492                           ;usb_switcher2.c: 71:         };
+   492                           ;usb_switcher2-2.c: 71:         };
    493  0692  0195               	clrf	21	;volatile
    494  0693                     l856:
    495                           
-   496                           ;usb_switcher2.c: 72: 
+   496                           ;usb_switcher2-2.c: 72: 
    497  0693  0023               	movlb	3	; select bank3
    498  0694  018C               	clrf	12	;volatile
    499  0695                     l858:
    500                           
-   501                           ;usb_switcher2.c: 73:     };
+   501                           ;usb_switcher2-2.c: 73:     };
    502  0695  018D               	clrf	13	;volatile
    503  0696                     l860:
    504                           
-   505                           ;usb_switcher2.c: 74: 
+   505                           ;usb_switcher2-2.c: 74: 
    506  0696  0021               	movlb	1	; select bank1
    507  0697  018C               	clrf	12	;volatile
    508  0698                     l862:
    509                           
-   510                           ;usb_switcher2.c: 75: }
+   510                           ;usb_switcher2-2.c: 75: }
    511  0698  30B8               	movlw	184
    512  0699  008D               	movwf	13	;volatile
    513  069A  018E               	clrf	14	;volatile
@@ -1021,7 +1021,7 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
   1002  0672                     __ptext1:	
   1003 ;; *************** function _Delay_ms *****************
   1004 ;; Defined at:
-  1005 ;;		line 59 in file "usb_switcher2.c"
+  1005 ;;		line 59 in file "usb_switcher2-2.c"
   1006 ;; Parameters:    Size  Location     Type
   1007 ;;  DELAY_CNT       2    0[COMMON] unsigned int 
   1008 ;; Auto vars:     Size  Location     Type
@@ -1061,13 +1061,13 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
   1037                           ; Regs used in _Delay_ms: [wreg+status,2]
   1038                           
   1039                           
-  1040                           ;usb_switcher2.c: 60: 
+  1040                           ;usb_switcher2-2.c: 60: 
   1041  0672  01F3               	clrf	Delay_ms@i
   1042  0673  01F4               	clrf	Delay_ms@i+1
   1043  0674  2E80               	goto	l31
   1044  0675                     l848:
   1045                           
-  1046                           ;usb_switcher2.c: 61:         if(t>=100) {
+  1046                           ;usb_switcher2-2.c: 61:         if(t>=100) {
   1047  0675  3003               	movlw	3
   1048  0676  00F2               	movwf	??_Delay_ms
   1049  0677  3098               	movlw	152
@@ -1077,7 +1077,7 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
   1053  067A  0BF2               	decfsz	??_Delay_ms,f
   1054  067B  2E78               	goto	u677
   1055                           
-  1056                           ;usb_switcher2.c: 62:             t = 0;
+  1056                           ;usb_switcher2-2.c: 62:             t = 0;
   1057  067C  3001               	movlw	1
   1058  067D  07F3               	addwf	Delay_ms@i,f
   1059  067E  3000               	movlw	0
@@ -1354,7 +1354,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.20 build 20200408173844 
-Symbol Table                                                                                   Fri Aug 07 00:14:44 2020
+Symbol Table                                                                                   Wed Aug 12 13:19:50 2020
 
                      l31 0680                       l40 0717                       l34 068A  
                      l60 0735                      l900 06F8                      l910 0713  

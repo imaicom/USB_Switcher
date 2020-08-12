@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\USB_Switcher-master.production.sym \
   --cmf=dist/default/production\USB_Switcher-master.production.cmf -z \
-  -Q16F1938 -oC:\Users\kurako\AppData\Local\Temp\sgj0.2 \
+  -Q16F1938 -oC:\Users\kurako\AppData\Local\Temp\s678.2 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/USB_Switcher-master.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=02000h-023EFh -pstack=STACK \
@@ -32,7 +32,7 @@ Linker command line:
   -AIDLOC=08000h-08003h -DIDLOC=2 -preset_vec=00h,intentry,init,end_init \
   -ppowerup=CODE -pcinit=CODE -pfunctab=ENTRY -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\kurako\AppData\Local\Temp\sgj0.o \
+  -DENTRY=2 -k C:\Users\kurako\AppData\Local\Temp\s678.o \
   dist/default/production\USB_Switcher-master.production.o 
 
 Object code version is 3.11
@@ -42,7 +42,7 @@ Machine type is 16F1938
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\kurako\AppData\Local\Temp\sgj0.o
+C:\Users\kurako\AppData\Local\Temp\s678.o
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2        0       4
@@ -539,7 +539,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 65 in file "usb_switcher2.c"
+		line 65 in file "usb_switcher2-2.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -569,7 +569,7 @@ Total ram usage:        5 bytes
 
  *************** function _Delay_ms *****************
  Defined at:
-		line 59 in file "usb_switcher2.c"
+		line 59 in file "usb_switcher2-2.c"
  Parameters:    Size  Location     Type
   DELAY_CNT       2    0[COMMON] unsigned int 
  Auto vars:     Size  Location     Type
@@ -605,9 +605,9 @@ shared
 
 shared estimated size: 1
 
-usb_switcher2.c
+usb_switcher2-2.c
 		_main          		CODE           	068B	0000	371
 		_Delay_ms      		CODE           	0672	0000	26
 
-usb_switcher2.c estimated size: 397
+usb_switcher2-2.c estimated size: 397
 
