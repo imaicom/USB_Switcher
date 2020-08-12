@@ -704,7 +704,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! _RB5 367  ]
 [e :U 368 ]
 "89
-[; ;usb_switcher2-2.c: 89:         if(t>=50000) {
+[; ;usb_switcher2-2.c: 89:         if(t>=25000) {
 [e ++ _i -> 1 `i ]
 [e $ ! > _i -> 7 `i 369  ]
 [e = _i -> 0 `i ]
@@ -884,7 +884,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 404 ]
 "145
-[e $ ! >= _t -> 50000 `l 405  ]
+[e $ ! >= _t -> -> 25000 `i `l 405  ]
 {
 "146
 [e = _t -> -> 0 `i `l ]

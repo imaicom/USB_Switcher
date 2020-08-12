@@ -142,7 +142,7 @@ void main(void)
             PORTC = 0b00000000;
         };
         
-        if(t>=50000) { // after 1sec (0.002ms x 50000 times)
+        if(t>=25000) { // after 1sec (0.002ms x 50000 times)
             t = 0;
             if(i==0) PORTC = 0b00000001;
             if(i==1) PORTC = 0b00000010;

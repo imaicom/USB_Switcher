@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.20 build 20200408173844 
-                                                                                               Wed Aug 12 15:50:06 2020
+                                                                                               Wed Aug 12 16:07:49 2020
 
 Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1 
      1                           	processor	16F1938
@@ -601,7 +601,7 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
    582  0621                     u470:
    583  0621                     l923:
    584                           
-   585                           ;usb_switcher2-2.c: 89:         if(t>=50000) {
+   585                           ;usb_switcher2-2.c: 89:         if(t>=25000) {
    586  0621  3001               	movlw	1
    587  0622  07A8               	addwf	main@i,f
    588  0623  3000               	movlw	0
@@ -1154,9 +1154,9 @@ Microchip MPLAB XC8 C Compiler v2.20 (Free license) build 20200408173844 Og1
   1135  07A1  0826               	movf	main@t+2,w
   1136  07A2  1D03               	btfss	3,2
   1137  07A3  2FAC               	goto	u820
-  1138  07A4  3050               	movlw	80
+  1138  07A4  30A8               	movlw	168
   1139  07A5  0224               	subwf	main@t,w
-  1140  07A6  30C3               	movlw	195
+  1140  07A6  3061               	movlw	97
   1141  07A7  3B25               	subwfb	main@t+1,w
   1142  07A8  1C03               	btfss	3,0
   1143  07A9  2FAB               	goto	u821
@@ -1617,7 +1617,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.20 build 20200408173844 
-Symbol Table                                                                                   Wed Aug 12 15:50:06 2020
+Symbol Table                                                                                   Wed Aug 12 16:07:49 2020
 
                      l42 05EF                       l39 05E5                       l48 0685  
                      l90 0770                       l82 06FC                       l83 070B  
