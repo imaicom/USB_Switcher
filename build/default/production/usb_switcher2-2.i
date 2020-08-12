@@ -4852,7 +4852,9 @@ void main(void)
 {
 
     int i = 0;
-    int t = 0;
+    long int t = 0;
+    int j = 0;
+    int k = 0;
     OSCCON = 0b01110010 ;
     OPTION_REG = 0b00000000 ;
     ANSELA = 0b00000000 ;
@@ -4898,9 +4900,35 @@ void main(void)
             if(i==7) PORTA = 0b10000000;
         };
 
-        if(t>=1) {Delay_ms(10); t++; PORTC = 0b00000000;};
 
-        if(t>=100) {
+
+
+
+        if((!RB4 && !RB3)||(RB4 && RB3)) {
+            j = 0;
+        } else j++;
+
+        if(1<=j && j<=500) RB2=0;
+        if(j>1500) {RB2=0;j=1500;} else RB2=1;
+
+        if (RB2==1) {
+            k++;
+            if(k>100) k=100;
+        };
+
+        if (RB2==0) k=0;
+
+        if (k>=100) RB6=0; else RB6=1;
+
+        if((t>=1)) {
+            t++;
+        };
+
+        if(t>=10000) {
+            PORTC = 0b00000000;
+        };
+
+        if(t>=50000) {
             t = 0;
             if(i==0) PORTC = 0b00000001;
             if(i==1) PORTC = 0b00000010;

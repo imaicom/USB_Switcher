@@ -37,18 +37,30 @@
 [v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
 "3702
 [v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"8164
+[v _RB2 RB2 `VEb  1 e 0 @106 ]
+"8167
+[v _RB3 RB3 `VEb  1 e 0 @107 ]
+"8170
+[v _RB4 RB4 `VEb  1 e 0 @108 ]
 "8173
 [v _RB5 RB5 `VEb  1 e 0 @109 ]
+"8176
+[v _RB6 RB6 `VEb  1 e 0 @110 ]
 "8179
 [v _RB7 RB7 `VEb  1 e 0 @111 ]
 "65 C:\Users\kurako\MPLABXProjects\USB_Switcher-master\usb_switcher2-2.c
 [v _main main `(v  1 e 1 0 ]
 {
+"69
+[v main@t t `l  1 a 4 4 ]
 "68
 [v main@i i `i  1 a 2 8 ]
-"69
-[v main@t t `i  1 a 2 6 ]
-"131
+"70
+[v main@j j `i  1 a 2 2 ]
+"71
+[v main@k k `i  1 a 2 0 ]
+"159
 } 0
 "59
 [v _Delay_ms Delay_ms `(v  1 s 1 Delay_ms ]
